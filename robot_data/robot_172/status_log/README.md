@@ -1,0 +1,1 @@
+# save_robot_statusコマンドによって保存されたログ
