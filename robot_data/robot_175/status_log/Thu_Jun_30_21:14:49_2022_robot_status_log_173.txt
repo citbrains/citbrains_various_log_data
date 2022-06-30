@@ -1,0 +1,1914 @@
+---- robot status ---- temperature [℃] ---- current [mA] ---- voltage [mV] ----
+id 0 32.03 70 12339 
+id 1 32.43 58 12458 
+id 2 31.56 67 12250 
+id 3 31.95 65 12369 
+id 4 31.32 69 12279 
+id 5 32.75 57 12369 
+id 6 32.11 69 12071 
+id 7 32.35 72 12279 
+id 8 31.09 57 12309 
+id 9 31.56 73 12041 
+id 10 31.48 64 12428 
+id 11 32.67 55 12547 
+id 12 32.99 63 12220 
+id 13 30.16 68 12458 
+id 14 32.03 58 12339 
+id 15 32.51 77 12279 
+id 16 32.19 71 12250 
+id 17 30.78 62 12279 
+id 18 31.32 73 12339 
+
+ Motors which temperature is over 45℃
+---------------------------------- dmesg ----------------------------------
+[10496.311929] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.314492] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.338487] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.338701] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.340315] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.365063] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.365272] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.367516] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.391761] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.391980] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.394349] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.418463] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.418666] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.420205] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.445093] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.445295] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.447558] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.471771] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.471981] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.477018] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.498438] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.498672] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.501048] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.525107] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.525311] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.528849] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.551789] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.552024] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.554409] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.578484] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.578700] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.581392] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.605117] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.605328] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.607469] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.631822] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.632017] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.634314] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.658455] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.658660] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.660273] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.685214] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.685470] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.688758] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.711819] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.712028] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.714483] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.738493] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.738738] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.740480] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.765200] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.765418] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.767403] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.791835] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.792047] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.794427] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.818516] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.818757] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.821291] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.845170] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.845379] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.847439] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.871892] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.872105] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.875640] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.898517] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.898736] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.900320] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.925190] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.925396] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.927403] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10496.951859] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10496.952077] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10496.954396] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10496.954584] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10496.954772] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10496.954936] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.457791] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10499.457953] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10499.458083] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.459828] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.469019]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10499.469030] Skipping Previous mode set ... 
+[10499.499080] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.499272] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.502100] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.525819] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.526026] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.528386] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.552414] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.552611] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.554703] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.579068] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.579255] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.581244] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.605732] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.606195] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.608452] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.632393] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.632587] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.634625] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.659088] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.659289] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.661269] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.685800] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.685992] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.688971] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.712441] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.712649] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.714605] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.739130] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.739333] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.741348] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10499.765804] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10499.766009] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10499.768329] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10640.821061] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[10641.347385]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10641.347395] Skipping Previous mode set ... 
+[10641.382772] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10641.382966] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10641.389957] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[10641.390000] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10641.557929] usb 2-3: usb_suspend_both: status 0
+[10641.558183] usb usb2: usb_suspend_both: status 0
+[10641.578350] usb usb2: usb_suspend_both: status 0
+[10641.773892] usb 2-3: usb_suspend_both: status 0
+[10641.774125] usb usb2: usb_suspend_both: status 0
+[10641.790596] usb usb2: usb_suspend_both: status 0
+[10642.409720] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.409976] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.414946] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.436376] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.436594] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.447279] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.463024] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.463231] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.467189] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.489702] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.489946] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.492285] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.516373] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.516576] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.518676] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.543075] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.543289] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.545259] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.569737] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.570021] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.575102] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.596415] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.596619] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.600094] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.623060] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.623269] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.625379] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.663644] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10642.663848] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.669209] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.689757] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.690001] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.695567] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.716418] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.716622] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.722071] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.743118] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.743333] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.745314] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.769770] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.770172] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.780555] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.796430] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.796634] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.800081] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.823153] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.823418] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.835168] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.849810] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.850140] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.852252] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.876493] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.876745] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.878482] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.903103] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.903308] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.911914] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.929831] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.930098] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.932337] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.956511] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.956716] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.966499] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10642.983172] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10642.983379] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10642.993568] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10643.009806] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10643.010097] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10643.012421] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10643.036482] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10643.036694] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10643.043181] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10643.063171] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10643.063367] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10643.065361] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10643.089852] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10643.090119] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10643.092411] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.601885] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10645.602047] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10645.602211] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.604487] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.610806]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10645.610816] Skipping Previous mode set ... 
+[10645.650351] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.650552] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.652455] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.677068] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.677276] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.679714] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.703694] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.703896] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.714265] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.730376] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.730575] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.732325] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.757037] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.757234] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.759518] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.783718] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.783916] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.786296] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10645.810388] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10645.810592] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10645.812391] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.321920] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10648.322083] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10648.322214] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.324474] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.337725]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10648.337737] Skipping Previous mode set ... 
+[10648.370954] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.371160] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.373290] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.397649] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.397920] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.401075] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.424289] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.424497] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.426371] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.450959] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.451162] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.453360] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.477638] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.477836] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.486873] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.504286] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.504489] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.507971] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.530971] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.531179] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.539309] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.557637] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.557929] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.560333] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.584313] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.584518] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.589540] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.610991] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.611201] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.613341] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.637674] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.637930] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.640708] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.664363] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.664615] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.669849] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10648.670071] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10648.670220] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10648.670399] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.691057] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.691256] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.693270] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.717691] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.717945] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.727074] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.744337] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.744541] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.747811] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.771028] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.771230] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.773441] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.797733] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.797995] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.800261] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.824382] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.824590] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.830416] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.851050] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.851278] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.853320] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.877749] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.878053] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.888966] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.904388] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.904580] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.912856] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.931058] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.931265] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.933272] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.957768] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.957992] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.968980] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10648.984470] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10648.984688] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10648.987413] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.011077] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.011277] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.013439] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.037791] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.038040] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.040265] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.064440] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.064640] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.066730] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.091119] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.091318] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.093345] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.117792] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.118021] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.120390] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.145534] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.145733] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.148713] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.171128] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.171331] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.179497] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.197816] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.198085] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.206364] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.224464] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.225011] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.227483] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.251140] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.251334] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.253283] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.277831] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.278086] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.280242] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.304489] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.304689] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.308032] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.345060] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10649.345249] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.348203] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.371135] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.371327] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.373313] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.397842] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.398105] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.400190] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.424527] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.424765] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.427729] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.451171] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.451384] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.454348] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.477870] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.478120] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.480236] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.504536] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.504737] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.506312] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.531213] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.531457] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.533331] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.557935] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.558135] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.560321] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.584529] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.584723] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.586305] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.611206] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.611400] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.613656] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.637917] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.638163] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.640480] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.664552] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.664817] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.670389] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.691272] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.691525] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.695838] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.717992] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.718303] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.722043] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.745157] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10649.745353] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.753978] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.771336] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.771588] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.773381] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.798004] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.798257] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.800283] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.824616] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.824818] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.827267] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.851272] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.851471] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.853404] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.877959] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.878156] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.885045] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.904617] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.904819] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.907793] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.931287] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.932145] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.936989] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.957985] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.958188] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.960362] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10649.984619] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10649.984871] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10649.989371] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.011327] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.011529] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.013418] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.037986] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.038190] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.040221] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.064658] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.064859] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.070623] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.091304] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.091504] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.099488] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.118009] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.118215] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.124888] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.144664] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.144878] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.155025] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.171315] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.171517] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.179395] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.198021] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.198226] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.202292] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.224666] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.224870] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.227262] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.251349] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.251548] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.259635] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.278016] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.278218] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.280504] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.304720] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.304937] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.307399] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.331350] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.331545] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.333421] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.358059] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.358267] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.360282] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.384708] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.384945] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.387353] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10650.387534] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10650.387723] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10650.387924] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.411392] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.411590] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.413358] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.438070] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.438272] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.440337] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.464727] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.464930] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.468918] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.491387] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.491577] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.493200] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.518076] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.518262] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.520193] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.544742] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.544943] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.555638] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.571425] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.571619] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.573348] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.598166] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.598365] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.607198] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.624794] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.625010] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.627918] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.651405] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.651654] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.659425] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.678153] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.678369] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.687553] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.704772] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.704978] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.708898] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.731495] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.731695] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.733602] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.758106] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.758310] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.767651] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.784816] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.785122] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.791318] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.811456] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.811650] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.819476] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.838141] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.838382] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.840284] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.864809] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.865007] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.869237] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.891460] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.891672] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.893926] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.918170] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.918373] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.934058] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.958175] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.958382] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.960273] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10650.984835] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10650.985039] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10650.995238] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.011483] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.011696] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.017713] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.038158] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.038402] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.040281] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.064876] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.065111] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.069497] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.091526] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.091736] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.093350] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.118205] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.118420] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.120343] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.144860] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.145058] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.151870] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.171525] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.171731] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.179344] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.198210] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.198419] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.200262] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.224896] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.225100] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.238303] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.251502] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 224, err_data 4194402
+[10651.251710] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.261013] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.278257] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.278460] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.280350] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.304907] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.305115] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.311196] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.331575] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.331810] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.339260] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.358251] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.358460] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.360396] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.384918] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.385122] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.387591] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.411583] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.411788] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.419255] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.438276] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.438479] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.440197] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.464942] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.465140] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.475067] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.491600] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.491797] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.494337] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.518300] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.518516] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.523205] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.544947] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.545185] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.547235] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.571669] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.571903] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.576467] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.598337] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.598547] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.600492] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.624994] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.625220] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.630647] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.665601] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10651.665799] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.671101] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.691646] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.691848] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.696996] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.718314] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.718515] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.727414] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.744990] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.745200] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.749274] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10651.771673] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10651.771923] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10651.777450] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.305894] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10654.306056] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10654.306228] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.309306] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.321033]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10654.321042] Skipping Previous mode set ... 
+[10654.358893] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.359091] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.361411] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.385543] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.385737] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.388391] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.412241] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.412432] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.415825] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.438906] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.439152] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.443693] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.465585] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.465782] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.468410] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.492234] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.492467] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.494365] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.518939] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.519135] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.521648] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.545590] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.545784] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.548430] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.572261] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.572458] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.574319] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.598940] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.599139] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.607444] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.625607] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.625801] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.628289] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10654.628510] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10654.628659] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10654.628834] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.652280] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.652488] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.654511] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.678956] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.679153] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.687408] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.705622] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.705820] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.708423] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.732321] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.732517] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.734612] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.758975] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.759194] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.761366] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.785623] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.785824] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.791086] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.812334] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.812532] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.814409] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.838995] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.839206] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.851025] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.865680] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.865930] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.868320] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.892355] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.892567] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.899632] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.919004] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.919250] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.921301] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.946330] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10654.946526] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.948462] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.972405] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.972611] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10654.976045] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10654.999024] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10654.999235] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.013913] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.039020] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.039236] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.041452] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.065706] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.065980] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.076863] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.092379] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.092595] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.095888] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.119049] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.119261] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.124209] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.145761] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.146021] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.148374] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.172415] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.172625] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.176190] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.199065] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.199307] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.203090] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.225723] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.226003] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.230316] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.252421] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.252631] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.259230] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.279109] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.279315] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.281660] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.305756] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.306012] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.312220] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.332465] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.332687] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.339387] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.359126] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.359332] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.361388] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.385761] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.385990] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.392335] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.412478] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.412721] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.422345] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.439115] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.439321] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.441211] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.465806] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.466105] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.468452] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.492462] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.492679] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.496805] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.519139] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.519352] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.521508] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.545815] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.546077] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.551613] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.572471] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.572671] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.575961] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.599145] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.599346] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.602031] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.625860] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.626096] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.628477] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.652506] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.652710] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.658944] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.679179] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.679376] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.682139] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.705901] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.706141] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.708371] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.732529] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.732734] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.734417] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.759197] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.759400] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.766031] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.785859] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.786158] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.788305] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.812562] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.812809] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.821287] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.839239] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.839447] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.841230] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.866032] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.866242] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.868328] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.892550] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.892747] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.901309] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.919227] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.919430] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.921266] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.945966] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.946167] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.948347] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.972559] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.972764] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10655.975390] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10655.999276] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10655.999488] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10656.001545] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.529916] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10658.530113] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10658.530278] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.532581] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.538723]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10658.538734] Skipping Previous mode set ... 
+[10658.573167] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.573377] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.576734] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.599793] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.600000] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.602532] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.626475] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.626727] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.628377] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.653120] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.653316] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.655410] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.679793] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.679991] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.682725] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.706484] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.706711] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.709025] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.733134] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.733325] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.736693] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.759816] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.760003] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.762364] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.786478] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.786676] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.789178] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.813212] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.813407] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.816948] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.853732] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10658.853944] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.856766] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10658.856947] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10658.857134] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10658.857309] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.879849] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.880042] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.882703] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.906496] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.906681] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.908998] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.933226] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.933431] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.935420] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.959854] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.960084] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.962346] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10658.986514] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10658.986736] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10658.988351] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.013211] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.013403] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.015407] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.039864] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.040042] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.042399] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.066545] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.066718] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.071116] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.093229] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.093451] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.097125] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.119937] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.120139] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.122800] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.146620] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.146835] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.155420] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.186586] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.186786] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.189349] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.213276] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.213475] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.215340] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.239941] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.240153] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.244623] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.266622] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.266825] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.269503] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.293350] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.293559] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.295408] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.319995] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.320197] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.326675] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.346662] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.346864] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.349380] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.373329] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.373534] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.376953] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.400004] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.400203] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.402776] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.426649] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.426842] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.432689] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.453369] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.453570] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.455318] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.480019] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.480280] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.487758] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.506700] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.506898] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.509285] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.533313] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.533518] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.535463] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.559999] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.560199] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.567007] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.586662] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.586862] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.589356] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.613330] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.613552] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.615437] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.640019] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.640231] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.642242] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.666693] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.666910] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.669325] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.693358] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.693560] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.695477] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.720031] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.720232] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.722456] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.746706] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.746912] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.749513] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.773410] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.773614] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.775390] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.800064] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.800259] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.807006] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.826721] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.826980] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.829273] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.853392] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.853590] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.855398] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.880122] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.880324] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.882270] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.906774] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.906974] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.909485] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.933462] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.933688] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.936384] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.960146] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.960352] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.962333] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10659.986801] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10659.987001] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10659.993829] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.013449] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.013649] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.016840] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.040152] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.040358] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.045766] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.066816] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.067034] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.073302] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.093446] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.093706] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.096558] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.120174] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.120373] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.125048] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.146852] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.147053] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.149327] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.173510] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.173760] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.176439] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.200191] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.200392] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.203252] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.226853] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.227063] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.229361] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.253513] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.253755] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.256342] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.280188] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.280401] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.282569] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.306876] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.307134] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.309327] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.333527] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.333743] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.336455] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.360217] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.360424] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.362848] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.386891] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.387101] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.389633] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.413547] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.413751] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.416380] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.440214] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.440443] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.442590] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.466871] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.467112] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.469435] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.493569] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.493782] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.501361] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.520244] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.520490] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.522847] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.546899] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.547109] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.549263] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.573580] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.573782] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.576517] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10660.576707] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10660.576861] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10660.577125] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.600277] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.600488] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.602479] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.626917] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.627119] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.630353] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.653648] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.653946] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.656999] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.680250] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.680446] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.682305] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.706942] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.707129] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.709311] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.733633] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.733825] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.736305] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.760308] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.760549] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.762458] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.786941] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.787201] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.789295] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.813641] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.813975] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.817238] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.840287] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.840491] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.842811] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.867006] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.867226] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.870562] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.893627] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.893829] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.896254] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.920342] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.920548] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.922513] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.946964] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.947175] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.952136] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10660.973655] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10660.973903] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10660.976272] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.000320] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.000529] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.002862] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.027016] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.027220] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.029581] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.053716] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.053956] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.057012] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.080348] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.080552] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.084742] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.107010] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.107244] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.109440] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.133706] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.133964] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.136848] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.160387] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.160605] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.162466] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.187133] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.187373] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.189480] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.213730] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.213966] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.216338] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.240406] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.240618] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.244960] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.267070] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.267290] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.269396] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.293724] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.293973] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.296285] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.320391] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.320599] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.326508] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.347075] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.347278] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.349581] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.373762] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.374041] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.377217] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.400433] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.400638] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.402703] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.427087] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.427345] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.429425] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.453813] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.454108] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.457920] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.480467] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.480678] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.482439] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.507101] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.507312] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.510339] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.533785] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.534035] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.538292] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.560467] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.560682] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.562350] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.587143] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.587348] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.593241] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.613846] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.614132] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.616458] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.640483] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.640689] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.643278] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.667145] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.667348] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.669465] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.693818] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.694056] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.697202] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.720477] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.720683] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.727510] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.747154] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.747356] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.749340] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.773859] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.774113] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.776523] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.800523] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.800739] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.802512] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.827183] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.827426] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.829360] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.853848] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.854110] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.856422] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.880561] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.880778] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.883436] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.907233] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.907450] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.909419] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.933932] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.934137] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.936364] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.960543] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.960754] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.963777] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10661.987175] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10661.987371] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10661.989441] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.013923] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.014164] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.016402] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.040551] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.040754] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.042430] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.067272] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.067536] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.069492] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.093971] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.094184] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.097120] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.120576] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.120798] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.123462] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.147252] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.147464] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.149227] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.173946] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.174201] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.176370] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.200612] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.200813] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.204720] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.227269] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.227476] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.231430] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.253981] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.254177] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.256755] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.280609] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.280815] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.283397] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10662.283611] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10662.283782] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10662.283956] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.307268] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.307473] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.315373] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.333995] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.334238] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.336329] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.360637] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.360879] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.363366] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.387296] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.387497] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.389336] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.413956] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.414208] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.416942] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.440650] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.440856] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.449412] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.467292] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.467494] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.470318] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.494008] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.494220] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.496243] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.520661] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.520869] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.523392] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.547347] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.547561] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.549349] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.573996] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.574217] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.576528] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.600667] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.601098] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.603257] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.627354] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.627598] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.629303] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.654007] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.654279] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.656308] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.680704] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.680946] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.683480] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.707351] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.707596] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.709479] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.734036] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.734292] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.739475] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.760702] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.760909] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.763448] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.787367] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.787602] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.790361] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.814069] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.814278] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.821259] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.840748] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.840971] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.843426] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.867388] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.867582] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.869810] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.894133] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.894338] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.896380] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.920772] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.920989] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.923409] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.947446] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.947664] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.949410] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10662.974104] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10662.974312] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10662.976367] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.000795] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.001068] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.003984] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.027426] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.027673] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.029499] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.054137] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.054353] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.056334] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.080773] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.080984] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.083546] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.107459] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.107669] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.109431] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.134124] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.134334] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.136456] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.160852] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.161068] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.164962] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.187484] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.187696] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.190574] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.214198] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.214402] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.216440] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.240826] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.241035] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.243743] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.267492] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.267706] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.269422] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.294190] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.294405] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.296304] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.320841] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.321126] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.323545] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.347591] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.347834] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.350384] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10663.374195] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10663.374396] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10663.376457] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10665.889906] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10665.890097] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10665.890232] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10665.892854] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10665.901005]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10665.901016] Skipping Previous mode set ... 
+[10665.934716] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10665.935110] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10665.937218] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10665.961380] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10665.961587] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10665.963268] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10665.988100] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10665.988333] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10665.992675] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.014729] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.014930] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.017969] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.041389] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.041579] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.043410] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.068089] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.068291] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.070351] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.094755] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.094955] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.097183] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.121450] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.121675] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.123301] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.148109] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.148341] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.150289] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.174769] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.174966] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.177404] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10666.201436] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10666.201636] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10666.203523] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.705900] tegra194-vi5 15c10000.vi: no reply from camera processor
+[10668.706070] tegra194-vi5 15c10000.vi: uncorr_err: request timed out after 2500 ms
+[10668.706233] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.708728] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.716351]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[10668.716363] Skipping Previous mode set ... 
+[10668.748669] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.748902] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.751402] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.775364] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.775597] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.777434] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.801991] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.802286] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.804291] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.828677] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.828948] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.849174] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.868692] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.868888] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.871472] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.909278] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10668.909469] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.912277] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.935337] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.935530] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.937344] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.962056] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.962253] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.964308] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10668.964490] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10668.964639] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10668.964805] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10668.988700] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10668.988900] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10668.991781] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.015375] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.015583] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.017321] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.042052] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.042238] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.044222] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.068724] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.069104] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.072483] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.095399] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.095595] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.097084] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.122049] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.122245] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.124377] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.148749] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.148949] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.151309] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.175389] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.175580] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.177262] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.202067] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.202266] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.204235] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.228810] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.229029] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.231493] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.255443] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.255649] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.257269] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.282118] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.282334] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.284573] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.308792] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.309002] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.319030] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.335455] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.335662] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.337330] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.362120] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.362320] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.364275] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.388805] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.389017] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.391499] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.415479] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.415689] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.417329] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.442213] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.442423] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.449541] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.468845] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.469054] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.471855] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.495488] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.495696] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.504714] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.522184] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.522401] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.524271] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.548820] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.549022] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.551320] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.575552] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.575773] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.578447] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.602171] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.602379] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.605725] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.628880] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.629125] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.633315] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.655510] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.655717] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.657409] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.682226] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.682471] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.684434] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.708902] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.709147] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.712095] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.735572] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.735780] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.743560] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.762256] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.762462] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.764860] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.788907] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.789114] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.791394] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.815578] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.815782] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.818594] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.842258] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.842464] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.844366] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.868912] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.869119] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.871355] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.895570] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.895778] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.898454] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.922241] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.922447] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.924305] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.948944] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.949157] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.953531] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10669.975602] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10669.975811] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10669.979663] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.002282] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.002494] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.004465] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.028963] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.029205] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.031480] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.055617] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.055821] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.058469] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.082269] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.082514] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.087108] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.108962] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.109172] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.111311] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.135608] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.135805] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.146139] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.162289] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.162495] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.164292] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.188988] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.189192] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.191915] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.215774] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.215984] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.218817] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.242319] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.242518] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.244317] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.268987] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.269222] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.272603] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.295652] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.295863] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.300736] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.322318] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.322554] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.324316] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.349003] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.349220] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.352778] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.375703] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.375907] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.378508] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.402360] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.402575] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.404600] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.429041] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.429261] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.432908] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.455684] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.455897] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.463904] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.482363] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.482577] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.484281] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.509046] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.509256] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.513570] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.535710] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.535927] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.538336] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.562386] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.562590] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.565243] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.589044] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.589286] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.592740] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.615732] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.615935] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.623262] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.642409] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.642617] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.645712] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.683004] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10670.683205] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.685748] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x39
+[10670.685999] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x41
+[10670.686182] tegra-capture-ivc ivc-bc00000.rtcpu:ivccontrol@3: No callback found for msg id: 0x37
+[10670.686358] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.709086] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.709280] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.712511] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.735752] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.735953] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.738489] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.762421] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.762630] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.764967] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.789117] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.789319] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.792976] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.815755] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.815938] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.818451] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.842446] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.842629] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.844727] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.869124] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.869321] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.872840] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.895812] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.896084] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.898334] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.922496] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.922698] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.924466] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.949161] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.949377] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.951331] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10670.975831] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10670.976053] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10670.979980] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.002505] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.002715] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.009194] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.029148] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.029348] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.031417] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.055866] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.056087] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.058867] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.082484] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.082687] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.084477] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.109197] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.109401] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.111460] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.135833] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.136038] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.139550] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.162549] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.162762] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.164415] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.189204] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.189420] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.191550] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.215886] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.216093] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.218795] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.242534] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.242738] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.244305] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.269221] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.269433] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.273255] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.295896] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.296144] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.298330] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.322551] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.322796] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.325429] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.349235] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.349484] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.356091] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.375891] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.376090] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.378551] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.402582] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.402781] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.405257] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.429248] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.429452] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.431371] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.455905] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.456156] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.458730] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.482593] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.482850] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.485632] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.509248] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.509449] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.511494] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.535971] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.536182] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.538300] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.562578] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.562777] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.569848] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.589279] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.589479] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.591626] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.615927] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.616131] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.618725] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.642642] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.642847] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.645226] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.669292] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.669504] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.672091] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.695953] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.696160] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.698434] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.722659] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.722906] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.726107] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.749312] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.749516] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.751478] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.775991] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.776244] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.781964] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.802718] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.802928] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.805286] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.829375] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.829591] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.832961] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.869964] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10671.870204] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.872698] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.896042] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.896279] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.898697] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.922684] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.922890] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.925317] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.949350] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.949595] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.951366] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10671.976033] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10671.976284] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10671.978999] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.002708] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.002930] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.005338] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.029390] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.029618] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.031380] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.056040] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.056251] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.060764] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.082731] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.083018] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.086683] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.109383] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.109599] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.111484] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.136062] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.136283] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.138929] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.162772] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.162975] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.171374] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.189406] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.189615] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.191264] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.216083] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.216293] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.218734] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.256679] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 32, err_data 162
+[10672.256902] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.261774] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.309446] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.309668] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.315194] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10672.429484] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[10672.429689] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[10672.431869] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[10762.466267] FAN rising trip_level:1 cur_temp:46050 trip_temps[2]:60000
+[10850.946860] FAN cooling trip_level:0 cur_temp:37700 trip_temps[1]:46000
+[11227.141082] CPU4: Booted secondary processor [4e0f0040]
+[11227.271275] ras_fhi_enable: FHI 474 enabled on CPU4
+[11227.273438] carmel_ras_enable: RAS enabled on cpu4
+[11227.310339] CPU5: Booted secondary processor [4e0f0040]
+[11227.312980] ras_fhi_enable: FHI 475 enabled on CPU5
+[11227.313776] carmel_ras_enable: RAS enabled on cpu5
+[11227.437941] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[11366.133570] ras_fhi_disable: FHI 474 disabled
+[11366.135429] CPU4: shutdown
+[11366.152800] psci: Retrying again to check for CPU kill
+[11366.152821] psci: CPU4 killed.
+[11366.210302] ras_fhi_disable: FHI 475 disabled
+[11366.216317] CPU5: shutdown
+[11366.232746] psci: Retrying again to check for CPU kill
+[11366.232771] psci: CPU5 killed.
+[11366.234966] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[11366.813471]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[11366.813483] Skipping Previous mode set ... 
+[11366.880850] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[11367.024815] usb 2-3: usb_suspend_both: status 0
+[11367.025089] usb usb2: usb_suspend_both: status 0
+[11402.931600] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[11402.931841] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[11402.934528] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[11403.118350] tegra194-vi5 15c10000.vi: corr_err: discarding frame 0, flags: 96, err_data 4194402
+[11403.118600] tegra194-vi5 15c10000.vi: err_rec: attempting to reset the capture channel
+[11403.120413] tegra194-vi5 15c10000.vi: err_rec: successfully reset the capture channel
+[11481.504859] FAN rising trip_level:1 cur_temp:46050 trip_temps[2]:60000
+[11694.304539] FAN cooling trip_level:0 cur_temp:37850 trip_temps[1]:46000
+[11728.919681] device wlan0 entered promiscuous mode
+[11730.018166] device wlan0 left promiscuous mode
+[11770.111542] device wlan0 entered promiscuous mode
+[11771.320829] device wlan0 left promiscuous mode
+[13006.076401] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[13006.627666]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[13006.627705] Skipping Previous mode set ... 
+[13006.697435] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[13006.877522] usb 2-3: usb_suspend_both: status 0
+[13006.877814] usb usb2: usb_suspend_both: status 0
+[13006.894304] usb usb2: usb_suspend_both: status 0
+[13007.073493] usb 2-3: usb_suspend_both: status 0
+[13007.073774] usb usb2: usb_suspend_both: status 0
+[13007.093882] usb usb2: usb_suspend_both: status 0
+[13029.845495] device wlan0 entered promiscuous mode
+[13030.928764] device wlan0 left promiscuous mode
+[13149.185588] FAN rising trip_level:1 cur_temp:46050 trip_temps[2]:60000
+[13472.865461] FAN cooling trip_level:0 cur_temp:37850 trip_temps[1]:46000
+[13510.687466] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[13511.210778]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[13511.210827] Skipping Previous mode set ... 
+[13511.244641] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[13511.424661] usb 2-3: usb_suspend_both: status 0
+[13511.425147] usb usb2: usb_suspend_both: status 0
+[13511.441061] usb usb2: usb_suspend_both: status 0
+[13511.624645] usb 2-3: usb_suspend_both: status 0
+[13511.625032] usb usb2: usb_suspend_both: status 0
+[13829.735859] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[13830.287005]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[13830.287040] Skipping Previous mode set ... 
+[13830.368019] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[13830.528045] usb 2-3: usb_suspend_both: status 0
+[13830.528649] usb usb2: usb_suspend_both: status 0
+[13830.708105] usb 2-3: usb_suspend_both: status 0
+[13830.708416] usb usb2: usb_suspend_both: status 0
+[13830.724463] usb usb2: usb_suspend_both: status 0
