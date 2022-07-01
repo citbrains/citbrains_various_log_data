@@ -1,1 +1,1 @@
-# save_robot_statusコマンドによって保存されたログ
+# robot_status_loggingによって取得されたログが保存されるディレクトリ
