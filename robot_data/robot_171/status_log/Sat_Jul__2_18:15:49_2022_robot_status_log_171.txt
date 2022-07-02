@@ -1,0 +1,1150 @@
+---- robot status ---- temperature [℃] ---- current [mA] ---- voltage [mV] ----
+id 0 43.76 63 11536 
+id 1 41.38 46 11328 
+id 2 41.96 46 11417 
+id 3 42.55 62 11417 
+id 4 41.76 65 11387 
+id 5 43.15 59 11566 
+id 6 49.77 64 11447 
+id 7 42.45 58 11685 
+id 8 38.59 65 11536 
+id 9 46.41 56 11536 
+id 10 41.28 59 11298 
+id 11 44.48 58 11298 
+id 12 43.05 64 11447 
+id 13 41.86 59 11447 
+id 14 42.15 57 11595 
+id 15 40.52 65 11774 
+id 16 39.68 62 11536 
+id 17 38.77 63 11328 
+id 18 40.52 73 11506 
+
+ Motors which temperature is over 45℃
+id 6 49.77
+id 9 46.41
+---------------------------------- dmesg ----------------------------------
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.9.201 (rikuyokoo@rikuyokoo-N1545K) (gcc version 7.3.1 20180425 [linaro-7.3-2018.05 revision d29120a424ecfbc167ef90065c0eeb7f91977701] (Linaro GCC 7.3-2018.05) ) #1 SMP PREEMPT Sat Apr 9 01:26:22 JST 2022
+[    0.000000] Boot CPU: AArch64 Processor [4e0f0040]
+[    0.000000] OF: fdt:memory scan node memory, reg size 48,
+[    0.000000] OF: fdt: - 80000000 ,  2c000000
+[    0.000000] OF: fdt: - ac200000 ,  44800000
+[    0.000000] OF: fdt: - 100000000 ,  180000000
+[    0.000000] earlycon: tegra_comb_uart0 at MMIO32 0x000000000c168000 (options '')
+[    0.000000] bootconsole [tegra_comb_uart0] enabled
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb0_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb0_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb1_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb1_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb2_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb2_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb3_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb3_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node ramoops_carveout, compatible id nvidia,ramoops
+[    0.000000] OF: reserved mem: initialized node vpr-carveout, compatible id nvidia,vpr-carveout
+[    0.000000] OF: reserved mem: initialized node grid-of-semaphores, compatible id nvidia,gosmem
+[    0.000000] cma: Reserved 64 MiB at 0x00000000c2000000
+[    0.000000] On node 0 totalpages: 2033152
+[    0.000000]   DMA zone: 7192 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 460288 pages, LIFO batch:31
+[    0.000000]   Normal zone: 24576 pages used for memmap
+[    0.000000]   Normal zone: 1572864 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] percpu: Embedded 24 pages/cpu s57560 r8192 d32552 u98304
+[    0.000000] pcpu-alloc: s57560 r8192 d32552 u98304 alloc=24*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 
+[    0.000000] Speculative Store Bypass Disable mitigation not required
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 2001384
+[    0.000000] Kernel command line: console=ttyTCU0,115200 video=tegrafb no_console_suspend=1 earlycon=tegra_comb_uart,mmio32,0x0c168000 gpt rootfs.slot_suffix= usbcore.old_scheme_first=1 tegraid=19.1.2.0.0 maxcpus=6 boot.slot_suffix= boot.ratchetvalues=0.4.2 vpr_resize sdhci_tegra.en_boot_part_access=1    quiet root=PARTUUID=8b3d9149-299d-4359-964b-687a7572b0ba rw rootwait rootfstype=ext4 console=ttyTCU0,115200n8 console=tty0 fbcon=map:0 net.ifnames=0
+[    0.000000] log_buf_len individual max cpu contribution: 32768 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 163840 bytes
+[    0.000000] log_buf_len min size: 32768 bytes
+[    0.000000] log_buf_len: 262144 bytes
+[    0.000000] early log buf free: 29060(88%)
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] Memory: 7190728K/8132608K available (15294K kernel code, 2942K rwdata, 6748K rodata, 8576K init, 609K bss, 188216K reserved, 753664K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+[    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+[    0.000000]       .text : 0xffffff8008080000 - 0xffffff8008f70000   ( 15296 KB)
+[    0.000000]     .rodata : 0xffffff8008f70000 - 0xffffff8009610000   (  6784 KB)
+[    0.000000]       .init : 0xffffff8009610000 - 0xffffff8009e70000   (  8576 KB)
+[    0.000000]       .data : 0xffffff8009e70000 - 0xffffff800a14f808   (  2943 KB)
+[    0.000000]        .bss : 0xffffff800a14f808 - 0xffffff800a1e7cbc   (   610 KB)
+[    0.000000]     fixed   : 0xffffffbefe7fd000 - 0xffffffbefec00000   (  4108 KB)
+[    0.000000]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+[    0.000000]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+[    0.000000]               0xffffffbf00000000 - 0xffffffbf08000000   (   128 MB actual)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc200000000   (  8192 MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=6, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=6.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=6
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 31.25MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xe6a171046, max_idle_ns: 881590405314 ns
+[    0.000006] sched_clock: 56 bits at 31MHz, resolution 32ns, wraps every 4398046511088ns
+[    0.000726] Console: colour dummy device 80x25
+[    0.000737] console [tty0] enabled
+[    0.000745] bootconsole [tegra_comb_uart0] disabled
+[    0.000758] kmemleak: Kernel memory leak detector disabled
+[    0.000776] Calibrating delay loop (skipped), value calculated using timer frequency.. 62.50 BogoMIPS (lpj=125000)
+[    0.000792] pid_max: default: 32768 minimum: 301
+[    0.001869] Security Framework initialized
+[    0.002445] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.002456] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.004073] ftrace: allocating 47179 entries in 185 pages
+[    0.398532] sched-energy: Sched-energy-costs installed from DT
+[    0.398551] ASID allocator initialised with 65536 entries
+[    0.434933] tegra-id: chipid=21917.
+[    0.434945] tegra-id: opt_subrevision=1.
+[    0.434972] Tegra Revision: A02p SKU: 0xde CPU Process: 0 SoC Process: 0
+[    0.434986] DTS File Name: /home/rikuyokoo/en715_l4t32_5_2/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/arch/arm64/boot/dts/../../../../../../hardware/nvidia/platform/t19x/jakku/kernel-dts/tegra194-p3668-all-p3509-0000-ar0521.dts
+[    0.434996] DTB Build time: Apr  9 2022 01:35:14
+[    0.482779] CPU1: Booted secondary processor [4e0f0040]
+[    0.514870] CPU2: Booted secondary processor [4e0f0040]
+[    0.546937] CPU3: Booted secondary processor [4e0f0040]
+[    0.579196] CPU4: Booted secondary processor [4e0f0040]
+[    0.611310] CPU5: Booted secondary processor [4e0f0040]
+[    0.611500] Brought up 6 CPUs
+[    0.611510] SMP: Total of 6 processors activated.
+[    0.611519] CPU features: detected feature: Privileged Access Never
+[    0.611525] CPU features: detected feature: LSE atomic instructions
+[    0.611532] CPU features: detected feature: User Access Override
+[    0.611538] CPU features: detected feature: 32-bit EL0 Support
+[    0.613061] CPU: All CPU(s) started at EL2
+[    0.613117] alternatives: patching kernel code
+[    0.619550] devtmpfs: initialized
+[    0.660996] Initilizing CustomIPI irq domain
+[    0.661274] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.661289] futex hash table entries: 2048 (order: 5, 131072 bytes)
+[    0.671283] pinctrl core: initialized pinctrl subsystem
+[    0.671506] OS set in device tree is not L4T.
+[    0.671744] regulator-dummy: no parameters
+[    0.672003] Initializing plugin-manager
+[    0.672046] Plugin module not found
+[    0.672076] Plugin-manager status disabled
+[    0.673467] NET: Registered protocol family 16
+[    0.674857] pstore: using zlib compression
+[    0.674879] console [pstore-1] enabled
+[    0.674884] pstore: Registered ramoops as persistent store backend
+[    0.674891] ramoops: attached 0x200000@0xf0800000, ecc: 0/0
+[    0.694014] cpuidle: using governor menu
+[    0.695353] bpmp: waiting for handshake
+[    0.695360] bpmp: handshake completed
+[    0.695375] bpmp: synchronizing channels
+[    0.695384] bpmp: channels synchronized
+[    0.695391] bpmp: mail init ok
+[    0.698332] t19x-arm-smmu 12000000.iommu: found 3 SMMUs and ISO SMMU id is 2
+[    0.698557] t19x-arm-smmu 12000000.iommu: probing hardware configuration...
+[    0.698564] t19x-arm-smmu 12000000.iommu: SMMUv2 with:
+[    0.698591] t19x-arm-smmu 12000000.iommu: 	stage 1 translation
+[    0.698597] t19x-arm-smmu 12000000.iommu: 	stage 2 translation
+[    0.698603] t19x-arm-smmu 12000000.iommu: 	nested translation
+[    0.698613] t19x-arm-smmu 12000000.iommu: 	stream matching with 128 register groups, mask 0x7f80
+[    0.698639] t19x-arm-smmu 12000000.iommu: SMMU address space size (0x800000) differs from mapped region size (0x1000000)!
+[    0.698646] t19x-arm-smmu 12000000.iommu: 	64 context banks (0 stage-2 only)
+[    0.698654] t19x-arm-smmu 12000000.iommu: 	Stage-1: 39-bit VA -> 48-bit IPA
+[    0.698660] t19x-arm-smmu 12000000.iommu: 	Stage-2: 39-bit IPA -> 48-bit PA
+[    0.702815] vdso: 2 pages (1 code @ ffffff8008f77000, 1 data @ ffffff8009e74000)
+[    0.702840] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.705324] atomic_pool_init():622: DMA: preallocated 1024 KiB pool for atomic allocations
+[    0.707200] tegra_aon_clk_init: ok
+[    0.707209] Registering BPMP clocks...
+[    0.707352] tegra_bpmp_clk_init: clock init ok (400 clks)
+[    0.708087] Serial: AMBA PL011 UART driver
+[    0.708214] tegra_powergate_init: DONE
+[    0.708291] DTS File Name: /home/rikuyokoo/en715_l4t32_5_2/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/arch/arm64/boot/dts/../../../../../../hardware/nvidia/platform/t19x/jakku/kernel-dts/tegra194-p3668-all-p3509-0000-ar0521.dts
+[    0.708303] DTB Build time: Apr  9 2022 01:35:14
+[    0.711624] Tegra reboot handler registered.
+[    0.719761] iommu: Adding device 14160000.pcie to group 0
+[    0.720437] iommu: Adding device 141a0000.pcie to group 1
+[    0.721831] iommu: Adding device 2490000.ether_qos to group 2
+[    0.722327] iommu: Adding device 3100000.serial to group 3
+[    0.722857] iommu: Adding device 3110000.serial to group 4
+[    0.723248] iommu: Adding device 3140000.serial to group 5
+[    0.723907] tegra-pmc c360000.pmc: scratch reg offset dts data not present
+[    0.724230] tegra-pmc: get_secure_pmc_setting: done secure_pmc=0
+[    0.724249] tegra-pmc: ### PMC reset source: TEGRA_POWER_ON_RESET
+[    0.724255] tegra-pmc: ### PMC reset level: TEGRA_RESET_LEVEL_L0
+[    0.724260] tegra-pmc: ### PMC reset status reg: 0x0
+[    0.724305] tegra-pmc: PMC Prod config success
+[    0.724513] padctrl padctrl.0: Pad control driver tegra-pmc-padctrl registered
+[    0.724528] tegra-pmc c360000.pmc: IO padctrl driver initialized
+[    0.724860] iommu: Adding device 3460000.sdhci to group 6
+[    0.725349] iommu: Adding device 3440000.sdhci to group 7
+[    0.725846] iommu: Adding device 3210000.spi to group 8
+[    0.726229] iommu: Adding device 3230000.spi to group 9
+[    0.726652] iommu: Adding device 3270000.spi to group 10
+[    0.727822] iommu: Adding device 3160000.i2c to group 11
+[    0.728221] iommu: Adding device c240000.i2c to group 12
+[    0.728604] iommu: Adding device 3180000.i2c to group 13
+[    0.729007] iommu: Adding device 3190000.i2c to group 14
+[    0.729525] iommu: Adding device 31b0000.i2c to group 15
+[    0.729932] iommu: Adding device 31c0000.i2c to group 16
+[    0.730343] iommu: Adding device c250000.i2c to group 17
+[    0.730791] iommu: Adding device 31e0000.i2c to group 18
+[    0.731381] iommu: Adding device sound to group 19
+[    0.731938] iommu: Adding device 3510000.hda to group 20
+[    0.732544] iommu: Adding device bc00000.rtcpu to group 21
+[    0.734388] iommu: Adding device 13e10000.host1x to group 22
+[    0.734813] iommu: Adding device 13e10000.host1x:ctx0 to group 23
+[    0.735206] iommu: Adding device 13e10000.host1x:ctx1 to group 24
+[    0.735559] iommu: Adding device 13e10000.host1x:ctx2 to group 25
+[    0.735948] iommu: Adding device 13e10000.host1x:ctx3 to group 26
+[    0.736373] iommu: Adding device 13e10000.host1x:ctx4 to group 27
+[    0.736733] iommu: Adding device 13e10000.host1x:ctx5 to group 28
+[    0.737167] iommu: Adding device 13e10000.host1x:ctx6 to group 29
+[    0.737526] iommu: Adding device 13e10000.host1x:ctx7 to group 30
+[    0.738043] iommu: Adding device 15340000.vic to group 31
+[    0.738426] iommu: Adding device 15380000.nvjpg to group 32
+[    0.738773] iommu: Adding device 15500000.tsec to group 33
+[    0.739112] iommu: Adding device 15100000.tsecb to group 34
+[    0.739416] iommu: Adding device 15480000.nvdec to group 35
+[    0.739695] iommu: Adding device 15140000.nvdec1 to group 36
+[    0.740029] iommu: Adding device 154c0000.nvenc to group 37
+[    0.740310] iommu: Adding device 15a80000.nvenc1 to group 38
+[    0.740699] iommu: Adding device 15880000.nvdla0 to group 39
+[    0.741166] iommu: Adding device 158c0000.nvdla1 to group 40
+[    0.741916] iommu: Adding device 15200000.nvdisplay to group 41
+[    0.745971] platform 15200000.nvdisplay: IOVA linear map 0x00000000c6000000(2a000000)
+[    0.746044] t19x-arm-smmu: Adding 15200000.nvdisplay to ISO SMMU client
+[    0.746761] iommu: Adding device 15210000.nvdisplay to group 42
+[    0.746810] t19x-arm-smmu: Adding 15210000.nvdisplay to ISO SMMU client
+[    0.748487] iommu: Adding device 15c10000.vi to group 43
+[    0.748669] t19x-arm-smmu: Adding 15c10000.vi to ISO SMMU client
+[    0.749174] iommu: Adding device 14800000.isp to group 44
+[    0.750174] iommu: Adding device 16000000.pva0 to group 45
+[    0.750675] iommu: Adding device 16800000.pva1 to group 46
+[    0.751088] iommu: Adding device 15810000.se to group 47
+[    0.751476] iommu: Adding device 15820000.se to group 48
+[    0.751744] iommu: Adding device 15830000.se to group 49
+[    0.752047] iommu: Adding device 15840000.se to group 50
+[    0.752316] iommu: Adding device c1a0000.aon to group 51
+[    0.753943] iommu: Adding device d000000.bpmp to group 52
+[    0.754254] bpmp: ping status is 0
+[    0.754382] bpmp d000000.bpmp: firmware tag is e73a758761f0c6d24a1e69a2ac6b5035
+[    0.757490] bpmp d000000.bpmp: probe ok
+[    0.759490] tegra-reset 0.bpmp_reset: registered 190 resets.
+[    0.759962] iommu: Adding device smmu_test to group 53
+[    0.761029] mc: mapped MMIO address: 0xffffff800a5c0000 -> 0x2c10000
+[    0.761047] mc: mapped MMIO address: 0xffffff800a5e0000 -> 0x2c20000
+[    0.761102] mc: mapped MMIO address: 0xffffff800a7b0000 -> 0x2c30000
+[    0.761119] mc: mapped MMIO address: 0xffffff800a7d0000 -> 0x2c40000
+[    0.761139] mc: mapped MMIO address: 0xffffff800b010000 -> 0x2c50000
+[    0.761155] mc: mapped MMIO address: 0xffffff800b030000 -> 0x2b80000
+[    0.761170] mc: mapped MMIO address: 0xffffff800b050000 -> 0x2b90000
+[    0.761185] mc: mapped MMIO address: 0xffffff800b070000 -> 0x2ba0000
+[    0.761203] mc: mapped MMIO address: 0xffffff800b090000 -> 0x2bb0000
+[    0.761220] mc: mapped MMIO address: 0xffffff800b0b0000 -> 0x1700000
+[    0.761235] mc: mapped MMIO address: 0xffffff800b0d0000 -> 0x1710000
+[    0.761251] mc: mapped MMIO address: 0xffffff800b0f0000 -> 0x1720000
+[    0.761266] mc: mapped MMIO address: 0xffffff800b110000 -> 0x1730000
+[    0.761281] mc: mapped MMIO address: 0xffffff800b130000 -> 0x1740000
+[    0.761296] mc: mapped MMIO address: 0xffffff800b150000 -> 0x1750000
+[    0.761311] mc: mapped MMIO address: 0xffffff800b170000 -> 0x1760000
+[    0.761327] mc: mapped MMIO address: 0xffffff800b190000 -> 0x1770000
+[    0.761395] mc-err: mcerr ops are set to t19x
+[    0.767081] iommu: Adding device 2600000.dma to group 54
+[    0.772790] gpio gpiochip0: gpio-line-names specifies 240 line names but there are 224 lines on the chip
+[    0.774075] GPIO line 339 (wifi-enable) hogged as output/high
+[    0.774117] GPIO line 412 (camera-control-output-low) hogged as output/high
+[    0.774143] GPIO line 412 (camera-control-output-low) hogged as output/high
+[    0.774511] gpiochip_setup_dev: registered GPIOs 288 to 511 on device: gpiochip0 (tegra-gpio)
+[    0.782936] gpio gpiochip1: gpio-line-names specifies 21 line names but there are 40 lines on the chip
+[    0.783005] GPIO line 253 (pex-refclk-sel-low) hogged as output/low
+[    0.783039] GPIO line 266 (w-disable1) hogged as output/high
+[    0.783071] GPIO line 264 (w-disable2) hogged as output/high
+[    0.783104] GPIO line 265 (suspend-led-gpio) hogged as output/high
+[    0.783444] gpiochip_setup_dev: registered GPIOs 248 to 287 on device: gpiochip1 (tegra-gpio-aon)
+[    0.785855] tegra186-aowake c370000.pmc: WAKE_AOWAKE_CNTRL_83 = 0x10a
+[    0.785867] tegra186-aowake c370000.pmc: WAKE_AOWAKE_CTRL_0 = 3
+[    0.785877] tegra186-aowake c370000.pmc: WAKE_AOWAKE_CNTRL_24(PMU_INT) = 256
+[    0.786725] iommu: Adding device 3550000.xudc to group 55
+[    0.787457] iommu: Adding device 3610000.xhci to group 56
+[    0.789564] arm64_ras arm64_ras: probed
+[    0.789945] ras_fhi_enable: FHI 470 enabled on CPU0
+[    0.789990] ras_fhi_enable: FHI 471 enabled on CPU1
+[    0.790058] ras_fhi_enable: FHI 472 enabled on CPU2
+[    0.790125] ras_fhi_enable: FHI 473 enabled on CPU3
+[    0.790211] ras_fhi_enable: FHI 474 enabled on CPU4
+[    0.790302] ras_fhi_enable: FHI 475 enabled on CPU5
+[    0.790492] carmel_ras_enable: RAS enabled on cpu0
+[    0.790662] carmel_ras_enable: RAS enabled on cpu1
+[    0.790852] carmel_ras_enable: RAS enabled on cpu2
+[    0.791049] carmel_ras_enable: RAS enabled on cpu3
+[    0.791269] carmel_ras_enable: RAS enabled on cpu4
+[    0.791495] carmel_ras_enable: RAS enabled on cpu5
+[    0.791619] carmel_ras carmel_ras: probed
+[    0.792732] tegra-cbb 2300000.cbb-noc: noc_secure_irq = 479, noc_nonsecure_irq = 478>
+[    0.793649] tegra-cbb c600000.aon-noc: noc_secure_irq = 481, noc_nonsecure_irq = 480>
+[    0.794710] tegra-cbb d600000.bpmp-noc: noc_secure_irq = 483, noc_nonsecure_irq = 482>
+[    0.795606] tegra-cbb be00000.rce-noc: noc_secure_irq = 485, noc_nonsecure_irq = 484>
+[    0.796600] tegra-cbb b600000.sce-noc: noc_secure_irq = 487, noc_nonsecure_irq = 486>
+[    0.796973] tegra-cbb 14040000.cv-noc: defer probe as CV-NOC not probed yet
+[    0.798365] vdd-ac-bat: 5000 mV 
+[    0.798810] vdd-sdmmc1-sw: 3300 mV 
+[    0.799121] vdd-1v8-sd: 1800 mV 
+[    0.799412] vdd-3v3-cvb: 3300 mV 
+[    0.799715] vdd-1v8-cvb: 1800 mV 
+[    0.800047] vdd-epb-1v0: supplied by vdd-3v3-cvb
+[    0.800103] vdd-epb-1v0: 1000 mV 
+[    0.800483] avdd-cam-2v8: 2800 mV 
+[    0.800811] vdd-fan: 5000 mV 
+[    0.801101] vdd-hdmi-5v0: 5000 mV 
+[    0.801435] vdd_sys_en: 1200 mV 
+[    0.834523] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.839230] eventlib_kernel: keventlib is initialized, test id: 0
+[    0.839531] SCSI subsystem initialized
+[    0.839793] libata version 3.00 loaded.
+[    0.840032] usbcore: registered new interface driver usbfs
+[    0.840095] usbcore: registered new interface driver hub
+[    0.840202] usbcore: registered new device driver usb
+[    0.852017] tegra-i2c 31e0000.i2c: could not find pctldev for node /host1x/dpaux@155F0000/pinmux@0, deferring probe
+[    0.854868] max77620 4-003c: PMIC Version OTP:0x51 and ES:0x1
+[    0.863124] vdd-1v0: at 1000 mV 
+[    0.867188] vdd-1v8-hs: at 1800 mV 
+[    0.871202] vdd-1v8-ls: at 1800 mV 
+[    0.875191] vdd-1v8-ao: at 1800 mV 
+[    0.879216] vddio-ddr-1v1: at 1100 mV 
+[    0.882996] vdd-rtc: at 800 mV 
+[    0.884265] spmic-ldo1: at 2375 mV 
+[    0.891025] vdd-ao-3v3: at 3300 mV 
+[    0.899069] vddio-emmc-3v3: at 3300 mV 
+[    0.900414] spmic-ldo4: at 1587 mV 
+[    0.911093] vdd-usb-3v3: at 3300 mV 
+[    0.919131] vddio-sdmmc1-3v3: at 3300 mV 
+[    0.923149] vdd-csi-1v2: at 1200 mV 
+[    0.924655] spmic-ldo8: at 1800 mV 
+[    0.929491] GPIO line 246 (gpio_default) hogged as output/high
+[    0.930887] GPIO line 247 (gpio_default) hogged as output/high
+[    0.931191] gpiochip_setup_dev: registered GPIOs 240 to 247 on device: gpiochip2 (max77620-gpio)
+[    0.931568] max77620 4-003c: max77620 probe successful
+[    0.932224] media: Linux media interface: v0.10
+[    0.932326] Linux video capture interface: v2.00
+[    0.933798] pps_core: LinuxPPS API ver. 1 registered
+[    0.933810] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.933883] PTP clock support registered
+[    0.934243] tegra_wdt_t18x 30c0000.watchdog: Expiry count is deprecated
+[    0.934512] tegra_wdt_t18x 30c0000.watchdog: Tegra WDT init timeout = 120 sec
+[    0.934559] tegra_wdt_t18x 30c0000.watchdog: Registered successfully
+[    0.937255] trusty trusty: trusty version: Built: 08:56:10 Jul  9 2021 
+[    0.937324] trusty trusty: selected api version: 3 (requested 3)
+[    0.938546] Advanced Linux Sound Architecture Driver Initialized.
+[    0.939057] Bluetooth: Core ver 2.22
+[    0.939104] NET: Registered protocol family 31
+[    0.939115] Bluetooth: HCI device and connection manager initialized
+[    0.939130] Bluetooth: HCI socket layer initialized
+[    0.939144] Bluetooth: L2CAP socket layer initialized
+[    0.939176] Bluetooth: SCO socket layer initialized
+[    0.941685] camchar: rtcpu character device driver loaded
+[    0.942228] gpio tegra-gpio wake61 for gpio=201(Z:1)
+[    0.942321] extcon-gpio-states external-connection:extcon@1: Cable state:0, cable id:0
+[    0.944058] clocksource: Switched to clocksource arch_sys_counter
+[    0.992030] VFS: Disk quotas dquot_6.6.0
+[    0.992181] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.992525] nvmap_heap_init: nvmap_heap_init: created heap block cache
+[    0.993882] tegra-carveouts tegra-carveouts: assigned reserved memory node grid-of-semaphores
+[    0.993931] dma_declare_coherent_resizable_cma_memory:324: resizable heap=vpr, base=0x00000000c6000000, size=0x2a000000
+[    0.994184] cma: enabled page replacement for spfn=c6000, epfn=f0000
+[    0.994197] dma_declare_coherent_resizable_cma_memory:373: resizable cma heap=vpr create successful
+[    0.994217] nvmap: nvmap_select_cache_ops() nvmap cache ops set to scf
+[    0.994240] nvmap_page_pool_init: Total RAM pages: 1986098
+[    0.994251] nvmap_page_pool_init: nvmap page pool size: 248262 pages (969 MB)
+[    0.994442] nvmap_background_zero_thread: PP zeroing thread starting.
+[    0.994930] misc nvmap: created heap vpr base 0x00000000c6000000 size (688128KiB)
+[    0.996977] tegra-gpcdma 2600000.dma: GPC DMA driver register 31 channels
+[    1.010356] thermal thermal_zone0: Registering thermal zone thermal_zone0 for type CPU-therm
+[    1.010592] thermal thermal_zone1: Registering thermal zone thermal_zone1 for type GPU-therm
+[    1.010822] thermal thermal_zone2: Registering thermal zone thermal_zone2 for type AUX-therm
+[    1.011034] thermal thermal_zone3: Registering thermal zone thermal_zone3 for type AO-therm
+[    1.011230] thermal thermal_zone4: Registering thermal zone thermal_zone4 for type PMIC-Die
+[    1.012451] la/ptsa driver initialized.
+[    1.012779] NET: Registered protocol family 2
+[    1.013655] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+[    1.013999] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    1.014622] TCP: Hash tables configured (established 65536 bind 65536)
+[    1.014682] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[    1.014805] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[    1.015181] NET: Registered protocol family 1
+[    1.015837] RPC: Registered named UNIX socket transport module.
+[    1.015848] RPC: Registered udp transport module.
+[    1.015871] RPC: Registered tcp transport module.
+[    1.015880] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.015891] PCI: CLS 0 bytes, default 64
+[    1.016184] Trying to unpack rootfs image as initramfs...
+[    1.240152] Freeing initrd memory: 7064K
+[    1.259737] random: fast init done
+[    1.264153] host1x 13e10000.host1x: initialized
+[    1.265988] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    1.270890] audit: initializing netlink subsys (disabled)
+[    1.270945] audit: type=2000 audit(0.888:1): initialized
+[    1.271825] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[    1.282092] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.283308] ntfs: driver 2.1.32 [Flags: R/W].
+[    1.283969] 9p: Installing v9fs 9p2000 file system support
+[    1.289074] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 240)
+[    1.289313] io scheduler noop registered
+[    1.289580] io scheduler cfq registered (default)
+[    1.293244] gic 2a41000.agic-controller: GIC IRQ controller registered
+[    1.327401] iommu: Adding device 2993000.adsp to group 57
+[    1.436392] iommu: Adding device aconnect@2a41000:adsp_audio to group 58
+[    1.437352] tegra-aconnect aconnect@2a41000: Tegra ACONNECT bus registered
+[    1.451708] tegra-pwm 3280000.pwm: PWM clk can sleep in ops
+[    1.452234] tegra-pwm c340000.pwm: PWM clk can sleep in ops
+[    1.452800] tegra-pwm 32c0000.pwm: PWM clk can sleep in ops
+[    1.453198] tegra-pwm 32d0000.pwm: PWM clk can sleep in ops
+[    1.453581] tegra-pwm 32f0000.pwm: PWM clk can sleep in ops
+[    1.457026] tegra_camera_platform tegra-camera-platform: tegra_camera_probe:camera_platform_driver probe
+[    1.457249] misc tegra_camera_ctrl: tegra_camera_isomgr_register: some fields not in DT.
+[    1.457270] misc tegra_camera_ctrl: tegra_camera_isomgr_register isp_iso_bw=0, vi_iso_bw=8350000, max_bw=8350000
+[    1.460207] tsec 15500000.tsec: initialized
+[    1.461864] tsec 15100000.tsecb: initialized
+[    1.465937] nvdec 15480000.nvdec: initialized
+[    1.468672] nvdec 15140000.nvdec1: initialized
+[    1.474287] falcon 15340000.vic: initialized
+[    1.476121] falcon 15380000.nvjpg: initialized
+[    1.477912] falcon 154c0000.nvenc: initialized
+[    1.479737] falcon 15a80000.nvenc1: initialized
+[    1.483202] iommu_context_dev 13e10000.host1x:ctx0: initialized (streamid=56)
+[    1.484902] iommu_context_dev 13e10000.host1x:ctx1: initialized (streamid=57)
+[    1.486437] iommu_context_dev 13e10000.host1x:ctx2: initialized (streamid=58)
+[    1.487917] iommu_context_dev 13e10000.host1x:ctx3: initialized (streamid=59)
+[    1.489465] iommu_context_dev 13e10000.host1x:ctx4: initialized (streamid=60)
+[    1.490999] iommu_context_dev 13e10000.host1x:ctx5: initialized (streamid=61)
+[    1.492561] iommu_context_dev 13e10000.host1x:ctx6: initialized (streamid=62)
+[    1.494098] iommu_context_dev 13e10000.host1x:ctx7: initialized (streamid=63)
+[    1.497551] t194-nvcsi 15a00000.nvcsi: initialized
+[    1.502927] scare-pigeon 13e10000.host1x:vi-thi@15f00000: initialized
+[    1.503354] scare-pigeon 14b00000.isp-thi: initialized
+[    1.508919] pva 16000000.pva0: initialized
+[    1.514599] pva 16800000.pva1: initialized
+[    1.519295] nvdla 15880000.nvdla0: initialized
+[    1.524186] nvdla 158c0000.nvdla1: initialized
+[    1.525495] tegradccommon 15200000.dc_common: host1x channel mapped
+[    1.525509] tegradccommon 15200000.dc_common: dc_common syncpt # 1 allocated
+[    1.525547] tegradccommon 15200000.dc_common: dma mapping done
+[    1.525721] tegra_cec 3960000.tegra_cec: dt=1 start=0x03960000 end=0x03960FFF irq=78
+[    1.525732] tegra_cec 3960000.tegra_cec: Unpowergate DISP: 0.
+[    1.526125] tegra_cec 3960000.tegra_cec: Enable clock result: 0.
+[    1.526157] tegra_cec 3960000.tegra_cec: tegra_cec_init started
+[    1.526475] tegra_cec 3960000.tegra_cec: cec_add_sysfs ret=0
+[    1.526484] tegra_cec 3960000.tegra_cec: probed
+[    1.527122] tegradc 15200000.nvdisplay: disp0 connected to head0->/host1x/sor1
+[    1.527155] generic_infoframe_type: 0x87
+[    1.527274] tegradc 15200000.nvdisplay: DT parsed successfully
+[    1.527319] tegradc 15200000.nvdisplay: Display dc.ffffff800bce0000 registered with id=0
+[    1.531104] tegra_nvdisp_bandwidth_register_max_config: max config iso bw = 7088400 KB/s
+[    1.531123] tegra_nvdisp_bandwidth_register_max_config: max config EMC floor = 800000000 Hz
+[    1.531134] tegra_nvdisp_bandwidth_register_max_config: max config hubclk = 300000000 Hz
+[    1.531348] tegradc 15200000.nvdisplay: vblank syncpt # 8 for dc 0
+[    1.531358] tegradc 15200000.nvdisplay: vpulse3 syncpt # 9 for dc 0
+[    1.535284] tegradc 15200000.nvdisplay: hdmi: invalid prod list prod_list_hdmi_board
+[    1.535293] tegradc 15200000.nvdisplay: hdmi: tegra_hdmi_tmds_range_read(bd) failed
+[    1.538866] tegradc 15200000.nvdisplay: probed
+[    1.540464] Console: switching to colour frame buffer device 80x30
+[    1.540499] tegradc 15200000.nvdisplay: fb registered
+[    1.540524] tegra-adma 2930000.adma: Tegra210 ADMA driver registered 32 channels
+[    1.540763] gpio tegra-gpio wake63 for gpio=97(M:1)
+[    1.541371] tegra-fuse-burn 3820000.efuse:efuse-burn: shutdown limit check disabled
+[    1.541387] tegra-fuse-burn 3820000.efuse:efuse-burn: Fuse burn driver initialized
+[    1.541393] tegradc 15210000.nvdisplay: disp1 connected to head1->/host1x/sor
+[    1.541435] tegradc 15210000.nvdisplay: parse_dp_settings: No dp-lt-settings node
+[    1.541635] tegradc 15210000.nvdisplay: DT parsed successfully
+[    1.541691] tegradc 15210000.nvdisplay: Display dc.ffffff800bdd0000 registered with id=1
+[    1.541885] kfuse 3830000.kfuse: initialized
+[    1.541915] tegradc 15210000.nvdisplay: vblank syncpt # 11 for dc 1
+[    1.541950] tegradc 15210000.nvdisplay: vpulse3 syncpt # 12 for dc 1
+[    1.547341] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    1.549897] 3100000.serial: ttyTHS0 at MMIO 0x3100000 (irq = 47, base_baud = 0) is a TEGRA_UART
+[    1.551019] 3110000.serial: ttyTHS1 at MMIO 0x3110000 (irq = 48, base_baud = 0) is a TEGRA_UART
+[    1.551759] 3140000.serial: ttyTHS4 at MMIO 0x3140000 (irq = 49, base_baud = 0) is a TEGRA_UART
+[    1.553425] console [ttyTCU0] enabled
+[    1.553741] [drm] Initialized
+[    1.555209] tegradc 15210000.nvdisplay: probed
+[    1.555615] tegradc 15210000.nvdisplay: fb registered
+[    1.559240] hpd: state 7 (Takeover from bootloader), hpd 0, pending_hpd_evt 1
+[    1.559255] hpd: switching from state 7 (Takeover from bootloader) to state 0 (Reset)
+[    1.559273] hpd: state 0 (Reset), hpd 0, pending_hpd_evt 0
+[    1.559289] tegradc 15210000.nvdisplay: blank - powerdown
+[    1.559304] extcon-disp-state external-connection:disp-state: cable 44 state 0 already set.
+[    1.559326] Extcon DP: HPD disabled
+[    1.559337] hpd: hpd_switch 0
+[    1.559344] hpd: switching from state 0 (Reset) to state 1 (Check Plug)
+[    1.559357] hpd: state 1 (Check Plug), hpd 0, pending_hpd_evt 0
+[    1.559367] hpd: switching from state 1 (Check Plug) to state 3 (Disabled)
+[    1.566843] brd: module loaded
+[    1.572934] loop: module loaded
+[    1.573052] tegra_profiler: version: 1.143, samples/io: 48/28
+[    1.573214] tegra_profiler: auth: init
+[    1.573930] THERMAL EST: found 3 subdevs
+[    1.573938] THERMAL EST num_resources: 0
+[    1.573944] [THERMAL EST subdev 0]
+[    1.573965] [THERMAL EST subdev 1]
+[    1.573978] [THERMAL EST subdev 2]
+[    1.573997] THERMAL EST: Found 2 profiles, default profile is quiet
+[    1.574331] thermal thermal_zone5: Registering thermal zone thermal_zone5 for type thermal-fan-est
+[    1.574337] THERMAL EST: thz register success.
+[    1.574506] THERMAL EST: end of probe, return err: 0
+[    1.575260] sd: No Scsi addr parsed to reserve index
+[    1.575295] hisi_sas: driver version v1.6
+[    1.586069] qspi_mtd spi6.0: s25fs256s SSG 8 0 1000 2000000
+[    1.586079] qspi_mtd spi6.0: s25fs256s (32768 Kbytes)
+[    1.586090] qspi_mtd spi6.0: mtd .name = spi6.0, .size = 0x2000000 (32MiB) .erasesize = 0x00010000 (64KiB) .numeraseregions = 0
+[    1.586344] 1 ofpart partitions found on MTD device spi6.0
+[    1.586350] Creating 1 MTD partitions on "spi6.0":
+[    1.586359] 0x000000000000-0x000002000000 : "Whole_flash0"
+[    1.589869] libphy: Fixed MDIO Bus: probed
+[    1.590605] tun: Universal TUN/TAP device driver, 1.6
+[    1.590611] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.591524] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    1.591530] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.591582] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.4.0-k
+[    1.591587] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.591639] igbvf: Intel(R) Gigabit Virtual Function Network Driver - version 2.4.0-k
+[    1.591644] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    1.591701] Intel(R) 10GbE PCI Express Linux Network Driver - version 4.6.4
+[    1.591706] Copyright(c) 1999 - 2017 Intel Corporation.
+[    1.835391] eqos 2490000.ether_qos: failed to read eqos_auto_cal_config_0_reg
+[    1.836025] eqos 2490000.ether_qos: Setting local MAC: 48 b0 2d 5a 79 7b
+[    1.836241] libphy: dwc_phy: probed
+[    1.838769] PPP generic driver version 2.4.2
+[    1.839044] PPP BSD Compression module registered
+[    1.839051] PPP Deflate Compression module registered
+[    1.839069] PPP MPPE Compression module registered
+[    1.839075] NET: Registered protocol family 24
+[    1.839137] usbcore: registered new interface driver r8152
+[    1.839210] usbcore: registered new interface driver asix
+[    1.839247] usbcore: registered new interface driver ax88179_178a
+[    1.839279] usbcore: registered new interface driver cdc_ether
+[    1.839321] usbcore: registered new interface driver net1080
+[    1.839353] usbcore: registered new interface driver cdc_subset
+[    1.839383] usbcore: registered new interface driver zaurus
+[    1.839425] usbcore: registered new interface driver cdc_ncm
+[    1.839668] VFIO - User Level meta-driver version: 0.3
+[    1.841024] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.841044] ehci-pci: EHCI PCI platform driver
+[    1.841078] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.841089] ohci-pci: OHCI PCI platform driver
+[    1.841121] ohci-platform: OHCI generic platform driver
+[    1.846176] tegra-xusb 3610000.xhci: USB2 port 0 has OTG_CAP
+[    1.848151] tegra-xusb 3610000.xhci: extcon 0: ffffffc1f4c82000 id
+[    1.848773] usbcore: registered new interface driver uas
+[    1.848835] usbcore: registered new interface driver usb-storage
+[    1.849019] usbcore: registered new interface driver usbserial
+[    1.850518] tegra-xusb 3610000.xhci: Firmware timestamp: 2019-07-24 05:47:34 UTC, Version: 60.06 release
+[    1.850573] tegra-xusb 3610000.xhci: xHCI Host Controller
+[    1.850593] tegra-xusb 3610000.xhci: new USB bus registered, assigned bus number 1
+[    1.851314] tegra-xusb 3610000.xhci: hcc params 0x0184ff25 hci version 0x110 quirks 0x00050810
+[    1.851360] tegra-xusb 3610000.xhci: irq 465, io mem 0x03610000
+[    1.851561] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    1.851569] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.851576] usb usb1: Product: xHCI Host Controller
+[    1.851583] usb usb1: Manufacturer: Linux 4.9.201 xhci-hcd
+[    1.851589] usb usb1: SerialNumber: 3610000.xhci
+[    1.852126] hub 1-0:1.0: USB hub found
+[    1.852176] hub 1-0:1.0: 4 ports detected
+[    1.852717] tegra-xusb 3610000.xhci: xHCI Host Controller
+[    1.852730] tegra-xusb 3610000.xhci: new USB bus registered, assigned bus number 2
+[    1.852744] tegra-xusb 3610000.xhci: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.852951] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[    1.852959] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.852966] usb usb2: Product: xHCI Host Controller
+[    1.852972] usb usb2: Manufacturer: Linux 4.9.201 xhci-hcd
+[    1.852979] usb usb2: SerialNumber: 3610000.xhci
+[    1.853423] hub 2-0:1.0: USB hub found
+[    1.853470] hub 2-0:1.0: 4 ports detected
+[    1.854360] Wake76 for irq=199
+[    1.854366] Wake77 for irq=199
+[    1.854371] Wake78 for irq=199
+[    1.854375] Wake79 for irq=199
+[    1.854379] Wake80 for irq=199
+[    1.854384] Wake81 for irq=199
+[    1.854388] Wake82 for irq=199
+[    1.854428] tegra-xusb 3610000.xhci: Upgrade port 0 to USB3.0
+[    1.854436] tegra-xusb 3610000.xhci: Upgrade port 1 to USB3.0
+[    1.856641] tegra-xudc-new 3550000.xudc: PMQOS CPU boost enabled
+[    1.856720] tegra-xudc-new 3550000.xudc: device count: 1
+[    1.857639] tegra-xudc-new 3550000.xudc: vbus state: 0
+[    1.857672] tegra-xudc-new 3550000.xudc: Initialize boost_cpufreq work
+[    1.857700] tegra-xudc-new 3550000.xudc: entering ELPG
+[    1.857939] tegra-xudc-new 3550000.xudc: entering ELPG done
+[    1.858535] mousedev: PS/2 mouse device common for all mice
+[    1.858687] usbcore: registered new interface driver xpad
+[    1.956760] usb usb2: usb_suspend_both: status 0
+[    1.990406] max77686-rtc max77620-rtc: rtc core: registered max77620-rtc as rtc0
+[    1.992023] Wake73 for irq=42
+[    1.993299] rtc rtc1: alarm rtc device
+[    1.993315] tegra_rtc c2a0000.rtc: rtc core: registered c2a0000.rtc as rtc1
+[    1.993342] tegra_rtc c2a0000.rtc: Tegra internal Real Time Clock
+[    1.993509] i2c /dev entries driver
+[    1.996443] max77620-power max20024-power: Event recorder REG_NVERC : 0x44
+[    2.002667] tegra-thermal-throttle bthrot_cdev: cpufreq policy is not ready defer
+[    2.003071] FAN dev name: pwm-fan
+[    2.003140] FAN:gpio request success.
+[    2.003175] pwm_fan_driver pwm-fan: Found 2 profiles, default profile is quiet
+[    2.003223] pwm_fan_driver pwm-fan: cap state:4, cap pwm:255
+[    2.003474] pwm_fan_driver pwm-fan: got pwm for fan. polarity is normal
+[    2.003651] gpio tegra-gpio-aon wake39 for gpio=19(CC:3)
+[    2.003748] pwm_fan_driver pwm-fan: fan tach request irq success
+[    2.003760] pwm_fan_driver pwm-fan: tach period: 1000
+[    2.004578] pwm_fan_driver pwm-fan: index 0: pwm=0, rpm=0, rru=40, rrd=40, state:2
+[    2.004587] pwm_fan_driver pwm-fan: index 1: pwm=130, rpm=1000, rru=2, rrd=2, state:2
+[    2.004594] pwm_fan_driver pwm-fan: index 2: pwm=160, rpm=2000, rru=1, rrd=1, state:2
+[    2.004601] pwm_fan_driver pwm-fan: index 3: pwm=200, rpm=3000, rru=1, rrd=1, state:2
+[    2.004608] pwm_fan_driver pwm-fan: index 4: pwm=255, rpm=4000, rru=1, rrd=1, state:3
+[    2.004615] pwm_fan_driver pwm-fan: index 5: pwm=255, rpm=5000, rru=1, rrd=1, state:3
+[    2.004621] pwm_fan_driver pwm-fan: index 6: pwm=255, rpm=6000, rru=1, rrd=1, state:3
+[    2.004629] pwm_fan_driver pwm-fan: index 7: pwm=255, rpm=7000, rru=1, rrd=1, state:4
+[    2.004635] pwm_fan_driver pwm-fan: index 8: pwm=255, rpm=10000, rru=1, rrd=1, state:4
+[    2.004642] pwm_fan_driver pwm-fan: index 9: pwm=255, rpm=11000, rru=1, rrd=1, state:4
+[    2.005395] tegra-oc-event d280000.soctherm-oc-event: OC driver initialized
+[    2.006593] device-mapper: uevent: version 1.0.3
+[    2.007079] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[    2.010801] tegra194_cpufreq_probe: platform driver Initialization: pass
+[    2.011881] cpuidle: Initializing cpuidle driver
+[    2.012835] sdhci: Secure Digital Host Controller Interface driver
+[    2.012839] sdhci: Copyright(c) Pierre Ossman
+[    2.012842] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.013753] sdhci-tegra 3460000.sdhci: Client registration for eMC Successful
+[    2.015566] CMDQ: cmdq_platfm_init successful
+[    2.016109] sdhci-tegra 3440000.sdhci: Got CD GPIO
+[    2.018748] sdhci-tegra 3440000.sdhci: Client registration for eMC Successful
+[    2.025678] tegra-se-elp 3ad0000.se_elp: tegra_se_elp_probe: complete
+[    2.026852] tegra-se-nvhost 15810000.se: initialized
+[    2.028081] tegra-se-nvhost 15810000.se: tegra_se_probe: complete
+[    2.029193] tegra-se-nvhost 15820000.se: initialized
+[    2.030497] tegra-se-nvhost 15820000.se: tegra_se_probe: complete
+[    2.031547] tegra-se-nvhost 15830000.se: initialized
+[    2.032309] tegra-se-nvhost 15830000.se: tegra_se_probe: complete
+[    2.033088] tegra-se-nvhost 15840000.se: initialized
+[    2.034156] tegra-se-nvhost 15840000.se: tegra_se_probe: complete
+[    2.034415] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.035825] usbcore: registered new interface driver usbhid
+[    2.035830] usbhid: USB HID core driver
+[    2.040284] tegra186-cam-rtcpu bc00000.rtcpu: deferring, 14800000.isp is not probed
+[    2.041408] tegra_aon c1a0000.aon: tegra aon driver probe OK
+[    2.041847] tegra186-aondbg aondbg: aondbg driver probe() OK
+[    2.042621] denver_knobs_init:MTS_VERSION:51035886
+[    2.042785] tegra19x_actmon d230000.actmon: in actmon_register()...
+[    2.043710] tegra19x_actmon d230000.actmon: initialization Completed for the device mc_all
+[    2.044105] t19x_cache tegra-cache: probed
+[    2.046314] misc nvmap: cvsram :dma coherent mem declare 0x0000000050000000,4194304
+[    2.046324] misc nvmap: created heap cvsram base 0x0000000050000000 size (4096KiB)
+[    2.047120] carmel-pmu-drv carmel-pmu: Registered Carmel PMU
+[    2.047544] PLL_AON clock registered
+[    2.050330] Clocks initialized successfully
+[    2.052801] nvpmodel: initialized successfully
+[    2.054012] trusty-virtio trusty:virtio: initializing
+[    2.054242] trusty_ipc virtio0: vring0: va(pa)  ffffffc1f2768000(0) qsz 32 notifyid 1
+[    2.054252] trusty_ipc virtio0: vring1: va(pa)  ffffffc1f276a000(0) qsz 32 notifyid 2
+[    2.054379] trusty-virtio trusty:virtio: initializing done
+[    2.054666] trusty_ipc virtio0: is online
+[    2.055383] tegra-hda 3510000.hda: Override SDO lines to 4
+[    2.055717] usbcore: registered new interface driver snd-usb-audio
+[    2.056110] mmc0: SDHCI controller on 3460000.sdhci [3460000.sdhci] using ADMA 64-bit with 64 bit addr
+[    2.068310] input: tegra-hda-xnx HDMI/DP,pcm=3 as /devices/3510000.hda/sound/card0/input0
+[    2.068587] input: tegra-hda-xnx HDMI/DP,pcm=7 as /devices/3510000.hda/sound/card0/input1
+[    2.068849] input: tegra-hda-xnx HDMI/DP,pcm=8 as /devices/3510000.hda/sound/card0/input2
+[    2.069156] input: tegra-hda-xnx HDMI/DP,pcm=9 as /devices/3510000.hda/sound/card0/input3
+[    2.072252] gpio tegra-gpio wake51 for gpio=130(Q:2)
+[    2.072316] mmc1: SDHCI controller on 3440000.sdhci [3440000.sdhci] using ADMA 64-bit with 64 bit addr
+[    2.098072] mmc0: mmc_decode_ext_csd: CMDQ supported: depth: 31, cmdq_support: 1
+[    2.111622] mmc0: periodic cache flush enabled
+[    2.111641] mmc0: new HS400 Enhanced strobe MMC card at address 0001
+[    2.112295] mmcblk0: mmc0:0001 DG4016 14.7 GiB 
+[    2.112563] mmcblk0boot0: mmc0:0001 DG4016 partition 1 4.00 MiB
+[    2.116883] mmcblk0boot1: mmc0:0001 DG4016 partition 2 4.00 MiB
+[    2.117106] mmcblk0rpmb: mmc0:0001 DG4016 partition 3 4.00 MiB
+[    2.122247]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11
+[    2.175595] OPE platform probe
+[    2.175710] OPE platform probe successful
+[    2.180091] usb 1-2: new high-speed USB device number 2 using tegra-xusb
+[    2.220743] usb 1-2: New USB device found, idVendor=0bda, idProduct=5411
+[    2.220751] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.220756] usb 1-2: Product: 4-Port USB 2.0 Hub
+[    2.220760] usb 1-2: Manufacturer: Generic
+[    2.222173] hub 1-2:1.0: USB hub found
+[    2.223300] hub 1-2:1.0: 4 ports detected
+[    2.255163] tegra-asoc: sound: ADMAIF1 <-> ADMAIF1 mapping ok
+[    2.255316] tegra-asoc: sound: ADMAIF2 <-> ADMAIF2 mapping ok
+[    2.255437] tegra-asoc: sound: ADMAIF3 <-> ADMAIF3 mapping ok
+[    2.255556] tegra-asoc: sound: ADMAIF4 <-> ADMAIF4 mapping ok
+[    2.255671] tegra-asoc: sound: ADMAIF5 <-> ADMAIF5 mapping ok
+[    2.255789] tegra-asoc: sound: ADMAIF6 <-> ADMAIF6 mapping ok
+[    2.255897] tegra-asoc: sound: ADMAIF7 <-> ADMAIF7 mapping ok
+[    2.255996] tegra-asoc: sound: ADMAIF8 <-> ADMAIF8 mapping ok
+[    2.256133] tegra-asoc: sound: ADMAIF9 <-> ADMAIF9 mapping ok
+[    2.256234] tegra-asoc: sound: ADMAIF10 <-> ADMAIF10 mapping ok
+[    2.256339] tegra-asoc: sound: ADMAIF11 <-> ADMAIF11 mapping ok
+[    2.256430] tegra-asoc: sound: ADMAIF12 <-> ADMAIF12 mapping ok
+[    2.256526] tegra-asoc: sound: ADMAIF13 <-> ADMAIF13 mapping ok
+[    2.256618] tegra-asoc: sound: ADMAIF14 <-> ADMAIF14 mapping ok
+[    2.256727] tegra-asoc: sound: ADMAIF15 <-> ADMAIF15 mapping ok
+[    2.256855] tegra-asoc: sound: ADMAIF16 <-> ADMAIF16 mapping ok
+[    2.256969] tegra-asoc: sound: ADMAIF17 <-> ADMAIF17 mapping ok
+[    2.257079] tegra-asoc: sound: ADMAIF18 <-> ADMAIF18 mapping ok
+[    2.257193] tegra-asoc: sound: ADMAIF19 <-> ADMAIF19 mapping ok
+[    2.257308] tegra-asoc: sound: ADMAIF20 <-> ADMAIF20 mapping ok
+[    2.286320] u32 classifier
+[    2.286326]     Actions configured
+[    2.286438] Initializing XFRM netlink socket
+[    2.287044] NET: Registered protocol family 10
+[    2.287869] NET: Registered protocol family 17
+[    2.287886] NET: Registered protocol family 15
+[    2.287940] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    2.288077] Bluetooth: RFCOMM socket layer initialized
+[    2.288094] Bluetooth: RFCOMM ver 1.11
+[    2.288101] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    2.288107] Bluetooth: HIDP socket layer initialized
+[    2.288125] 9pnet: Installing 9P2000 support
+[    2.288169] Key type dns_resolver registered
+[    2.288502] Registered cp15_barrier emulation handler
+[    2.288524] Registered setend emulation handler
+[    2.290164] registered taskstats version 1
+[    2.290667] tegra-pcie-dw 14160000.pcie: Setting init speed to max speed
+[    2.291806] OF: PCI: host bridge /pcie@14160000 ranges:
+[    2.291829] OF: PCI:    IO 0x36100000..0x361fffff -> 0x36100000
+[    2.291839] OF: PCI:   MEM 0x1740000000..0x17ffffffff -> 0x40000000
+[    2.291846] OF: PCI:   MEM 0x1400000000..0x173fffffff -> 0x1400000000
+[    2.321434] mmc1: host does not support reading read-only switch, assuming write-enable
+[    2.329318] usb 2-3: new SuperSpeed USB device number 2 using tegra-xusb
+[    2.368143] usb 2-3: New USB device found, idVendor=0bda, idProduct=0411
+[    2.368151] usb 2-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.368156] usb 2-3: Product: 2-Port USB 3.0 Hub
+[    2.368160] usb 2-3: Manufacturer: Generic
+[    2.387045] hub 2-3:1.0: USB hub found
+[    2.389256] hub 2-3:1.0: 4 ports detected
+[    2.466427] mmc1: hw tuning done ...
+[    2.466477] mmc1: new ultra high speed SDR104 SDXC card at address aaaa
+[    2.466977] mmcblk1: mmc1:aaaa SR64G 59.5 GiB 
+[    2.478197]  mmcblk1: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11
+[    2.516092] usb 1-2.1: new high-speed USB device number 3 using tegra-xusb
+[    2.536474] usb 1-2.1: New USB device found, idVendor=1a40, idProduct=0101
+[    2.536480] usb 1-2.1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    2.536485] usb 1-2.1: Product: USB 2.0 Hub
+[    2.537244] hub 1-2.1:1.0: USB hub found
+[    2.537306] hub 1-2.1:1.0: 4 ports detected
+[    2.556107] tegra_cec 3960000.tegra_cec: Can't find physical addresse.
+[    2.556113] tegra_cec 3960000.tegra_cec: tegra_cec_init Done.
+[    2.560101] usb 2-3: usb_suspend_both: status 0
+[    2.560344] usb usb2: usb_suspend_both: status 0
+[    2.806704] tegra-pcie-dw 14160000.pcie: link is down
+[    2.806858] tegra-pcie-dw 14160000.pcie: PCI host bridge to bus 0004:00
+[    2.806866] pci_bus 0004:00: root bus resource [bus 00-ff]
+[    2.806875] pci_bus 0004:00: root bus resource [io  0x0000-0xfffff] (bus address [0x36100000-0x361fffff])
+[    2.806882] pci_bus 0004:00: root bus resource [mem 0x1740000000-0x17ffffffff] (bus address [0x40000000-0xffffffff])
+[    2.806887] pci_bus 0004:00: root bus resource [mem 0x1400000000-0x173fffffff pref]
+[    2.806916] pci 0004:00:00.0: [10de:1ad1] type 01 class 0x060400
+[    2.807089] pci 0004:00:00.0: PME# supported from D0 D3hot D3cold
+[    2.807367] iommu: Adding device 0004:00:00.0 to group 59
+[    2.807585] pci 0004:00:00.0: PCI bridge to [bus 01-ff]
+[    2.807609] pci 0004:00:00.0: Max Payload Size set to  256/ 256 (was  256), Max Read Rq  512
+[    2.807815] pcieport 0004:00:00.0: Signaling PME through PCIe PME interrupt
+[    2.807822] pcie_pme 0004:00:00.0:pcie001: service driver pcie_pme loaded
+[    2.807899] aer 0004:00:00.0:pcie002: service driver aer loaded
+[    2.808034] pcie_pme 0004:00:00.0:pcie001: unloading service driver pcie_pme
+[    2.808112] aer 0004:00:00.0:pcie002: unloading service driver aer
+[    2.808195] pci_bus 0004:01: busn_res: [bus 01-ff] is released
+[    2.808258] iommu: Removing device 0004:00:00.0 from group 59
+[    2.808281] pci_bus 0004:00: busn_res: [bus 00-ff] is released
+[    2.809847] tegra-pcie-dw 14160000.pcie: PCIe link is not up...!
+[    2.810772] tegra-pcie-dw 141a0000.pcie: Setting init speed to max speed
+[    2.811892] OF: PCI: host bridge /pcie@141a0000 ranges:
+[    2.811935] OF: PCI:    IO 0x3a100000..0x3a1fffff -> 0x3a100000
+[    2.811945] OF: PCI:   MEM 0x1f40000000..0x1fffffffff -> 0x40000000
+[    2.811952] OF: PCI:   MEM 0x1c00000000..0x1f3fffffff -> 0x1c00000000
+[    2.828115] usb 1-2.1.1: new high-speed USB device number 4 using tegra-xusb
+[    2.852673] usb 1-2.1.1: New USB device found, idVendor=2357, idProduct=011e
+[    2.852680] usb 1-2.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.852684] usb 1-2.1.1: Product: 802.11ac WLAN Adapter 
+[    2.852688] usb 1-2.1.1: Manufacturer: Realtek 
+[    2.852692] usb 1-2.1.1: SerialNumber: 00e04c000001
+[    2.932087] usb 1-2.1.2: new high-speed USB device number 5 using tegra-xusb
+[    2.956412] usb 1-2.1.2: New USB device found, idVendor=0403, idProduct=6011
+[    2.956418] usb 1-2.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.956422] usb 1-2.1.2: Product: FT4232H MiniModule
+[    2.956427] usb 1-2.1.2: Manufacturer: FTDI
+[    2.956431] usb 1-2.1.2: SerialNumber: FT6V456O
+[    3.064105] usb 1-2.1.3: new full-speed USB device number 6 using tegra-xusb
+[    3.087966] usb 1-2.1.3: New USB device found, idVendor=2341, idProduct=8036
+[    3.087972] usb 1-2.1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    3.087977] usb 1-2.1.3: Product: Arduino Leonardo
+[    3.087981] usb 1-2.1.3: Manufacturer: Arduino LLC
+[    3.087985] usb 1-2.1.3: SerialNumber: HIDPH
+[    3.091086] input: Arduino LLC Arduino Leonardo as /devices/3610000.xhci/usb1/1-2/1-2.1/1-2.1.3/1-2.1.3:1.2/0003:2341:8036.0001/input/input4
+[    3.091460] hid-generic 0003:2341:8036.0001: input,hidraw0: USB HID v1.01 Joystick [Arduino LLC Arduino Leonardo] on usb-3610000.xhci-2.1.3/input2
+[    3.327597] tegra-pcie-dw 141a0000.pcie: link is down
+[    3.327724] tegra-pcie-dw 141a0000.pcie: PCI host bridge to bus 0005:00
+[    3.327745] pci_bus 0005:00: root bus resource [bus 00-ff]
+[    3.327754] pci_bus 0005:00: root bus resource [io  0x100000-0x1fffff] (bus address [0x3a100000-0x3a1fffff])
+[    3.327760] pci_bus 0005:00: root bus resource [mem 0x1f40000000-0x1fffffffff] (bus address [0x40000000-0xffffffff])
+[    3.327766] pci_bus 0005:00: root bus resource [mem 0x1c00000000-0x1f3fffffff pref]
+[    3.327793] pci 0005:00:00.0: [10de:1ad0] type 01 class 0x060400
+[    3.327937] pci 0005:00:00.0: PME# supported from D0 D3hot D3cold
+[    3.328223] iommu: Adding device 0005:00:00.0 to group 59
+[    3.328427] pci 0005:00:00.0: PCI bridge to [bus 01-ff]
+[    3.328449] pci 0005:00:00.0: Max Payload Size set to  256/ 256 (was  256), Max Read Rq  512
+[    3.328647] pcieport 0005:00:00.0: Signaling PME through PCIe PME interrupt
+[    3.328655] pcie_pme 0005:00:00.0:pcie001: service driver pcie_pme loaded
+[    3.328762] aer 0005:00:00.0:pcie002: service driver aer loaded
+[    3.328917] pcie_pme 0005:00:00.0:pcie001: unloading service driver pcie_pme
+[    3.328988] aer 0005:00:00.0:pcie002: unloading service driver aer
+[    3.329082] pci_bus 0005:01: busn_res: [bus 01-ff] is released
+[    3.329182] iommu: Removing device 0005:00:00.0 from group 59
+[    3.329207] pci_bus 0005:00: busn_res: [bus 00-ff] is released
+[    3.331274] tegra-pcie-dw 141a0000.pcie: PCIe link is not up...!
+[    3.342197] tegra-cbb 14040000.cv-noc: noc_secure_irq = 91, noc_nonsecure_irq = 90>
+[    3.350286] tegra194-isp5 14800000.isp: initialized
+[    3.357301] tegra194-vi5 15c10000.vi: using default number of vi channels, 36
+[    3.361834] tegra194-vi5 15c10000.vi: initialized
+[    3.366244] tegra194-vi5 15c10000.vi: subdev 15a00000.nvcsi--2 bound
+[    3.366315] tegra194-vi5 15c10000.vi: subdev 15a00000.nvcsi--1 bound
+[    3.366527] tegra-thermal-throttle bthrot_cdev: clk:cpu max:1907200000, min:115200000 steps:24
+[    3.370956] tegra-thermal-throttle bthrot_cdev: clk:gpu max:1109250000, min:114750000 steps:10
+[    3.370976] tegra-thermal-throttle bthrot_cdev: cdev:skin-balanced clk:0:cpu off:0 slope-adj:200
+[    3.370982] tegra-thermal-throttle bthrot_cdev: cdev:skin-balanced clk:1:gpu off:0 slope-adj:400
+[    3.371079] tegra-thermal-throttle bthrot_cdev: cdev:skin-balanced max_state:48 cutoff:0
+[    3.371125] tegra-thermal-throttle bthrot_cdev: cdev:gpu-balanced clk:0:cpu off:0 slope-adj:400
+[    3.371129] tegra-thermal-throttle bthrot_cdev: cdev:gpu-balanced clk:1:gpu off:0 slope-adj:400
+[    3.375086] tegra-thermal-throttle bthrot_cdev: cdev:gpu-balanced max_state:40 cutoff:1
+[    3.375123] tegra-thermal-throttle bthrot_cdev: cdev:cpu-balanced clk:0:cpu off:0 slope-adj:200
+[    3.375128] tegra-thermal-throttle bthrot_cdev: cdev:cpu-balanced clk:1:gpu off:365500000 slope-adj:300
+[    3.375542] tegra-thermal-throttle bthrot_cdev: cdev:cpu-balanced max_state:48 cutoff:0
+[    3.375628] tegra-thermal-throttle bthrot_cdev: cdev:emergency-balanced clk:0:cpu off:38400000 slope-adj:10
+[    3.375633] tegra-thermal-throttle bthrot_cdev: cdev:emergency-balanced clk:1:gpu off:25500000 slope-adj:10
+[    3.375983] tegra-thermal-throttle bthrot_cdev: cdev:emergency-balanced max_state:2 cutoff:0
+[    3.376041] tegra-thermal-throttle bthrot_cdev: cdev:aux-balanced clk:0:cpu off:0 slope-adj:400
+[    3.376111] tegra-thermal-throttle bthrot_cdev: cdev:aux-balanced clk:1:gpu off:0 slope-adj:400
+[    3.376509] tegra-thermal-throttle bthrot_cdev: cdev:aux-balanced max_state:40 cutoff:1
+[    3.377285] tegra186-cam-rtcpu bc00000.rtcpu: Trace buffer configured at IOVA=0xbff00000
+[    3.462281] tegra-ivc ivc-bc00000.rtcpu: region 0: iova=0xbfee0000-0xbfefffff size=131072
+[    3.462619] tegra-ivc ivc-bc00000.rtcpu:echo@0: echo: ver=0 grp=1 RX[16x64]=0x1000-0x1480 TX[16x64]=0x1480-0x1900
+[    3.462849] tegra-ivc ivc-bc00000.rtcpu:dbg@1: dbg: ver=0 grp=1 RX[1x384]=0x1900-0x1b00 TX[1x384]=0x1b00-0x1d00
+[    3.463063] tegra-ivc ivc-bc00000.rtcpu:dbg@2: dbg: ver=0 grp=1 RX[1x8192]=0x1d00-0x3d80 TX[1x8192]=0x3d80-0x5e00
+[    3.463397] tegra-ivc ivc-bc00000.rtcpu:ivccontrol@3: ivccontrol: ver=0 grp=1 RX[64x320]=0x5e00-0xae80 TX[64x320]=0xae80-0xff00
+[    3.463511] tegra-ivc ivc-bc00000.rtcpu:ivccapture@4: ivccapture: ver=0 grp=1 RX[512x64]=0xff00-0x17f80 TX[512x64]=0x17f80-0x20000
+[    3.463721] tegra186-cam-rtcpu bc00000.rtcpu: using cam RTCPU IRQ (66)
+[    3.463726] tegra186-cam-rtcpu bc00000.rtcpu: tegra_camrtc_mon_create is successful
+[    3.464929] tegra186-cam-rtcpu bc00000.rtcpu: firmware version cpu=rce cmd=5 sha1=cf2bef3ad10e437272857b76308abef8ffb80bda
+[    3.465346] Wake83 for irq=211
+[    3.465413] gpio tegra-gpio wake67 for gpio=48(G:0)
+[    3.465486] gpio tegra-gpio-aon wake29 for gpio=36(EE:4)
+[    3.465652] input: gpio-keys as /devices/gpio-keys/input/input5
+[    3.499796] tegra_rtc c2a0000.rtc: setting system clock to 2022-07-02 07:31:50 UTC (1656747110)
+[    3.500336] mmcblk mmc0:0001: Card claimed for testing.
+[    3.500350] mmcblk mmc1:aaaa: Card claimed for testing.
+[    3.536763] bpmp: mounted debugfs mirror
+[    3.542966] ALSA device list:
+[    3.542972]   #0: tegra-hda-xnx at 0x3518000 irq 65
+[    3.542976]   #1: jetson-xaviernx-ape
+[    3.545295] Freeing unused kernel memory: 8576K
+[    3.585068] Root device found: PARTUUID=8b3d9149-299d-4359-964b-687a7572b0ba
+[    4.356193] EXT4-fs (mmcblk1p1): mounted filesystem with ordered data mode. Opts: (null)
+[    4.363433] Rootfs mounted over PARTUUID=8b3d9149-299d-4359-964b-687a7572b0ba
+[    4.391897] Switching from initrd to actual rootfs
+[    4.663750] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    4.668660] cgroup: cgroup2: unknown option "nsdelegate"
+[    4.680592] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    4.681241] systemd[1]: Detected architecture arm64.
+[    4.687175] systemd[1]: Set hostname to <cit171>.
+[    4.832979] systemd[1]: File /lib/systemd/system/systemd-journald.service:36 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    4.832991] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    4.993582] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.996983] systemd[1]: Created slice User and Session Slice.
+[    4.997505] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.997949] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    4.997996] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.998047] systemd[1]: Reached target Swap.
+[    4.999094] systemd[1]: Created slice System Slice.
+[    4.999373] systemd[1]: Listening on RPCbind Server Activation Socket.
+[    5.063981] EXT4-fs (mmcblk1p1): re-mounted. Opts: (null)
+[    5.085624] pca954x 2-0070: vcc-pullup regulator not found
+[    5.085639] pca954x 2-0070: pca954x_probe: forcing device bus number, start 30.
+[    5.085643] pca954x 2-0070: device detect skipped.
+[    5.086201] i2c i2c-2: Added multiplexed i2c bus 30
+[    5.086868] i2c i2c-2: Added multiplexed i2c bus 31
+[    5.087179] i2c i2c-2: Added multiplexed i2c bus 32
+[    5.087411] i2c i2c-2: Added multiplexed i2c bus 33
+[    5.087423] pca954x 2-0070: registered 4 multiplexed busses for I2C switch pca9546
+[    5.099456] GPIO line 224 (tca9539_74_outlow) hogged as output/low
+[    5.099720] GPIO line 225 (tca9539_74_outlow) hogged as output/low
+[    5.099963] GPIO line 226 (tca9539_74_outlow) hogged as output/low
+[    5.100231] GPIO line 227 (tca9539_74_outlow) hogged as output/low
+[    5.100494] GPIO line 228 (tca9539_74_outlow) hogged as output/low
+[    5.100739] GPIO line 229 (tca9539_74_outlow) hogged as output/low
+[    5.100986] GPIO line 230 (tca9539_74_outlow) hogged as output/low
+[    5.101248] GPIO line 231 (tca9539_74_outlow) hogged as output/low
+[    5.101685] gpiochip_setup_dev: registered GPIOs 224 to 239 on device: gpiochip3 (pca9539)
+[    5.101693] pca953x 2-0074: interrupt support not compiled in
+[    5.102141] tegra-i2c 3180000.i2c: no acknowledge from address 0x22
+[    5.102305] pca953x 30-0022: failed reading register
+[    5.102500] pca953x: probe of 30-0022 failed with error -121
+[    5.105119] GPIO line 200 (tca6424_22_outlow) hogged as output/low
+[    5.106055] GPIO line 201 (tca6424_22_outlow) hogged as output/low
+[    5.106843] GPIO line 202 (tca6424_22_outlow) hogged as output/low
+[    5.107651] GPIO line 203 (tca6424_22_outlow) hogged as output/low
+[    5.108455] GPIO line 204 (tca6424_22_outlow) hogged as output/low
+[    5.109246] GPIO line 205 (tca6424_22_outlow) hogged as output/low
+[    5.109950] GPIO line 206 (tca6424_22_outlow) hogged as output/low
+[    5.110622] GPIO line 207 (tca6424_22_outlow) hogged as output/low
+[    5.111094] gpiochip_setup_dev: registered GPIOs 200 to 223 on device: gpiochip4 (tca6424)
+[    5.111107] pca953x 31-0022: interrupt support not compiled in
+[    5.124888] ar0521: loading out-of-tree module taints kernel.
+[    5.126623] ar0521 30-0042: Unable to toggle GPIO
+[    5.126782] ar0521: probe of 30-0042 failed with error -22
+[    5.192660] Current Firmware Version - (50CUNANO-g3bfcc9c)
+[    5.288745] cam_isp_init
+[    5.369483] systemd-journald[2337]: Received request to flush runtime journal from PID 1
+[    6.773667] random: crng init done
+[    6.773678] random: 7 urandom warning(s) missed due to ratelimiting
+[    6.853515] cdc_acm 1-2.1.3:1.0: ttyACM0: USB ACM device
+[    6.854002] usbcore: registered new interface driver cdc_acm
+[    6.854007] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    6.867207] usbcore: registered new interface driver ftdi_sio
+[    6.867251] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    6.867405] ftdi_sio 1-2.1.2:1.0: FTDI USB Serial Device converter detected
+[    6.867708] usb 1-2.1.2: Detected FT4232H
+[    6.868818] usb 1-2.1.2: FTDI USB Serial Device converter now attached to ttyUSB0
+[    6.868893] ftdi_sio 1-2.1.2:1.1: FTDI USB Serial Device converter detected
+[    6.868990] usb 1-2.1.2: Detected FT4232H
+[    6.869845] usb 1-2.1.2: FTDI USB Serial Device converter now attached to ttyUSB1
+[    6.869906] ftdi_sio 1-2.1.2:1.2: FTDI USB Serial Device converter detected
+[    6.870005] usb 1-2.1.2: Detected FT4232H
+[    6.872278] usb 1-2.1.2: FTDI USB Serial Device converter now attached to ttyUSB2
+[    6.872343] ftdi_sio 1-2.1.2:1.3: FTDI USB Serial Device converter detected
+[    6.872478] usb 1-2.1.2: Detected FT4232H
+[    6.872819] usb 1-2.1.2: FTDI USB Serial Device converter now attached to ttyUSB3
+[    7.522577] usbcore: registered new interface driver rtl8821au
+[    8.206559] nvgpu: 17000000.gv11b          nvgpu_nvhost_syncpt_init:291  [INFO]  syncpt_unit_base 60000000 syncpt_unit_size 400000 size 1000
+
+[    9.377577] ar0521 31-0042: ISP Already Initialized !! 
+[    9.384345] SENSOR ID=0x0265
+[    9.389199]  cam_stream_off 2180 CAM Get CMD Stream off Success !! 
+[    9.467435] 0. Initialized Control 0x00980900 - Brightness 
+[    9.467442] 1. Initialized Control 0x00980901 - Contrast 
+[    9.467447] 2. Initialized Control 0x00980902 - Saturation 
+[    9.467452] 3. Initialized Control 0x0098090c - White Balance, Automatic 
+[    9.467457] 4. Initialized Control 0x00980910 - Gamma 
+[    9.467461] 5. Initialized Control 0x0098091a - White Balance Temperature 
+[    9.467466] 6. Initialized Control 0x0098091b - Sharpness 
+[    9.467471] 7. Initialized Control 0x00980913 - Gain 
+[    9.474043]  Menu Element 0 : Full FOV Auto Mode 
+[    9.474050]  Menu Element 1 : Manual Mode 
+[    9.474054]  Menu Element 2 : ROI Based Auto Mode 
+[    9.474066] 8. Initialized Custom Ctrl 0x009a0901 - Exposure Auto 
+[    9.474072] 9. Initialized Control 0x009a0902 - Exposure Time, Absolute 
+[    9.474077] 10. Initialized Control 0x009a090d - Zoom, Absolute 
+[    9.474082] 11. Initialized Control 0x009a0908 - Pan, Absolute 
+[    9.474086] 12. Initialized Control 0x009a0909 - Tilt, Absolute 
+[    9.477536] 13. Initialized Custom Ctrl 0x009a092d - Denoise 
+[    9.477547] 14. Initialized Control 0x00980914 - Horizontal Flip 
+[    9.477553] 15. Initialized Control 0x00980915 - Vertical Flip 
+[    9.481550] 16. Initialized Custom Ctrl 0x009a0926 - ROI Exposure 
+[    9.485573] 17. Initialized Custom Ctrl 0x009a0924 - ROI Window Size 
+[    9.489607] 18. Initialized Custom Ctrl 0x009a0931 - Exposure Compensation 
+[    9.489620] tegra194-vi5 15c10000.vi: subdev ar0521 31-0042 bound
+[    9.502094] cpu-throttle-alert cooling device registered.
+[    9.502531] gpu-throttle-alert cooling device registered.
+[    9.502860] aux-throttle-alert cooling device registered.
+[   10.772943] using random self ethernet address
+[   10.773082] using random host ethernet address
+[   11.622252] Mass Storage Function, version: 2009/09/11
+[   11.622261] LUN: removable file: (no medium)
+[   11.630777] using random self ethernet address
+[   11.630910] using random host ethernet address
+[   11.911082] rndis0: HOST MAC f6:ee:58:51:ed:6c
+[   11.911165] rndis0: MAC f6:ee:58:51:ed:6d
+[   11.912018] usb0: HOST MAC f6:ee:58:51:ed:6e
+[   11.912122] usb0: MAC f6:ee:58:51:ed:6f
+[   11.912161] tegra-xudc-new 3550000.xudc: exiting ELPG
+[   11.913977] tegra-xudc-new 3550000.xudc: exiting ELPG done
+[   11.914005] tegra-xudc-new 3550000.xudc: ep 0 (type: 0, dir: out) enabled
+[   11.914051] tegra-xudc-new 3550000.xudc: entering ELPG
+[   11.914337] tegra-xudc-new 3550000.xudc: entering ELPG done
+[   11.914355] tegra-xudc-new 3550000.xudc: exiting ELPG
+[   11.915313] tegra-xudc-new 3550000.xudc: exiting ELPG done
+[   11.915328] tegra-xudc-new 3550000.xudc: entering ELPG
+[   11.915542] tegra-xudc-new 3550000.xudc: entering ELPG done
+[   11.921001] l4tbr0: port 1(rndis0) entered blocking state
+[   11.921007] l4tbr0: port 1(rndis0) entered disabled state
+[   11.921269] device rndis0 entered promiscuous mode
+[   11.929158] IPv6: ADDRCONF(NETDEV_UP): rndis0: link is not ready
+[   11.937911] l4tbr0: port 2(usb0) entered blocking state
+[   11.937920] l4tbr0: port 2(usb0) entered disabled state
+[   11.938155] device usb0 entered promiscuous mode
+[   11.947876] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[   12.239023] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   12.552921] gpio tegra-gpio wake20 for gpio=52(G:4)
+[   12.559283] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   12.572699] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   12.974990] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   13.004728] ras_fhi_disable: FHI 474 disabled
+[   13.010667] CPU4: shutdown
+[   13.010796] psci: CPU4 killed.
+[   13.053769] ras_fhi_disable: FHI 475 disabled
+[   13.059342] CPU5: shutdown
+[   13.076116] psci: Retrying again to check for CPU kill
+[   13.076200] psci: CPU5 killed.
+[   13.078694] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[   13.393430] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   13.504869] zram: Added device: zram0
+[   13.506864] zram: Added device: zram1
+[   13.520929] zram: Added device: zram2
+[   13.523334] zram: Added device: zram3
+[   13.579108] zram0: detected capacity change from 0 to 1018884096
+[   13.965064] Adding 995000k swap on /dev/zram0.  Priority:5 extents:1 across:995000k SS
+[   13.975735] zram1: detected capacity change from 0 to 1018884096
+[   14.009552] Adding 995000k swap on /dev/zram1.  Priority:5 extents:1 across:995000k SS
+[   14.020525] zram2: detected capacity change from 0 to 1018884096
+[   14.053879] Adding 995000k swap on /dev/zram2.  Priority:5 extents:1 across:995000k SS
+[   14.058370] zram3: detected capacity change from 0 to 1018884096
+[   14.101246] Adding 995000k swap on /dev/zram3.  Priority:5 extents:1 across:995000k SS
+[   15.090698] Bridge firewalling registered
+[   15.184415] nf_conntrack version 0.5.0 (65536 buckets, 262144 max)
+[   15.648865] Netfilter messages via NETLINK v0.30.
+[   15.673350] ctnetlink v0.93: registering with nfnetlink.
+[   15.902538] IPv6: ADDRCONF(NETDEV_UP): docker0: link is not ready
+[   16.477255] tegradc 15200000.nvdisplay: blank - powerdown
+[   16.477274] tegradc 15210000.nvdisplay: blank - powerdown
+[   17.625361] ------------[ cut here ]------------
+[   17.625652] WARNING: CPU: 2 PID: 6499 at /home/rikuyokoo/en715_l4t32_5_2/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/net/wireless/nl80211.c:14141 cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[   17.625978] Modules linked in: xt_conntrack ipt_MASQUERADE nf_nat_masquerade_ipv4 nf_conntrack_netlink nfnetlink xt_addrtype iptable_filter iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack br_netfilter zram overlay userspace_alert nvgpu rtl8821au cfg80211 ftdi_sio cdc_acm spidev binfmt_misc ar0521(O) gpio_pca953x i2c_mux_pca954x bluedroid_pm ip_tables x_tables
+
+[   17.626115] CPU: 2 PID: 6499 Comm: RTW_CMD_THREAD Tainted: G           O    4.9.201 #1
+[   17.626120] Hardware name: NVIDIA Jetson Xavier NX Developer Kit (DT)
+[   17.626127] task: ffffffc1f4628e00 task.stack: ffffffc1e46f0000
+[   17.626268] PC is at cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[   17.626917] LR is at rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[   17.626927] pc : [<ffffff8001183080>] lr : [<ffffff80012eb8b0>] pstate: 60c00045
+[   17.626932] sp : ffffffc1e46f3c20
+[   17.626948] x29: ffffffc1e46f3c20 x28: ffffff800128d930 
+[   17.626968] x27: ffffff800beca1ac x26: ffffff80013f2060 
+[   17.626982] x25: ffffff80014455bc x24: ffffffc1f2697000 
+[   17.626995] x23: ffffffc1ed247000 x22: ffffffc1e46ec800 
+[   17.627009] x21: 0000000000000002 x20: ffffffc1e46f3ca8 
+[   17.627022] x19: ffffffc1eb66b800 x18: 0000007fa8b07a70 
+[   17.627036] x17: 0000007fa8a38980 x16: 00000055890497f8 
+[   17.627049] x15: 000000000000002a x14: 0000000000000008 
+[   17.627064] x13: 7f0201c70000002a x12: 0105c001b2fffe01 
+[   17.627079] x11: 0000000000000004 x10: 0000000000000002 
+[   17.627093] x9 : 0000000000000004 x8 : ffffffc1e46f3d3a 
+[   17.627107] x7 : 0000000000000000 x6 : 0000000000000001 
+[   17.627122] x5 : 0000000000000040 x4 : 00000000000009b4 
+[   17.627136] x3 : 0000145a00000003 x2 : ffffffc1e46ee048 
+[   17.627152] x1 : 0000145a00000003 x0 : 0000000000000000 
+
+[   17.627172] ---[ end trace 2249042f399c8f68 ]---
+[   17.627268] Call trace:
+[   17.627414] [<ffffff8001183080>] cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[   17.628055] [<ffffff80012eb8b0>] rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[   17.628671] [<ffffff800128d894>] rtw_chk_start_clnt_join+0x43c/0x4d8 [rtl8821au]
+[   17.629293] [<ffffff800128db68>] join_cmd_hdl+0x238/0x330 [rtl8821au]
+[   17.629901] [<ffffff8001251550>] rtw_cmd_thread+0x308/0x608 [rtl8821au]
+[   17.629915] [<ffffff80080db074>] kthread+0xec/0xf0
+[   17.629925] [<ffffff80080838a0>] ret_from_fork+0x10/0x30
+[   17.818364] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   21.391953] fuse init (API version 7.26)
+[   25.998763] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   25.998792] Bluetooth: BNEP socket layer initialized
+[   31.764685] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[   34.140211] vdd-sdmmc1-sw: disabling
+[   34.140221] vdd-1v8-cvb: disabling
+[   34.140227] vdd-epb-1v0: disabling
+[   34.140232] avdd-cam-2v8: disabling
+[   34.140238] vdd-fan: disabling
+[   34.140243] vdd_sys_en: disabling
+[  421.856837] CPU4: Booted secondary processor [4e0f0040]
+[  421.895078] ras_fhi_enable: FHI 474 enabled on CPU4
+[  421.896783] carmel_ras_enable: RAS enabled on cpu4
+[  421.926268] CPU5: Booted secondary processor [4e0f0040]
+[  421.941467] ras_fhi_enable: FHI 475 enabled on CPU5
+[  421.941867] carmel_ras_enable: RAS enabled on cpu5
+[  421.967594] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[  713.421954] ras_fhi_disable: FHI 474 disabled
+[  713.426817] CPU4: shutdown
+[  713.444025] psci: Retrying again to check for CPU kill
+[  713.444077] psci: CPU4 killed.
+[  713.489680] ras_fhi_disable: FHI 475 disabled
+[  713.496271] CPU5: shutdown
+[  713.516022] psci: Retrying again to check for CPU kill
+[  713.516066] psci: CPU5 killed.
+[  713.523965] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[  890.084169] eqos 2490000.ether_qos eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[  890.085643] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 1104.246766] device eth0 entered promiscuous mode
+[ 1105.370056] device eth0 left promiscuous mode
+[ 1615.289315] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 1615.838734]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 1615.915010] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 1616.071020] usb 2-3: usb_suspend_both: status 0
+[ 1616.071481] usb usb2: usb_suspend_both: status 0
+[ 1616.091599] usb usb2: usb_suspend_both: status 0
+[ 1616.275050] usb 2-3: usb_suspend_both: status 0
+[ 1616.275346] usb usb2: usb_suspend_both: status 0
+[ 1616.291452] usb usb2: usb_suspend_both: status 0
+[ 1724.132079] FAN rising trip_level:1 cur_temp:46000 trip_temps[2]:60000
+[ 2121.514817] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 2122.036520]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 2122.036529] Skipping Previous mode set ... 
+[ 2122.251157] usb 2-3: usb_suspend_both: status 0
+[ 2122.251439] usb usb2: usb_suspend_both: status 0
+[ 2122.267512] usb usb2: usb_suspend_both: status 0
+[ 2122.447194] usb 2-3: usb_suspend_both: status 0
+[ 2122.447467] usb usb2: usb_suspend_both: status 0
+[ 2122.467375] usb usb2: usb_suspend_both: status 0
+[ 2122.855630] FAN rising trip_level:1 cur_temp:46100 trip_temps[2]:60000
+[ 2315.976058] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 2316.510408]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 2316.510418] Skipping Previous mode set ... 
+[ 2316.537092] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 2316.713141] usb 2-3: usb_suspend_both: status 0
+[ 2316.713401] usb usb2: usb_suspend_both: status 0
+[ 2316.731434] usb usb2: usb_suspend_both: status 0
+[ 2316.913112] usb 2-3: usb_suspend_both: status 0
+[ 2316.913371] usb usb2: usb_suspend_both: status 0
+[ 2316.929651] usb usb2: usb_suspend_both: status 0
+[ 2336.777603] FAN rising trip_level:1 cur_temp:46000 trip_temps[2]:60000
+[ 2432.347344] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 2432.872314]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 2432.872323] Skipping Previous mode set ... 
+[ 2432.894268] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 2433.086251] usb 2-3: usb_suspend_both: status 0
+[ 2433.086484] usb usb2: usb_suspend_both: status 0
+[ 2433.102708] usb usb2: usb_suspend_both: status 0
+[ 2433.290269] usb 2-3: usb_suspend_both: status 0
+[ 2433.290528] usb usb2: usb_suspend_both: status 0
+[ 2433.314507] usb usb2: usb_suspend_both: status 0
+[ 2444.298620] FAN rising trip_level:1 cur_temp:46050 trip_temps[2]:60000
+[ 2776.942813] FAN cooling trip_level:0 cur_temp:37950 trip_temps[1]:46000
+[ 3085.084340] eqos 2490000.ether_qos eth0: Link is Down
+[ 5453.973687] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 5454.496297]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 5454.496352] Skipping Previous mode set ... 
+[ 5454.554268] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 5454.714273] usb 2-3: usb_suspend_both: status 0
+[ 5454.714710] usb usb2: usb_suspend_both: status 0
+[ 5454.902287] usb 2-3: usb_suspend_both: status 0
+[ 5454.902497] usb usb2: usb_suspend_both: status 0
+[ 5454.922675] usb usb2: usb_suspend_both: status 0
+[ 5544.438111] FAN rising trip_level:1 cur_temp:46150 trip_temps[2]:60000
+[ 5657.840915] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 5658.365509]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 5658.365518] Skipping Previous mode set ... 
+[ 5658.381051] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 5658.577051] usb 2-3: usb_suspend_both: status 0
+[ 5658.577328] usb usb2: usb_suspend_both: status 0
+[ 5658.593523] usb usb2: usb_suspend_both: status 0
+[ 5658.773088] usb 2-3: usb_suspend_both: status 0
+[ 5658.773319] usb usb2: usb_suspend_both: status 0
+[ 5658.797250] usb usb2: usb_suspend_both: status 0
+[ 5670.997294] FAN rising trip_level:1 cur_temp:46150 trip_temps[2]:60000
