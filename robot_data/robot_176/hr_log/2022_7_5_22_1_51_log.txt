@@ -1,0 +1,1 @@
+2022年 7月 5日 火曜日 22:01:49 JST\n機体番号 176\n使用者 inoue satoshi \n使用目的 for testing current and voltage logging
