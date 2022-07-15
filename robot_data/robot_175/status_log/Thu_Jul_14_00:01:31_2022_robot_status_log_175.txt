@@ -1,0 +1,1665 @@
+---- robot status ---- temperature [℃] ---- current [mA] ---- voltage [mV] ----
+id 0 -7650 -7650 -7650 
+id 1 -7650 -7650 -7650 
+id 2 -7650 -7650 -7650 
+id 3 -7650 -7650 -7650 
+id 4 -7650 -7650 -7650 
+id 5 -7650 -7650 -7650 
+id 6 -7650 -7650 -7650 
+id 7 -7650 -7650 -7650 
+id 8 -7650 -7650 -7650 
+id 9 -7650 -7650 -7650 
+id 10 -7650 -7650 -7650 
+id 11 -7650 -7650 -7650 
+id 12 -7650 -7650 -7650 
+id 13 -7650 -7650 -7650 
+id 14 -7650 -7650 -7650 
+id 15 -7650 -7650 -7650 
+id 16 -7650 -7650 -7650 
+id 17 -7650 -7650 -7650 
+id 18 -7650 -7650 -7650 
+
+ Motors which temperature is over 45℃
+---------------------------------- dmesg ----------------------------------
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.9.201 (hiroki@hiroki) (gcc version 7.3.1 20180425 [linaro-7.3-2018.05 revision d29120a424ecfbc167ef90065c0eeb7f91977701] (Linaro GCC 7.3-2018.05) ) #1 SMP PREEMPT Mon May 16 20:47:32 JST 2022
+[    0.000000] Boot CPU: AArch64 Processor [4e0f0040]
+[    0.000000] OF: fdt:memory scan node memory, reg size 48,
+[    0.000000] OF: fdt: - 80000000 ,  2c000000
+[    0.000000] OF: fdt: - ac200000 ,  44800000
+[    0.000000] OF: fdt: - 100000000 ,  180000000
+[    0.000000] earlycon: tegra_comb_uart0 at MMIO32 0x000000000c168000 (options '')
+[    0.000000] bootconsole [tegra_comb_uart0] enabled
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb0_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb0_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb1_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb1_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb2_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb2_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb3_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt:Reserved memory: failed to reserve memory for node 'fb3_carveout': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node ramoops_carveout, compatible id nvidia,ramoops
+[    0.000000] OF: reserved mem: initialized node vpr-carveout, compatible id nvidia,vpr-carveout
+[    0.000000] OF: reserved mem: initialized node grid-of-semaphores, compatible id nvidia,gosmem
+[    0.000000] cma: Reserved 64 MiB at 0x00000000c2000000
+[    0.000000] On node 0 totalpages: 2033152
+[    0.000000]   DMA zone: 7192 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 460288 pages, LIFO batch:31
+[    0.000000]   Normal zone: 24576 pages used for memmap
+[    0.000000]   Normal zone: 1572864 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] percpu: Embedded 24 pages/cpu s57560 r8192 d32552 u98304
+[    0.000000] pcpu-alloc: s57560 r8192 d32552 u98304 alloc=24*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 
+[    0.000000] Speculative Store Bypass Disable mitigation not required
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 2001384
+[    0.000000] Kernel command line: console=ttyTCU0,115200 video=tegrafb no_console_suspend=1 earlycon=tegra_comb_uart,mmio32,0x0c168000 gpt rootfs.slot_suffix= usbcore.old_scheme_first=1 tegraid=19.1.2.0.0 maxcpus=6 boot.slot_suffix= boot.ratchetvalues=0.4.2 vpr_resize sdhci_tegra.en_boot_part_access=1    quiet root=PARTUUID=ddbf9896-a4db-4932-8580-5f014e7f85fd rw rootwait rootfstype=ext4 console=ttyTCU0,115200n8 console=tty0 fbcon=map:0 net.ifnames=0
+[    0.000000] log_buf_len individual max cpu contribution: 32768 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 163840 bytes
+[    0.000000] log_buf_len min size: 32768 bytes
+[    0.000000] log_buf_len: 262144 bytes
+[    0.000000] early log buf free: 29072(88%)
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] Memory: 7190728K/8132608K available (15294K kernel code, 2942K rwdata, 6716K rodata, 8576K init, 609K bss, 188216K reserved, 753664K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+[    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+[    0.000000]       .text : 0xffffff8008080000 - 0xffffff8008f70000   ( 15296 KB)
+[    0.000000]     .rodata : 0xffffff8008f70000 - 0xffffff8009610000   (  6784 KB)
+[    0.000000]       .init : 0xffffff8009610000 - 0xffffff8009e70000   (  8576 KB)
+[    0.000000]       .data : 0xffffff8009e70000 - 0xffffff800a14f808   (  2943 KB)
+[    0.000000]        .bss : 0xffffff800a14f808 - 0xffffff800a1e7cbc   (   610 KB)
+[    0.000000]     fixed   : 0xffffffbefe7fd000 - 0xffffffbefec00000   (  4108 KB)
+[    0.000000]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+[    0.000000]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+[    0.000000]               0xffffffbf00000000 - 0xffffffbf08000000   (   128 MB actual)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc200000000   (  8192 MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=6, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=6.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=6
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 31.25MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xe6a171046, max_idle_ns: 881590405314 ns
+[    0.000004] sched_clock: 56 bits at 31MHz, resolution 32ns, wraps every 4398046511088ns
+[    0.000708] Console: colour dummy device 80x25
+[    0.000720] console [tty0] enabled
+[    0.000728] bootconsole [tegra_comb_uart0] disabled
+[    0.000742] kmemleak: Kernel memory leak detector disabled
+[    0.000760] Calibrating delay loop (skipped), value calculated using timer frequency.. 62.50 BogoMIPS (lpj=125000)
+[    0.000776] pid_max: default: 32768 minimum: 301
+[    0.001904] Security Framework initialized
+[    0.002517] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.002528] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.004179] ftrace: allocating 47179 entries in 185 pages
+[    0.402992] sched-energy: Sched-energy-costs installed from DT
+[    0.403011] ASID allocator initialised with 65536 entries
+[    0.439004] tegra-id: chipid=21917.
+[    0.439015] tegra-id: opt_subrevision=1.
+[    0.439042] Tegra Revision: A02p SKU: 0xde CPU Process: 0 SoC Process: 0
+[    0.439065] DTS File Name: /home/hiroki/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/arch/arm64/boot/dts/../../../../../../hardware/nvidia/platform/t19x/jakku/kernel-dts/tegra194-p3668-all-p3509-0000-ar0521.dts
+[    0.439074] DTB Build time: May 16 2022 21:04:32
+[    0.486558] CPU1: Booted secondary processor [4e0f0040]
+[    0.518591] CPU2: Booted secondary processor [4e0f0040]
+[    0.550708] CPU3: Booted secondary processor [4e0f0040]
+[    0.582966] CPU4: Booted secondary processor [4e0f0040]
+[    0.615063] CPU5: Booted secondary processor [4e0f0040]
+[    0.615245] Brought up 6 CPUs
+[    0.615255] SMP: Total of 6 processors activated.
+[    0.615264] CPU features: detected feature: Privileged Access Never
+[    0.615270] CPU features: detected feature: LSE atomic instructions
+[    0.615279] CPU features: detected feature: User Access Override
+[    0.615309] CPU features: detected feature: 32-bit EL0 Support
+[    0.616806] CPU: All CPU(s) started at EL2
+[    0.616878] alternatives: patching kernel code
+[    0.623286] devtmpfs: initialized
+[    0.664518] Initilizing CustomIPI irq domain
+[    0.664815] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.664830] futex hash table entries: 2048 (order: 5, 131072 bytes)
+[    0.674887] pinctrl core: initialized pinctrl subsystem
+[    0.675100] OS set in device tree is not L4T.
+[    0.675377] regulator-dummy: no parameters
+[    0.675646] Initializing plugin-manager
+[    0.675702] Plugin module not found
+[    0.675733] Plugin-manager status disabled
+[    0.676799] NET: Registered protocol family 16
+[    0.678030] pstore: using zlib compression
+[    0.678050] console [pstore-1] enabled
+[    0.678056] pstore: Registered ramoops as persistent store backend
+[    0.678063] ramoops: attached 0x200000@0xf0800000, ecc: 0/0
+[    0.697739] cpuidle: using governor menu
+[    0.698731] bpmp: waiting for handshake
+[    0.698745] bpmp: handshake completed
+[    0.698764] bpmp: synchronizing channels
+[    0.698776] bpmp: channels synchronized
+[    0.698786] bpmp: mail init ok
+[    0.701193] t19x-arm-smmu 12000000.iommu: found 3 SMMUs and ISO SMMU id is 2
+[    0.701384] t19x-arm-smmu 12000000.iommu: probing hardware configuration...
+[    0.701392] t19x-arm-smmu 12000000.iommu: SMMUv2 with:
+[    0.701421] t19x-arm-smmu 12000000.iommu: 	stage 1 translation
+[    0.701427] t19x-arm-smmu 12000000.iommu: 	stage 2 translation
+[    0.701433] t19x-arm-smmu 12000000.iommu: 	nested translation
+[    0.701442] t19x-arm-smmu 12000000.iommu: 	stream matching with 128 register groups, mask 0x7f80
+[    0.701469] t19x-arm-smmu 12000000.iommu: SMMU address space size (0x800000) differs from mapped region size (0x1000000)!
+[    0.701476] t19x-arm-smmu 12000000.iommu: 	64 context banks (0 stage-2 only)
+[    0.701484] t19x-arm-smmu 12000000.iommu: 	Stage-1: 39-bit VA -> 48-bit IPA
+[    0.701490] t19x-arm-smmu 12000000.iommu: 	Stage-2: 39-bit IPA -> 48-bit PA
+[    0.704298] vdso: 2 pages (1 code @ ffffff8008f77000, 1 data @ ffffff8009e74000)
+[    0.704332] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.706905] atomic_pool_init():622: DMA: preallocated 1024 KiB pool for atomic allocations
+[    0.707783] tegra_aon_clk_init: ok
+[    0.707797] Registering BPMP clocks...
+[    0.707899] tegra_bpmp_clk_init: clock init ok (400 clks)
+[    0.708424] Serial: AMBA PL011 UART driver
+[    0.708541] tegra_powergate_init: DONE
+[    0.708651] DTS File Name: /home/hiroki/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/arch/arm64/boot/dts/../../../../../../hardware/nvidia/platform/t19x/jakku/kernel-dts/tegra194-p3668-all-p3509-0000-ar0521.dts
+[    0.708666] DTB Build time: May 16 2022 21:04:32
+[    0.711109] Tegra reboot handler registered.
+[    0.717856] iommu: Adding device 14160000.pcie to group 0
+[    0.718472] iommu: Adding device 141a0000.pcie to group 1
+[    0.719664] iommu: Adding device 2490000.ether_qos to group 2
+[    0.720080] iommu: Adding device 3100000.serial to group 3
+[    0.720514] iommu: Adding device 3110000.serial to group 4
+[    0.720866] iommu: Adding device 3140000.serial to group 5
+[    0.721403] tegra-pmc c360000.pmc: scratch reg offset dts data not present
+[    0.721549] tegra-pmc: get_secure_pmc_setting: done secure_pmc=0
+[    0.721572] tegra-pmc: ### PMC reset source: TEGRA_POWER_ON_RESET
+[    0.721582] tegra-pmc: ### PMC reset level: TEGRA_RESET_LEVEL_L0
+[    0.721590] tegra-pmc: ### PMC reset status reg: 0x0
+[    0.721637] tegra-pmc: PMC Prod config success
+[    0.721923] padctrl padctrl.0: Pad control driver tegra-pmc-padctrl registered
+[    0.721936] tegra-pmc c360000.pmc: IO padctrl driver initialized
+[    0.722232] iommu: Adding device 3460000.sdhci to group 6
+[    0.722677] iommu: Adding device 3440000.sdhci to group 7
+[    0.723172] iommu: Adding device 3210000.spi to group 8
+[    0.723513] iommu: Adding device 3230000.spi to group 9
+[    0.723850] iommu: Adding device 3270000.spi to group 10
+[    0.724767] iommu: Adding device 3160000.i2c to group 11
+[    0.725107] iommu: Adding device c240000.i2c to group 12
+[    0.725441] iommu: Adding device 3180000.i2c to group 13
+[    0.725787] iommu: Adding device 3190000.i2c to group 14
+[    0.726239] iommu: Adding device 31b0000.i2c to group 15
+[    0.726618] iommu: Adding device 31c0000.i2c to group 16
+[    0.726994] iommu: Adding device c250000.i2c to group 17
+[    0.727335] iommu: Adding device 31e0000.i2c to group 18
+[    0.727919] iommu: Adding device sound to group 19
+[    0.728410] iommu: Adding device 3510000.hda to group 20
+[    0.728907] iommu: Adding device bc00000.rtcpu to group 21
+[    0.730620] iommu: Adding device 13e10000.host1x to group 22
+[    0.731044] iommu: Adding device 13e10000.host1x:ctx0 to group 23
+[    0.731354] iommu: Adding device 13e10000.host1x:ctx1 to group 24
+[    0.731693] iommu: Adding device 13e10000.host1x:ctx2 to group 25
+[    0.732014] iommu: Adding device 13e10000.host1x:ctx3 to group 26
+[    0.732350] iommu: Adding device 13e10000.host1x:ctx4 to group 27
+[    0.732654] iommu: Adding device 13e10000.host1x:ctx5 to group 28
+[    0.733016] iommu: Adding device 13e10000.host1x:ctx6 to group 29
+[    0.733331] iommu: Adding device 13e10000.host1x:ctx7 to group 30
+[    0.733768] iommu: Adding device 15340000.vic to group 31
+[    0.734144] iommu: Adding device 15380000.nvjpg to group 32
+[    0.734418] iommu: Adding device 15500000.tsec to group 33
+[    0.734653] iommu: Adding device 15100000.tsecb to group 34
+[    0.734913] iommu: Adding device 15480000.nvdec to group 35
+[    0.735186] iommu: Adding device 15140000.nvdec1 to group 36
+[    0.735418] iommu: Adding device 154c0000.nvenc to group 37
+[    0.735659] iommu: Adding device 15a80000.nvenc1 to group 38
+[    0.736025] iommu: Adding device 15880000.nvdla0 to group 39
+[    0.736376] iommu: Adding device 158c0000.nvdla1 to group 40
+[    0.736863] iommu: Adding device 15200000.nvdisplay to group 41
+[    0.740867] platform 15200000.nvdisplay: IOVA linear map 0x00000000c6000000(2a000000)
+[    0.740932] t19x-arm-smmu: Adding 15200000.nvdisplay to ISO SMMU client
+[    0.741401] iommu: Adding device 15210000.nvdisplay to group 42
+[    0.741446] t19x-arm-smmu: Adding 15210000.nvdisplay to ISO SMMU client
+[    0.742960] iommu: Adding device 15c10000.vi to group 43
+[    0.743102] t19x-arm-smmu: Adding 15c10000.vi to ISO SMMU client
+[    0.743489] iommu: Adding device 14800000.isp to group 44
+[    0.744396] iommu: Adding device 16000000.pva0 to group 45
+[    0.744893] iommu: Adding device 16800000.pva1 to group 46
+[    0.745255] iommu: Adding device 15810000.se to group 47
+[    0.745673] iommu: Adding device 15820000.se to group 48
+[    0.745917] iommu: Adding device 15830000.se to group 49
+[    0.746171] iommu: Adding device 15840000.se to group 50
+[    0.746426] iommu: Adding device c1a0000.aon to group 51
+[    0.747995] iommu: Adding device d000000.bpmp to group 52
+[    0.748312] bpmp: ping status is 0
+[    0.748444] bpmp d000000.bpmp: firmware tag is e73a758761f0c6d24a1e69a2ac6b5035
+[    0.751378] bpmp d000000.bpmp: probe ok
+[    0.753179] tegra-reset 0.bpmp_reset: registered 190 resets.
+[    0.753667] iommu: Adding device smmu_test to group 53
+[    0.754645] mc: mapped MMIO address: 0xffffff800a5c0000 -> 0x2c10000
+[    0.754684] mc: mapped MMIO address: 0xffffff800a5e0000 -> 0x2c20000
+[    0.754708] mc: mapped MMIO address: 0xffffff800a7b0000 -> 0x2c30000
+[    0.754730] mc: mapped MMIO address: 0xffffff800a7d0000 -> 0x2c40000
+[    0.754748] mc: mapped MMIO address: 0xffffff800b010000 -> 0x2c50000
+[    0.754763] mc: mapped MMIO address: 0xffffff800b030000 -> 0x2b80000
+[    0.754778] mc: mapped MMIO address: 0xffffff800b050000 -> 0x2b90000
+[    0.754793] mc: mapped MMIO address: 0xffffff800b070000 -> 0x2ba0000
+[    0.754809] mc: mapped MMIO address: 0xffffff800b090000 -> 0x2bb0000
+[    0.754827] mc: mapped MMIO address: 0xffffff800b0b0000 -> 0x1700000
+[    0.754841] mc: mapped MMIO address: 0xffffff800b0d0000 -> 0x1710000
+[    0.754857] mc: mapped MMIO address: 0xffffff800b0f0000 -> 0x1720000
+[    0.754871] mc: mapped MMIO address: 0xffffff800b110000 -> 0x1730000
+[    0.754886] mc: mapped MMIO address: 0xffffff800b130000 -> 0x1740000
+[    0.754901] mc: mapped MMIO address: 0xffffff800b150000 -> 0x1750000
+[    0.754916] mc: mapped MMIO address: 0xffffff800b170000 -> 0x1760000
+[    0.754931] mc: mapped MMIO address: 0xffffff800b190000 -> 0x1770000
+[    0.755002] mc-err: mcerr ops are set to t19x
+[    0.760162] iommu: Adding device 2600000.dma to group 54
+[    0.765357] gpio gpiochip0: gpio-line-names specifies 240 line names but there are 224 lines on the chip
+[    0.766556] GPIO line 339 (wifi-enable) hogged as output/high
+[    0.766597] GPIO line 412 (camera-control-output-low) hogged as output/high
+[    0.766627] GPIO line 412 (camera-control-output-low) hogged as output/high
+[    0.766871] gpiochip_setup_dev: registered GPIOs 288 to 511 on device: gpiochip0 (tegra-gpio)
+[    0.772873] gpio gpiochip1: gpio-line-names specifies 21 line names but there are 40 lines on the chip
+[    0.772934] GPIO line 253 (pex-refclk-sel-low) hogged as output/low
+[    0.772968] GPIO line 266 (w-disable1) hogged as output/high
+[    0.772999] GPIO line 264 (w-disable2) hogged as output/high
+[    0.773031] GPIO line 265 (suspend-led-gpio) hogged as output/high
+[    0.773260] gpiochip_setup_dev: registered GPIOs 248 to 287 on device: gpiochip1 (tegra-gpio-aon)
+[    0.775067] tegra186-aowake c370000.pmc: WAKE_AOWAKE_CNTRL_83 = 0x10a
+[    0.775088] tegra186-aowake c370000.pmc: WAKE_AOWAKE_CTRL_0 = 3
+[    0.775098] tegra186-aowake c370000.pmc: WAKE_AOWAKE_CNTRL_24(PMU_INT) = 256
+[    0.775785] iommu: Adding device 3550000.xudc to group 55
+[    0.776405] iommu: Adding device 3610000.xhci to group 56
+[    0.778264] arm64_ras arm64_ras: probed
+[    0.778569] ras_fhi_enable: FHI 470 enabled on CPU0
+[    0.778610] ras_fhi_enable: FHI 471 enabled on CPU1
+[    0.778685] ras_fhi_enable: FHI 472 enabled on CPU2
+[    0.778760] ras_fhi_enable: FHI 473 enabled on CPU3
+[    0.778838] ras_fhi_enable: FHI 474 enabled on CPU4
+[    0.778901] ras_fhi_enable: FHI 475 enabled on CPU5
+[    0.779083] carmel_ras_enable: RAS enabled on cpu0
+[    0.779256] carmel_ras_enable: RAS enabled on cpu1
+[    0.779447] carmel_ras_enable: RAS enabled on cpu2
+[    0.779636] carmel_ras_enable: RAS enabled on cpu3
+[    0.779848] carmel_ras_enable: RAS enabled on cpu4
+[    0.780041] carmel_ras_enable: RAS enabled on cpu5
+[    0.780103] carmel_ras carmel_ras: probed
+[    0.781041] tegra-cbb 2300000.cbb-noc: noc_secure_irq = 479, noc_nonsecure_irq = 478>
+[    0.781456] tegra-cbb c600000.aon-noc: noc_secure_irq = 481, noc_nonsecure_irq = 480>
+[    0.782177] tegra-cbb d600000.bpmp-noc: noc_secure_irq = 483, noc_nonsecure_irq = 482>
+[    0.782804] tegra-cbb be00000.rce-noc: noc_secure_irq = 485, noc_nonsecure_irq = 484>
+[    0.783523] tegra-cbb b600000.sce-noc: noc_secure_irq = 487, noc_nonsecure_irq = 486>
+[    0.783851] tegra-cbb 14040000.cv-noc: defer probe as CV-NOC not probed yet
+[    0.784704] vdd-ac-bat: 5000 mV 
+[    0.785034] vdd-sdmmc1-sw: 3300 mV 
+[    0.785264] vdd-1v8-sd: 1800 mV 
+[    0.785504] vdd-3v3-cvb: 3300 mV 
+[    0.785711] vdd-1v8-cvb: 1800 mV 
+[    0.785961] vdd-epb-1v0: supplied by vdd-3v3-cvb
+[    0.786008] vdd-epb-1v0: 1000 mV 
+[    0.786392] avdd-cam-2v8: 2800 mV 
+[    0.786652] vdd-fan: 5000 mV 
+[    0.787019] vdd-hdmi-5v0: 5000 mV 
+[    0.787240] vdd_sys_en: 1200 mV 
+[    0.813332] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.817474] eventlib_kernel: keventlib is initialized, test id: 0
+[    0.817734] SCSI subsystem initialized
+[    0.817954] libata version 3.00 loaded.
+[    0.818143] usbcore: registered new interface driver usbfs
+[    0.818175] usbcore: registered new interface driver hub
+[    0.818271] usbcore: registered new device driver usb
+[    0.829141] tegra-i2c 31e0000.i2c: could not find pctldev for node /host1x/dpaux@155F0000/pinmux@0, deferring probe
+[    0.831661] max77620 4-003c: PMIC Version OTP:0x51 and ES:0x1
+[    0.836851] vdd-1v0: at 1000 mV 
+[    0.840818] vdd-1v8-hs: at 1800 mV 
+[    0.844871] vdd-1v8-ls: at 1800 mV 
+[    0.848893] vdd-1v8-ao: at 1800 mV 
+[    0.852876] vddio-ddr-1v1: at 1100 mV 
+[    0.856665] vdd-rtc: at 800 mV 
+[    0.857816] spmic-ldo1: at 2375 mV 
+[    0.864710] vdd-ao-3v3: at 3300 mV 
+[    0.872739] vddio-emmc-3v3: at 3300 mV 
+[    0.873974] spmic-ldo4: at 1587 mV 
+[    0.880822] vdd-usb-3v3: at 3300 mV 
+[    0.888834] vddio-sdmmc1-3v3: at 3300 mV 
+[    0.892846] vdd-csi-1v2: at 1200 mV 
+[    0.894326] spmic-ldo8: at 1800 mV 
+[    0.898997] GPIO line 246 (gpio_default) hogged as output/high
+[    0.900377] GPIO line 247 (gpio_default) hogged as output/high
+[    0.900642] gpiochip_setup_dev: registered GPIOs 240 to 247 on device: gpiochip2 (max77620-gpio)
+[    0.900954] max77620 4-003c: max77620 probe successful
+[    0.901452] media: Linux media interface: v0.10
+[    0.901523] Linux video capture interface: v2.00
+[    0.902988] pps_core: LinuxPPS API ver. 1 registered
+[    0.902995] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.903011] PTP clock support registered
+[    0.903294] tegra_wdt_t18x 30c0000.watchdog: Expiry count is deprecated
+[    0.903556] tegra_wdt_t18x 30c0000.watchdog: Tegra WDT init timeout = 120 sec
+[    0.903589] tegra_wdt_t18x 30c0000.watchdog: Registered successfully
+[    0.906064] trusty trusty: trusty version: Built: 08:56:10 Jul  9 2021 
+[    0.906123] trusty trusty: selected api version: 3 (requested 3)
+[    0.906865] Advanced Linux Sound Architecture Driver Initialized.
+[    0.907206] Bluetooth: Core ver 2.22
+[    0.907246] NET: Registered protocol family 31
+[    0.907254] Bluetooth: HCI device and connection manager initialized
+[    0.907291] Bluetooth: HCI socket layer initialized
+[    0.907299] Bluetooth: L2CAP socket layer initialized
+[    0.907320] Bluetooth: SCO socket layer initialized
+[    0.909570] camchar: rtcpu character device driver loaded
+[    0.909968] gpio tegra-gpio wake61 for gpio=201(Z:1)
+[    0.910043] extcon-gpio-states external-connection:extcon@1: Cable state:0, cable id:0
+[    0.910683] clocksource: Switched to clocksource arch_sys_counter
+[    0.949398] VFS: Disk quotas dquot_6.6.0
+[    0.949481] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.949770] nvmap_heap_init: nvmap_heap_init: created heap block cache
+[    0.951004] tegra-carveouts tegra-carveouts: assigned reserved memory node grid-of-semaphores
+[    0.951050] dma_declare_coherent_resizable_cma_memory:324: resizable heap=vpr, base=0x00000000c6000000, size=0x2a000000
+[    0.951260] cma: enabled page replacement for spfn=c6000, epfn=f0000
+[    0.951268] dma_declare_coherent_resizable_cma_memory:373: resizable cma heap=vpr create successful
+[    0.951281] nvmap: nvmap_select_cache_ops() nvmap cache ops set to scf
+[    0.951290] nvmap_page_pool_init: Total RAM pages: 1986098
+[    0.951296] nvmap_page_pool_init: nvmap page pool size: 248262 pages (969 MB)
+[    0.951526] nvmap_background_zero_thread: PP zeroing thread starting.
+[    0.952407] misc nvmap: created heap vpr base 0x00000000c6000000 size (688128KiB)
+[    0.952842] tegra-gpcdma 2600000.dma: GPC DMA driver register 31 channels
+[    0.963624] thermal thermal_zone0: Registering thermal zone thermal_zone0 for type CPU-therm
+[    0.963787] thermal thermal_zone1: Registering thermal zone thermal_zone1 for type GPU-therm
+[    0.963936] thermal thermal_zone2: Registering thermal zone thermal_zone2 for type AUX-therm
+[    0.964054] thermal thermal_zone3: Registering thermal zone thermal_zone3 for type AO-therm
+[    0.964198] thermal thermal_zone4: Registering thermal zone thermal_zone4 for type PMIC-Die
+[    0.965314] la/ptsa driver initialized.
+[    0.965646] NET: Registered protocol family 2
+[    0.966490] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.966883] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.967505] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.967551] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.967671] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.968025] NET: Registered protocol family 1
+[    0.968559] RPC: Registered named UNIX socket transport module.
+[    0.968566] RPC: Registered udp transport module.
+[    0.968571] RPC: Registered tcp transport module.
+[    0.968576] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.968597] PCI: CLS 0 bytes, default 64
+[    0.968760] Trying to unpack rootfs image as initramfs...
+[    1.188778] Freeing initrd memory: 7064K
+[    1.199781] random: fast init done
+[    1.203530] host1x 13e10000.host1x: initialized
+[    1.204967] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    1.208905] audit: initializing netlink subsys (disabled)
+[    1.208955] audit: type=2000 audit(0.828:1): initialized
+[    1.209601] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[    1.215692] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.216719] ntfs: driver 2.1.32 [Flags: R/W].
+[    1.217231] 9p: Installing v9fs 9p2000 file system support
+[    1.222265] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 240)
+[    1.222429] io scheduler noop registered
+[    1.222694] io scheduler cfq registered (default)
+[    1.225765] gic 2a41000.agic-controller: GIC IRQ controller registered
+[    1.229246] iommu: Adding device 2993000.adsp to group 57
+[    1.286361] iommu: Adding device aconnect@2a41000:adsp_audio to group 58
+[    1.287453] tegra-aconnect aconnect@2a41000: Tegra ACONNECT bus registered
+[    1.298599] tegra-pwm 3280000.pwm: PWM clk can sleep in ops
+[    1.299033] tegra-pwm c340000.pwm: PWM clk can sleep in ops
+[    1.299586] tegra-pwm 32c0000.pwm: PWM clk can sleep in ops
+[    1.300029] tegra-pwm 32d0000.pwm: PWM clk can sleep in ops
+[    1.300423] tegra-pwm 32f0000.pwm: PWM clk can sleep in ops
+[    1.302933] tegra_camera_platform tegra-camera-platform: tegra_camera_probe:camera_platform_driver probe
+[    1.303096] misc tegra_camera_ctrl: tegra_camera_isomgr_register: some fields not in DT.
+[    1.303107] misc tegra_camera_ctrl: tegra_camera_isomgr_register isp_iso_bw=0, vi_iso_bw=8350000, max_bw=8350000
+[    1.305438] tsec 15500000.tsec: initialized
+[    1.306896] tsec 15100000.tsecb: initialized
+[    1.310000] nvdec 15480000.nvdec: initialized
+[    1.312463] nvdec 15140000.nvdec1: initialized
+[    1.317909] falcon 15340000.vic: initialized
+[    1.319720] falcon 15380000.nvjpg: initialized
+[    1.321292] falcon 154c0000.nvenc: initialized
+[    1.323161] falcon 15a80000.nvenc1: initialized
+[    1.326822] iommu_context_dev 13e10000.host1x:ctx0: initialized (streamid=56)
+[    1.328328] iommu_context_dev 13e10000.host1x:ctx1: initialized (streamid=57)
+[    1.329723] iommu_context_dev 13e10000.host1x:ctx2: initialized (streamid=58)
+[    1.331172] iommu_context_dev 13e10000.host1x:ctx3: initialized (streamid=59)
+[    1.332619] iommu_context_dev 13e10000.host1x:ctx4: initialized (streamid=60)
+[    1.334031] iommu_context_dev 13e10000.host1x:ctx5: initialized (streamid=61)
+[    1.335381] iommu_context_dev 13e10000.host1x:ctx6: initialized (streamid=62)
+[    1.337338] iommu_context_dev 13e10000.host1x:ctx7: initialized (streamid=63)
+[    1.340518] t194-nvcsi 15a00000.nvcsi: initialized
+[    1.345253] scare-pigeon 13e10000.host1x:vi-thi@15f00000: initialized
+[    1.345535] scare-pigeon 14b00000.isp-thi: initialized
+[    1.350489] pva 16000000.pva0: initialized
+[    1.355951] pva 16800000.pva1: initialized
+[    1.360615] nvdla 15880000.nvdla0: initialized
+[    1.364919] nvdla 158c0000.nvdla1: initialized
+[    1.366339] tegradccommon 15200000.dc_common: host1x channel mapped
+[    1.366353] tegradccommon 15200000.dc_common: dc_common syncpt # 1 allocated
+[    1.366389] tegradccommon 15200000.dc_common: dma mapping done
+[    1.366912] tegradc 15200000.nvdisplay: disp0 connected to head0->/host1x/sor1
+[    1.366939] generic_infoframe_type: 0x87
+[    1.366996] tegradc 15200000.nvdisplay: DT parsed successfully
+[    1.367027] tegradc 15200000.nvdisplay: Display dc.ffffff800bce0000 registered with id=0
+[    1.370706] tegra_nvdisp_bandwidth_register_max_config: max config iso bw = 7088400 KB/s
+[    1.370713] tegra_nvdisp_bandwidth_register_max_config: max config EMC floor = 800000000 Hz
+[    1.370719] tegra_nvdisp_bandwidth_register_max_config: max config hubclk = 300000000 Hz
+[    1.370915] tegradc 15200000.nvdisplay: vblank syncpt # 8 for dc 0
+[    1.370926] tegradc 15200000.nvdisplay: vpulse3 syncpt # 9 for dc 0
+[    1.373283] tegradc 15200000.nvdisplay: hdmi: invalid prod list prod_list_hdmi_board
+[    1.373291] tegradc 15200000.nvdisplay: hdmi: tegra_hdmi_tmds_range_read(bd) failed
+[    1.376286] tegradc 15200000.nvdisplay: probed
+[    1.376890] Console: switching to colour frame buffer device 80x30
+[    1.376926] tegradc 15200000.nvdisplay: fb registered
+[    1.377136] gpio tegra-gpio wake63 for gpio=97(M:1)
+[    1.377630] tegradc 15210000.nvdisplay: disp1 connected to head1->/host1x/sor
+[    1.377693] tegradc 15210000.nvdisplay: parse_dp_settings: No dp-lt-settings node
+[    1.377807] tegradc 15210000.nvdisplay: DT parsed successfully
+[    1.377844] tegradc 15210000.nvdisplay: Display dc.ffffff800bdd0000 registered with id=1
+[    1.378017] tegradc 15210000.nvdisplay: vblank syncpt # 11 for dc 1
+[    1.378027] tegradc 15210000.nvdisplay: vpulse3 syncpt # 12 for dc 1
+[    1.386760] tegradc 15210000.nvdisplay: probed
+[    1.387143] tegradc 15210000.nvdisplay: fb registered
+[    1.390685] hpd: state 7 (Takeover from bootloader), hpd 0, pending_hpd_evt 1
+[    1.390694] hpd: switching from state 7 (Takeover from bootloader) to state 0 (Reset)
+[    1.390706] hpd: state 0 (Reset), hpd 0, pending_hpd_evt 0
+[    1.390718] tegradc 15210000.nvdisplay: blank - powerdown
+[    1.390733] extcon-disp-state external-connection:disp-state: cable 44 state 0 already set.
+[    1.390738] Extcon DP: HPD disabled
+[    1.390743] hpd: hpd_switch 0
+[    1.390749] hpd: switching from state 0 (Reset) to state 1 (Check Plug)
+[    1.390760] hpd: state 1 (Check Plug), hpd 0, pending_hpd_evt 0
+[    1.390769] hpd: switching from state 1 (Check Plug) to state 3 (Disabled)
+[    1.391007] tegra_cec 3960000.tegra_cec: dt=1 start=0x03960000 end=0x03960FFF irq=78
+[    1.391017] tegra_cec 3960000.tegra_cec: Unpowergate DISP: 0.
+[    1.391273] tegra_cec 3960000.tegra_cec: Enable clock result: 0.
+[    1.391376] tegra_cec 3960000.tegra_cec: tegra_cec_init started
+[    1.391533] tegra_cec 3960000.tegra_cec: cec_add_sysfs ret=0
+[    1.391541] tegra_cec 3960000.tegra_cec: probed
+[    1.399448] tegra-adma 2930000.adma: Tegra210 ADMA driver registered 32 channels
+[    1.400108] tegra-fuse-burn 3820000.efuse:efuse-burn: shutdown limit check disabled
+[    1.400117] tegra-fuse-burn 3820000.efuse:efuse-burn: Fuse burn driver initialized
+[    1.400387] kfuse 3830000.kfuse: initialized
+[    1.405313] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    1.407541] 3100000.serial: ttyTHS0 at MMIO 0x3100000 (irq = 47, base_baud = 0) is a TEGRA_UART
+[    1.408458] 3110000.serial: ttyTHS1 at MMIO 0x3110000 (irq = 48, base_baud = 0) is a TEGRA_UART
+[    1.409058] 3140000.serial: ttyTHS4 at MMIO 0x3140000 (irq = 49, base_baud = 0) is a TEGRA_UART
+[    1.409945] console [ttyTCU0] enabled
+[    1.410169] [drm] Initialized
+[    1.419797] brd: module loaded
+[    1.423960] loop: module loaded
+[    1.424049] tegra_profiler: version: 1.143, samples/io: 48/28
+[    1.424185] tegra_profiler: auth: init
+[    1.424842] THERMAL EST: found 3 subdevs
+[    1.424850] THERMAL EST num_resources: 0
+[    1.424858] [THERMAL EST subdev 0]
+[    1.424864] [THERMAL EST subdev 1]
+[    1.424870] [THERMAL EST subdev 2]
+[    1.424880] THERMAL EST: Found 2 profiles, default profile is quiet
+[    1.425259] thermal thermal_zone5: Registering thermal zone thermal_zone5 for type thermal-fan-est
+[    1.425265] THERMAL EST: thz register success.
+[    1.425411] THERMAL EST: end of probe, return err: 0
+[    1.425954] sd: No Scsi addr parsed to reserve index
+[    1.425982] hisi_sas: driver version v1.6
+[    1.435261] qspi_mtd spi6.0: s25fs256s SSG 8 0 1000 2000000
+[    1.435271] qspi_mtd spi6.0: s25fs256s (32768 Kbytes)
+[    1.435282] qspi_mtd spi6.0: mtd .name = spi6.0, .size = 0x2000000 (32MiB) .erasesize = 0x00010000 (64KiB) .numeraseregions = 0
+[    1.435509] 1 ofpart partitions found on MTD device spi6.0
+[    1.435516] Creating 1 MTD partitions on "spi6.0":
+[    1.435526] 0x000000000000-0x000002000000 : "Whole_flash0"
+[    1.437593] libphy: Fixed MDIO Bus: probed
+[    1.438135] tun: Universal TUN/TAP device driver, 1.6
+[    1.438140] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.438794] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    1.438799] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.438829] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.4.0-k
+[    1.438834] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.438861] igbvf: Intel(R) Gigabit Virtual Function Network Driver - version 2.4.0-k
+[    1.438866] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    1.438893] Intel(R) 10GbE PCI Express Linux Network Driver - version 4.6.4
+[    1.438898] Copyright(c) 1999 - 2017 Intel Corporation.
+[    1.681988] eqos 2490000.ether_qos: failed to read eqos_auto_cal_config_0_reg
+[    1.682508] eqos 2490000.ether_qos: Setting local MAC: 48 b0 2d 5a 78 2f
+[    1.682647] libphy: dwc_phy: probed
+[    1.685183] PPP generic driver version 2.4.2
+[    1.685352] PPP BSD Compression module registered
+[    1.685365] PPP Deflate Compression module registered
+[    1.685384] PPP MPPE Compression module registered
+[    1.685390] NET: Registered protocol family 24
+[    1.685465] usbcore: registered new interface driver r8152
+[    1.685496] usbcore: registered new interface driver asix
+[    1.685525] usbcore: registered new interface driver ax88179_178a
+[    1.685574] usbcore: registered new interface driver cdc_ether
+[    1.685599] usbcore: registered new interface driver net1080
+[    1.685622] usbcore: registered new interface driver cdc_subset
+[    1.685671] usbcore: registered new interface driver zaurus
+[    1.685704] usbcore: registered new interface driver cdc_ncm
+[    1.686086] VFIO - User Level meta-driver version: 0.3
+[    1.687089] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.687105] ehci-pci: EHCI PCI platform driver
+[    1.687134] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.687144] ohci-pci: OHCI PCI platform driver
+[    1.687173] ohci-platform: OHCI generic platform driver
+[    1.692198] tegra-xusb 3610000.xhci: USB2 port 0 has OTG_CAP
+[    1.694486] tegra-xusb 3610000.xhci: extcon 0: ffffffc1f5bf2c00 id
+[    1.695048] usbcore: registered new interface driver uas
+[    1.695083] usbcore: registered new interface driver usb-storage
+[    1.695138] usbcore: registered new interface driver usbserial
+[    1.696874] tegra-xusb 3610000.xhci: Firmware timestamp: 2019-07-24 05:47:34 UTC, Version: 60.06 release
+[    1.696908] tegra-xusb 3610000.xhci: xHCI Host Controller
+[    1.696957] tegra-xusb 3610000.xhci: new USB bus registered, assigned bus number 1
+[    1.697718] tegra-xusb 3610000.xhci: hcc params 0x0184ff25 hci version 0x110 quirks 0x00050810
+[    1.697780] tegra-xusb 3610000.xhci: irq 465, io mem 0x03610000
+[    1.698020] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    1.698028] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.698035] usb usb1: Product: xHCI Host Controller
+[    1.698046] usb usb1: Manufacturer: Linux 4.9.201 xhci-hcd
+[    1.698073] usb usb1: SerialNumber: 3610000.xhci
+[    1.698710] hub 1-0:1.0: USB hub found
+[    1.698831] hub 1-0:1.0: 4 ports detected
+[    1.699223] tegra-xusb 3610000.xhci: xHCI Host Controller
+[    1.699236] tegra-xusb 3610000.xhci: new USB bus registered, assigned bus number 2
+[    1.699246] tegra-xusb 3610000.xhci: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.699473] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[    1.699481] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.699487] usb usb2: Product: xHCI Host Controller
+[    1.699514] usb usb2: Manufacturer: Linux 4.9.201 xhci-hcd
+[    1.699521] usb usb2: SerialNumber: 3610000.xhci
+[    1.699560] tegra-xudc-new 3550000.xudc: PMQOS CPU boost enabled
+[    1.699638] tegra-xudc-new 3550000.xudc: device count: 1
+[    1.699944] hub 2-0:1.0: USB hub found
+[    1.700026] hub 2-0:1.0: 4 ports detected
+[    1.700532] tegra-xudc-new 3550000.xudc: vbus state: 0
+[    1.700542] tegra-xudc-new 3550000.xudc: Initialize boost_cpufreq work
+[    1.700569] tegra-xudc-new 3550000.xudc: entering ELPG
+[    1.700740] Wake76 for irq=199
+[    1.700745] Wake77 for irq=199
+[    1.700750] Wake78 for irq=199
+[    1.700754] Wake79 for irq=199
+[    1.700757] Wake80 for irq=199
+[    1.700761] Wake81 for irq=199
+[    1.700767] Wake82 for irq=199
+[    1.700817] tegra-xudc-new 3550000.xudc: entering ELPG done
+[    1.700871] tegra-xusb 3610000.xhci: Upgrade port 0 to USB3.0
+[    1.700881] tegra-xusb 3610000.xhci: Upgrade port 1 to USB3.0
+[    1.701465] mousedev: PS/2 mouse device common for all mice
+[    1.701574] usbcore: registered new interface driver xpad
+[    1.803248] usb usb2: usb_suspend_both: status 0
+[    1.833804] max77686-rtc max77620-rtc: rtc core: registered max77620-rtc as rtc0
+[    1.835098] Wake73 for irq=42
+[    1.836328] rtc rtc1: alarm rtc device
+[    1.836342] tegra_rtc c2a0000.rtc: rtc core: registered c2a0000.rtc as rtc1
+[    1.836363] tegra_rtc c2a0000.rtc: Tegra internal Real Time Clock
+[    1.836472] i2c /dev entries driver
+[    1.839047] max77620-power max20024-power: Event recorder REG_NVERC : 0x44
+[    1.845524] tegra-thermal-throttle bthrot_cdev: cpufreq policy is not ready defer
+[    1.845895] FAN dev name: pwm-fan
+[    1.845941] FAN:gpio request success.
+[    1.845973] pwm_fan_driver pwm-fan: Found 2 profiles, default profile is quiet
+[    1.846015] pwm_fan_driver pwm-fan: cap state:4, cap pwm:255
+[    1.846184] pwm_fan_driver pwm-fan: got pwm for fan. polarity is normal
+[    1.846316] gpio tegra-gpio-aon wake39 for gpio=19(CC:3)
+[    1.846376] pwm_fan_driver pwm-fan: fan tach request irq success
+[    1.846386] pwm_fan_driver pwm-fan: tach period: 1000
+[    1.847002] pwm_fan_driver pwm-fan: index 0: pwm=0, rpm=0, rru=40, rrd=40, state:2
+[    1.847012] pwm_fan_driver pwm-fan: index 1: pwm=130, rpm=1000, rru=2, rrd=2, state:2
+[    1.847019] pwm_fan_driver pwm-fan: index 2: pwm=160, rpm=2000, rru=1, rrd=1, state:2
+[    1.847025] pwm_fan_driver pwm-fan: index 3: pwm=200, rpm=3000, rru=1, rrd=1, state:2
+[    1.847031] pwm_fan_driver pwm-fan: index 4: pwm=255, rpm=4000, rru=1, rrd=1, state:3
+[    1.847037] pwm_fan_driver pwm-fan: index 5: pwm=255, rpm=5000, rru=1, rrd=1, state:3
+[    1.847044] pwm_fan_driver pwm-fan: index 6: pwm=255, rpm=6000, rru=1, rrd=1, state:3
+[    1.847050] pwm_fan_driver pwm-fan: index 7: pwm=255, rpm=7000, rru=1, rrd=1, state:4
+[    1.847056] pwm_fan_driver pwm-fan: index 8: pwm=255, rpm=10000, rru=1, rrd=1, state:4
+[    1.847063] pwm_fan_driver pwm-fan: index 9: pwm=255, rpm=11000, rru=1, rrd=1, state:4
+[    1.847871] tegra-oc-event d280000.soctherm-oc-event: OC driver initialized
+[    1.848830] device-mapper: uevent: version 1.0.3
+[    1.849230] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[    1.853060] tegra194_cpufreq_probe: platform driver Initialization: pass
+[    1.854128] cpuidle: Initializing cpuidle driver
+[    1.854841] sdhci: Secure Digital Host Controller Interface driver
+[    1.854845] sdhci: Copyright(c) Pierre Ossman
+[    1.854849] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.855768] sdhci-tegra 3460000.sdhci: Client registration for eMC Successful
+[    1.857908] CMDQ: cmdq_platfm_init successful
+[    1.858341] sdhci-tegra 3440000.sdhci: Got CD GPIO
+[    1.859853] sdhci-tegra 3440000.sdhci: Client registration for eMC Successful
+[    1.866106] tegra-se-elp 3ad0000.se_elp: tegra_se_elp_probe: complete
+[    1.867826] tegra-se-nvhost 15810000.se: initialized
+[    1.869593] tegra-se-nvhost 15810000.se: tegra_se_probe: complete
+[    1.870299] tegra-se-nvhost 15820000.se: initialized
+[    1.871651] tegra-se-nvhost 15820000.se: tegra_se_probe: complete
+[    1.872613] tegra-se-nvhost 15830000.se: initialized
+[    1.873407] tegra-se-nvhost 15830000.se: tegra_se_probe: complete
+[    1.874383] tegra-se-nvhost 15840000.se: initialized
+[    1.875451] tegra-se-nvhost 15840000.se: tegra_se_probe: complete
+[    1.875786] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.877011] usbcore: registered new interface driver usbhid
+[    1.877014] usbhid: USB HID core driver
+[    1.880859] tegra186-cam-rtcpu bc00000.rtcpu: deferring, 14800000.isp is not probed
+[    1.881966] tegra_aon c1a0000.aon: tegra aon driver probe OK
+[    1.882330] tegra186-aondbg aondbg: aondbg driver probe() OK
+[    1.882857] denver_knobs_init:MTS_VERSION:51035886
+[    1.883015] tegra19x_actmon d230000.actmon: in actmon_register()...
+[    1.883623] tegra19x_actmon d230000.actmon: initialization Completed for the device mc_all
+[    1.883930] t19x_cache tegra-cache: probed
+[    1.886089] misc nvmap: cvsram :dma coherent mem declare 0x0000000050000000,4194304
+[    1.886098] misc nvmap: created heap cvsram base 0x0000000050000000 size (4096KiB)
+[    1.886738] carmel-pmu-drv carmel-pmu: Registered Carmel PMU
+[    1.887069] PLL_AON clock registered
+[    1.888134] Clocks initialized successfully
+[    1.889393] nvpmodel: initialized successfully
+[    1.890412] trusty-virtio trusty:virtio: initializing
+[    1.890642] trusty_ipc virtio0: vring0: va(pa)  ffffffc1f26ee000(0) qsz 32 notifyid 1
+[    1.890653] trusty_ipc virtio0: vring1: va(pa)  ffffffc1f26f0000(0) qsz 32 notifyid 2
+[    1.890890] trusty-virtio trusty:virtio: initializing done
+[    1.891081] trusty_ipc virtio0: is online
+[    1.891673] tegra-hda 3510000.hda: Override SDO lines to 4
+[    1.892053] usbcore: registered new interface driver snd-usb-audio
+[    1.902702] mmc0: SDHCI controller on 3460000.sdhci [3460000.sdhci] using ADMA 64-bit with 64 bit addr
+[    1.904550] input: tegra-hda-xnx HDMI/DP,pcm=3 as /devices/3510000.hda/sound/card0/input0
+[    1.904712] input: tegra-hda-xnx HDMI/DP,pcm=7 as /devices/3510000.hda/sound/card0/input1
+[    1.904872] input: tegra-hda-xnx HDMI/DP,pcm=8 as /devices/3510000.hda/sound/card0/input2
+[    1.905079] input: tegra-hda-xnx HDMI/DP,pcm=9 as /devices/3510000.hda/sound/card0/input3
+[    1.906835] gpio tegra-gpio wake51 for gpio=130(Q:2)
+[    1.906903] mmc1: SDHCI controller on 3440000.sdhci [3440000.sdhci] using ADMA 64-bit with 64 bit addr
+[    1.944689] mmc0: mmc_decode_ext_csd: CMDQ supported: depth: 31, cmdq_support: 1
+[    1.959545] mmc0: periodic cache flush enabled
+[    1.959562] mmc0: new HS400 Enhanced strobe MMC card at address 0001
+[    1.960064] mmcblk0: mmc0:0001 DG4016 14.7 GiB 
+[    1.960276] mmcblk0boot0: mmc0:0001 DG4016 partition 1 4.00 MiB
+[    1.960480] mmcblk0boot1: mmc0:0001 DG4016 partition 2 4.00 MiB
+[    1.960659] mmcblk0rpmb: mmc0:0001 DG4016 partition 3 4.00 MiB
+[    1.965637]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11
+[    1.972508] OPE platform probe
+[    1.972637] OPE platform probe successful
+[    2.026708] usb 1-2: new high-speed USB device number 2 using tegra-xusb
+[    2.044507] tegra-asoc: sound: ADMAIF1 <-> ADMAIF1 mapping ok
+[    2.044594] tegra-asoc: sound: ADMAIF2 <-> ADMAIF2 mapping ok
+[    2.044674] tegra-asoc: sound: ADMAIF3 <-> ADMAIF3 mapping ok
+[    2.044747] tegra-asoc: sound: ADMAIF4 <-> ADMAIF4 mapping ok
+[    2.044816] tegra-asoc: sound: ADMAIF5 <-> ADMAIF5 mapping ok
+[    2.044909] tegra-asoc: sound: ADMAIF6 <-> ADMAIF6 mapping ok
+[    2.045007] tegra-asoc: sound: ADMAIF7 <-> ADMAIF7 mapping ok
+[    2.045097] tegra-asoc: sound: ADMAIF8 <-> ADMAIF8 mapping ok
+[    2.045187] tegra-asoc: sound: ADMAIF9 <-> ADMAIF9 mapping ok
+[    2.045256] tegra-asoc: sound: ADMAIF10 <-> ADMAIF10 mapping ok
+[    2.045335] tegra-asoc: sound: ADMAIF11 <-> ADMAIF11 mapping ok
+[    2.045406] tegra-asoc: sound: ADMAIF12 <-> ADMAIF12 mapping ok
+[    2.045477] tegra-asoc: sound: ADMAIF13 <-> ADMAIF13 mapping ok
+[    2.045576] tegra-asoc: sound: ADMAIF14 <-> ADMAIF14 mapping ok
+[    2.045648] tegra-asoc: sound: ADMAIF15 <-> ADMAIF15 mapping ok
+[    2.045719] tegra-asoc: sound: ADMAIF16 <-> ADMAIF16 mapping ok
+[    2.045812] tegra-asoc: sound: ADMAIF17 <-> ADMAIF17 mapping ok
+[    2.045900] tegra-asoc: sound: ADMAIF18 <-> ADMAIF18 mapping ok
+[    2.045994] tegra-asoc: sound: ADMAIF19 <-> ADMAIF19 mapping ok
+[    2.046071] tegra-asoc: sound: ADMAIF20 <-> ADMAIF20 mapping ok
+[    2.062898] usb 1-2: New USB device found, idVendor=0bda, idProduct=5411
+[    2.062904] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.062909] usb 1-2: Product: 4-Port USB 2.0 Hub
+[    2.062913] usb 1-2: Manufacturer: Generic
+[    2.064172] hub 1-2:1.0: USB hub found
+[    2.066527] hub 1-2:1.0: 4 ports detected
+[    2.073063] u32 classifier
+[    2.073068]     Actions configured
+[    2.073136] Initializing XFRM netlink socket
+[    2.073667] NET: Registered protocol family 10
+[    2.074440] NET: Registered protocol family 17
+[    2.074457] NET: Registered protocol family 15
+[    2.074508] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    2.074597] Bluetooth: RFCOMM socket layer initialized
+[    2.074615] Bluetooth: RFCOMM ver 1.11
+[    2.074627] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    2.074634] Bluetooth: HIDP socket layer initialized
+[    2.074652] 9pnet: Installing 9P2000 support
+[    2.074740] Key type dns_resolver registered
+[    2.074983] Registered cp15_barrier emulation handler
+[    2.075013] Registered setend emulation handler
+[    2.076408] registered taskstats version 1
+[    2.076894] tegra-pcie-dw 14160000.pcie: Setting init speed to max speed
+[    2.077818] OF: PCI: host bridge /pcie@14160000 ranges:
+[    2.077834] OF: PCI:    IO 0x36100000..0x361fffff -> 0x36100000
+[    2.077842] OF: PCI:   MEM 0x1740000000..0x17ffffffff -> 0x40000000
+[    2.077847] OF: PCI:   MEM 0x1400000000..0x173fffffff -> 0x1400000000
+[    2.171581] usb 2-3: new SuperSpeed USB device number 2 using tegra-xusb
+[    2.204463] mmc1: host does not support reading read-only switch, assuming write-enable
+[    2.206469] usb 2-3: New USB device found, idVendor=0bda, idProduct=0411
+[    2.206477] usb 2-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.206482] usb 2-3: Product: 2-Port USB 3.0 Hub
+[    2.206486] usb 2-3: Manufacturer: Generic
+[    2.216941] hub 2-3:1.0: USB hub found
+[    2.218890] hub 2-3:1.0: 4 ports detected
+[    2.347918] mmc1: hw tuning done ...
+[    2.347953] mmc1: new ultra high speed SDR104 SDXC card at address aaaa
+[    2.348376] mmcblk1: mmc1:aaaa SR64G 59.5 GiB 
+[    2.354719] usb 1-2.1: new high-speed USB device number 3 using tegra-xusb
+[    2.360957]  mmcblk1: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11
+[    2.375211] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[    2.375218] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.375223] usb 1-2.1: Product: 802.11ac NIC
+[    2.375226] usb 1-2.1: Manufacturer: Realtek
+[    2.375230] usb 1-2.1: SerialNumber: 123456
+[    2.386735] usb 2-3: usb_suspend_both: status 0
+[    2.386976] usb usb2: usb_suspend_both: status 0
+[    2.422745] tegra_cec 3960000.tegra_cec: Can't find physical addresse.
+[    2.422751] tegra_cec 3960000.tegra_cec: tegra_cec_init Done.
+[    2.454719] usb 1-2.2: new high-speed USB device number 4 using tegra-xusb
+[    2.475034] usb 1-2.2: New USB device found, idVendor=1a40, idProduct=0101
+[    2.475040] usb 1-2.2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    2.475044] usb 1-2.2: Product: USB 2.0 Hub
+[    2.475716] hub 1-2.2:1.0: USB hub found
+[    2.475786] hub 1-2.2:1.0: 4 ports detected
+[    2.588854] tegra-pcie-dw 14160000.pcie: link is down
+[    2.588970] tegra-pcie-dw 14160000.pcie: PCI host bridge to bus 0004:00
+[    2.588977] pci_bus 0004:00: root bus resource [bus 00-ff]
+[    2.588985] pci_bus 0004:00: root bus resource [io  0x0000-0xfffff] (bus address [0x36100000-0x361fffff])
+[    2.588996] pci_bus 0004:00: root bus resource [mem 0x1740000000-0x17ffffffff] (bus address [0x40000000-0xffffffff])
+[    2.589000] pci_bus 0004:00: root bus resource [mem 0x1400000000-0x173fffffff pref]
+[    2.589050] pci 0004:00:00.0: [10de:1ad1] type 01 class 0x060400
+[    2.589217] pci 0004:00:00.0: PME# supported from D0 D3hot D3cold
+[    2.589442] iommu: Adding device 0004:00:00.0 to group 59
+[    2.589650] pci 0004:00:00.0: PCI bridge to [bus 01-ff]
+[    2.589673] pci 0004:00:00.0: Max Payload Size set to  256/ 256 (was  256), Max Read Rq  512
+[    2.589842] pcieport 0004:00:00.0: Signaling PME through PCIe PME interrupt
+[    2.589849] pcie_pme 0004:00:00.0:pcie001: service driver pcie_pme loaded
+[    2.589910] aer 0004:00:00.0:pcie002: service driver aer loaded
+[    2.590048] pcie_pme 0004:00:00.0:pcie001: unloading service driver pcie_pme
+[    2.590091] aer 0004:00:00.0:pcie002: unloading service driver aer
+[    2.590174] pci_bus 0004:01: busn_res: [bus 01-ff] is released
+[    2.590249] iommu: Removing device 0004:00:00.0 from group 59
+[    2.590291] pci_bus 0004:00: busn_res: [bus 00-ff] is released
+[    2.592013] tegra-pcie-dw 14160000.pcie: PCIe link is not up...!
+[    2.592948] tegra-pcie-dw 141a0000.pcie: Setting init speed to max speed
+[    2.594006] OF: PCI: host bridge /pcie@141a0000 ranges:
+[    2.594026] OF: PCI:    IO 0x3a100000..0x3a1fffff -> 0x3a100000
+[    2.594034] OF: PCI:   MEM 0x1f40000000..0x1fffffffff -> 0x40000000
+[    2.594039] OF: PCI:   MEM 0x1c00000000..0x1f3fffffff -> 0x1c00000000
+[    2.762717] usb 1-2.2.2: new high-speed USB device number 5 using tegra-xusb
+[    2.787000] usb 1-2.2.2: New USB device found, idVendor=0403, idProduct=6011
+[    2.787008] usb 1-2.2.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.787013] usb 1-2.2.2: Product: FT4232H MiniModule
+[    2.787017] usb 1-2.2.2: Manufacturer: FTDI
+[    2.787021] usb 1-2.2.2: SerialNumber: FT6RP8Q1
+[    2.894696] usb 1-2.2.3: new full-speed USB device number 6 using tegra-xusb
+[    2.918568] usb 1-2.2.3: New USB device found, idVendor=2341, idProduct=8036
+[    2.918574] usb 1-2.2.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.918579] usb 1-2.2.3: Product: Arduino Leonardo
+[    2.918583] usb 1-2.2.3: Manufacturer: Arduino LLC
+[    2.918586] usb 1-2.2.3: SerialNumber: HIDPH
+[    2.921311] input: Arduino LLC Arduino Leonardo as /devices/3610000.xhci/usb1/1-2/1-2.2/1-2.2.3/1-2.2.3:1.2/0003:2341:8036.0001/input/input4
+[    2.921602] hid-generic 0003:2341:8036.0001: input,hidraw0: USB HID v1.01 Joystick [Arduino LLC Arduino Leonardo] on usb-3610000.xhci-2.2.3/input2
+[    3.107519] tegra-pcie-dw 141a0000.pcie: link is down
+[    3.107688] tegra-pcie-dw 141a0000.pcie: PCI host bridge to bus 0005:00
+[    3.107697] pci_bus 0005:00: root bus resource [bus 00-ff]
+[    3.107705] pci_bus 0005:00: root bus resource [io  0x100000-0x1fffff] (bus address [0x3a100000-0x3a1fffff])
+[    3.107736] pci_bus 0005:00: root bus resource [mem 0x1f40000000-0x1fffffffff] (bus address [0x40000000-0xffffffff])
+[    3.107741] pci_bus 0005:00: root bus resource [mem 0x1c00000000-0x1f3fffffff pref]
+[    3.107779] pci 0005:00:00.0: [10de:1ad0] type 01 class 0x060400
+[    3.107943] pci 0005:00:00.0: PME# supported from D0 D3hot D3cold
+[    3.108137] iommu: Adding device 0005:00:00.0 to group 59
+[    3.108492] pci 0005:00:00.0: PCI bridge to [bus 01-ff]
+[    3.108514] pci 0005:00:00.0: Max Payload Size set to  256/ 256 (was  256), Max Read Rq  512
+[    3.108743] pcieport 0005:00:00.0: Signaling PME through PCIe PME interrupt
+[    3.108751] pcie_pme 0005:00:00.0:pcie001: service driver pcie_pme loaded
+[    3.108871] aer 0005:00:00.0:pcie002: service driver aer loaded
+[    3.109037] pcie_pme 0005:00:00.0:pcie001: unloading service driver pcie_pme
+[    3.109137] aer 0005:00:00.0:pcie002: unloading service driver aer
+[    3.109218] pci_bus 0005:01: busn_res: [bus 01-ff] is released
+[    3.109351] iommu: Removing device 0005:00:00.0 from group 59
+[    3.109383] pci_bus 0005:00: busn_res: [bus 00-ff] is released
+[    3.111112] tegra-pcie-dw 141a0000.pcie: PCIe link is not up...!
+[    3.119392] tegra-cbb 14040000.cv-noc: noc_secure_irq = 91, noc_nonsecure_irq = 90>
+[    3.124264] tegra194-isp5 14800000.isp: initialized
+[    3.130655] tegra194-vi5 15c10000.vi: using default number of vi channels, 36
+[    3.133269] tegra194-vi5 15c10000.vi: initialized
+[    3.137280] tegra194-vi5 15c10000.vi: subdev 15a00000.nvcsi--2 bound
+[    3.137330] tegra194-vi5 15c10000.vi: subdev 15a00000.nvcsi--1 bound
+[    3.137532] tegra-thermal-throttle bthrot_cdev: clk:cpu max:1907200000, min:115200000 steps:24
+[    3.141859] tegra-thermal-throttle bthrot_cdev: clk:gpu max:1109250000, min:114750000 steps:10
+[    3.141877] tegra-thermal-throttle bthrot_cdev: cdev:skin-balanced clk:0:cpu off:0 slope-adj:200
+[    3.141883] tegra-thermal-throttle bthrot_cdev: cdev:skin-balanced clk:1:gpu off:0 slope-adj:400
+[    3.141973] tegra-thermal-throttle bthrot_cdev: cdev:skin-balanced max_state:48 cutoff:0
+[    3.142000] tegra-thermal-throttle bthrot_cdev: cdev:gpu-balanced clk:0:cpu off:0 slope-adj:400
+[    3.142004] tegra-thermal-throttle bthrot_cdev: cdev:gpu-balanced clk:1:gpu off:0 slope-adj:400
+[    3.146109] tegra-thermal-throttle bthrot_cdev: cdev:gpu-balanced max_state:40 cutoff:1
+[    3.146150] tegra-thermal-throttle bthrot_cdev: cdev:cpu-balanced clk:0:cpu off:0 slope-adj:200
+[    3.146156] tegra-thermal-throttle bthrot_cdev: cdev:cpu-balanced clk:1:gpu off:365500000 slope-adj:300
+[    3.146493] tegra-thermal-throttle bthrot_cdev: cdev:cpu-balanced max_state:48 cutoff:0
+[    3.146535] tegra-thermal-throttle bthrot_cdev: cdev:emergency-balanced clk:0:cpu off:38400000 slope-adj:10
+[    3.146540] tegra-thermal-throttle bthrot_cdev: cdev:emergency-balanced clk:1:gpu off:25500000 slope-adj:10
+[    3.147005] tegra-thermal-throttle bthrot_cdev: cdev:emergency-balanced max_state:2 cutoff:0
+[    3.147043] tegra-thermal-throttle bthrot_cdev: cdev:aux-balanced clk:0:cpu off:0 slope-adj:400
+[    3.147048] tegra-thermal-throttle bthrot_cdev: cdev:aux-balanced clk:1:gpu off:0 slope-adj:400
+[    3.147356] tegra-thermal-throttle bthrot_cdev: cdev:aux-balanced max_state:40 cutoff:1
+[    3.148036] tegra186-cam-rtcpu bc00000.rtcpu: Trace buffer configured at IOVA=0xbff00000
+[    3.229636] tegra-ivc ivc-bc00000.rtcpu: region 0: iova=0xbfee0000-0xbfefffff size=131072
+[    3.229972] tegra-ivc ivc-bc00000.rtcpu:echo@0: echo: ver=0 grp=1 RX[16x64]=0x1000-0x1480 TX[16x64]=0x1480-0x1900
+[    3.230213] tegra-ivc ivc-bc00000.rtcpu:dbg@1: dbg: ver=0 grp=1 RX[1x384]=0x1900-0x1b00 TX[1x384]=0x1b00-0x1d00
+[    3.230446] tegra-ivc ivc-bc00000.rtcpu:dbg@2: dbg: ver=0 grp=1 RX[1x8192]=0x1d00-0x3d80 TX[1x8192]=0x3d80-0x5e00
+[    3.230791] tegra-ivc ivc-bc00000.rtcpu:ivccontrol@3: ivccontrol: ver=0 grp=1 RX[64x320]=0x5e00-0xae80 TX[64x320]=0xae80-0xff00
+[    3.230853] tegra-ivc ivc-bc00000.rtcpu:ivccapture@4: ivccapture: ver=0 grp=1 RX[512x64]=0xff00-0x17f80 TX[512x64]=0x17f80-0x20000
+[    3.231028] tegra186-cam-rtcpu bc00000.rtcpu: using cam RTCPU IRQ (66)
+[    3.231032] tegra186-cam-rtcpu bc00000.rtcpu: tegra_camrtc_mon_create is successful
+[    3.231998] tegra186-cam-rtcpu bc00000.rtcpu: firmware version cpu=rce cmd=5 sha1=cf2bef3ad10e437272857b76308abef8ffb80bda
+[    3.232382] Wake83 for irq=211
+[    3.232444] gpio tegra-gpio wake67 for gpio=48(G:0)
+[    3.232543] gpio tegra-gpio-aon wake29 for gpio=36(EE:4)
+[    3.232682] input: gpio-keys as /devices/gpio-keys/input/input5
+[    3.263817] tegra_rtc c2a0000.rtc: setting system clock to 2022-07-14 09:13:52 UTC (1657790032)
+[    3.264549] mmcblk mmc0:0001: Card claimed for testing.
+[    3.264570] mmcblk mmc1:aaaa: Card claimed for testing.
+[    3.296554] bpmp: mounted debugfs mirror
+[    3.303355] ALSA device list:
+[    3.303361]   #0: tegra-hda-xnx at 0x3518000 irq 65
+[    3.303365]   #1: jetson-xaviernx-ape
+[    3.305106] Freeing unused kernel memory: 8576K
+[    3.345108] Root device found: PARTUUID=ddbf9896-a4db-4932-8580-5f014e7f85fd
+[    4.102309] EXT4-fs (mmcblk1p1): mounted filesystem with ordered data mode. Opts: (null)
+[    4.109578] Rootfs mounted over PARTUUID=ddbf9896-a4db-4932-8580-5f014e7f85fd
+[    4.138615] Switching from initrd to actual rootfs
+[    4.394850] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    4.399898] cgroup: cgroup2: unknown option "nsdelegate"
+[    4.410417] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    4.411110] systemd[1]: Detected architecture arm64.
+[    4.421790] systemd[1]: Set hostname to <cit175>.
+[    4.569995] systemd[1]: File /lib/systemd/system/systemd-journald.service:36 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    4.570009] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    4.740699] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.740990] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    4.741330] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.741689] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    4.741738] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.741759] systemd[1]: Reached target Swap.
+[    4.741807] systemd[1]: Reached target User and Group Name Lookups.
+[    4.744925] systemd[1]: Created slice User and Session Slice.
+[    4.792851] pca954x 2-0070: vcc-pullup regulator not found
+[    4.792864] pca954x 2-0070: pca954x_probe: forcing device bus number, start 30.
+[    4.792870] pca954x 2-0070: device detect skipped.
+[    4.793553] i2c i2c-2: Added multiplexed i2c bus 30
+[    4.794042] i2c i2c-2: Added multiplexed i2c bus 31
+[    4.794372] i2c i2c-2: Added multiplexed i2c bus 32
+[    4.794803] i2c i2c-2: Added multiplexed i2c bus 33
+[    4.794809] pca954x 2-0070: registered 4 multiplexed busses for I2C switch pca9546
+[    4.799000] EXT4-fs (mmcblk1p1): re-mounted. Opts: (null)
+[    4.809123] GPIO line 224 (tca9539_74_outlow) hogged as output/low
+[    4.809383] GPIO line 225 (tca9539_74_outlow) hogged as output/low
+[    4.809647] GPIO line 226 (tca9539_74_outlow) hogged as output/low
+[    4.809890] GPIO line 227 (tca9539_74_outlow) hogged as output/low
+[    4.810130] GPIO line 228 (tca9539_74_outlow) hogged as output/low
+[    4.810368] GPIO line 229 (tca9539_74_outlow) hogged as output/low
+[    4.810606] GPIO line 230 (tca9539_74_outlow) hogged as output/low
+[    4.810962] GPIO line 231 (tca9539_74_outlow) hogged as output/low
+[    4.811195] gpiochip_setup_dev: registered GPIOs 224 to 239 on device: gpiochip3 (pca9539)
+[    4.811204] pca953x 2-0074: interrupt support not compiled in
+[    4.811684] tegra-i2c 3180000.i2c: no acknowledge from address 0x22
+[    4.811841] pca953x 30-0022: failed reading register
+[    4.812051] pca953x: probe of 30-0022 failed with error -121
+[    4.814203] GPIO line 200 (tca6424_22_outlow) hogged as output/low
+[    4.814930] GPIO line 201 (tca6424_22_outlow) hogged as output/low
+[    4.815611] GPIO line 202 (tca6424_22_outlow) hogged as output/low
+[    4.816273] GPIO line 203 (tca6424_22_outlow) hogged as output/low
+[    4.817032] GPIO line 204 (tca6424_22_outlow) hogged as output/low
+[    4.817710] GPIO line 205 (tca6424_22_outlow) hogged as output/low
+[    4.818450] GPIO line 206 (tca6424_22_outlow) hogged as output/low
+[    4.819245] GPIO line 207 (tca6424_22_outlow) hogged as output/low
+[    4.819524] gpiochip_setup_dev: registered GPIOs 200 to 223 on device: gpiochip4 (tca6424)
+[    4.819532] pca953x 31-0022: interrupt support not compiled in
+[    4.846786] ar0521: loading out-of-tree module taints kernel.
+[    4.848345] ar0521 30-0042: Unable to toggle GPIO
+[    4.848499] ar0521: probe of 30-0042 failed with error -22
+[    4.911318] Current Firmware Version - (50CUNANO-g3bfcc9c)
+[    5.010047] cam_isp_init
+[    5.304184] systemd-journald[2403]: Received request to flush runtime journal from PID 1
+[    6.365477] random: crng init done
+[    6.365484] random: 7 urandom warning(s) missed due to ratelimiting
+[    6.531463] usbcore: registered new interface driver ftdi_sio
+[    6.531554] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    6.531696] ftdi_sio 1-2.2.2:1.0: FTDI USB Serial Device converter detected
+[    6.531788] usb 1-2.2.2: Detected FT4232H
+[    6.535527] usb 1-2.2.2: FTDI USB Serial Device converter now attached to ttyUSB0
+[    6.535623] ftdi_sio 1-2.2.2:1.1: FTDI USB Serial Device converter detected
+[    6.535874] usb 1-2.2.2: Detected FT4232H
+[    6.537553] usb 1-2.2.2: FTDI USB Serial Device converter now attached to ttyUSB1
+[    6.537857] ftdi_sio 1-2.2.2:1.2: FTDI USB Serial Device converter detected
+[    6.538154] usb 1-2.2.2: Detected FT4232H
+[    6.538511] usb 1-2.2.2: FTDI USB Serial Device converter now attached to ttyUSB2
+[    6.538819] ftdi_sio 1-2.2.2:1.3: FTDI USB Serial Device converter detected
+[    6.538903] usb 1-2.2.2: Detected FT4232H
+[    6.539269] usb 1-2.2.2: FTDI USB Serial Device converter now attached to ttyUSB3
+[    6.572409] cdc_acm 1-2.2.3:1.0: ttyACM0: USB ACM device
+[    6.573406] usbcore: registered new interface driver cdc_acm
+[    6.573412] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    7.266422] usbcore: registered new interface driver rtl8821cu
+[    7.978565] nvgpu: 17000000.gv11b          nvgpu_nvhost_syncpt_init:291  [INFO]  syncpt_unit_base 60000000 syncpt_unit_size 400000 size 1000
+
+[    9.089646] ar0521 31-0042: ISP Already Initialized !! 
+[    9.096423] SENSOR ID=0x0265
+[    9.101316]  cam_stream_off 2180 CAM Get CMD Stream off Success !! 
+[    9.181292] 0. Initialized Control 0x00980900 - Brightness 
+[    9.181299] 1. Initialized Control 0x00980901 - Contrast 
+[    9.181304] 2. Initialized Control 0x00980902 - Saturation 
+[    9.181309] 3. Initialized Control 0x0098090c - White Balance, Automatic 
+[    9.181313] 4. Initialized Control 0x00980910 - Gamma 
+[    9.181318] 5. Initialized Control 0x0098091a - White Balance Temperature 
+[    9.181323] 6. Initialized Control 0x0098091b - Sharpness 
+[    9.181328] 7. Initialized Control 0x00980913 - Gain 
+[    9.188291]  Menu Element 0 : Full FOV Auto Mode 
+[    9.188296]  Menu Element 1 : Manual Mode 
+[    9.188300]  Menu Element 2 : ROI Based Auto Mode 
+[    9.188312] 8. Initialized Custom Ctrl 0x009a0901 - Exposure Auto 
+[    9.188320] 9. Initialized Control 0x009a0902 - Exposure Time, Absolute 
+[    9.188326] 10. Initialized Control 0x009a090d - Zoom, Absolute 
+[    9.188332] 11. Initialized Control 0x009a0908 - Pan, Absolute 
+[    9.188338] 12. Initialized Control 0x009a0909 - Tilt, Absolute 
+[    9.191801] 13. Initialized Custom Ctrl 0x009a092d - Denoise 
+[    9.191811] 14. Initialized Control 0x00980914 - Horizontal Flip 
+[    9.191817] 15. Initialized Control 0x00980915 - Vertical Flip 
+[    9.195859] 16. Initialized Custom Ctrl 0x009a0926 - ROI Exposure 
+[    9.199866] 17. Initialized Custom Ctrl 0x009a0924 - ROI Window Size 
+[    9.203895] 18. Initialized Custom Ctrl 0x009a0931 - Exposure Compensation 
+[    9.203906] tegra194-vi5 15c10000.vi: subdev ar0521 31-0042 bound
+[    9.217285] cpu-throttle-alert cooling device registered.
+[    9.218051] gpu-throttle-alert cooling device registered.
+[    9.218501] aux-throttle-alert cooling device registered.
+[   10.256748] using random self ethernet address
+[   10.256876] using random host ethernet address
+[   10.790096] Mass Storage Function, version: 2009/09/11
+[   10.790105] LUN: removable file: (no medium)
+[   10.796419] using random self ethernet address
+[   10.796548] using random host ethernet address
+[   10.997505] rndis0: HOST MAC d2:6c:55:29:4d:38
+[   10.997791] rndis0: MAC d2:6c:55:29:4d:39
+[   11.003486] usb0: HOST MAC d2:6c:55:29:4d:3a
+[   11.003534] usb0: MAC d2:6c:55:29:4d:3b
+[   11.003559] tegra-xudc-new 3550000.xudc: exiting ELPG
+[   11.004400] tegra-xudc-new 3550000.xudc: exiting ELPG done
+[   11.004423] tegra-xudc-new 3550000.xudc: ep 0 (type: 0, dir: out) enabled
+[   11.004470] tegra-xudc-new 3550000.xudc: entering ELPG
+[   11.004757] tegra-xudc-new 3550000.xudc: entering ELPG done
+[   11.004776] tegra-xudc-new 3550000.xudc: exiting ELPG
+[   11.005237] tegra-xudc-new 3550000.xudc: exiting ELPG done
+[   11.005251] tegra-xudc-new 3550000.xudc: entering ELPG
+[   11.005436] tegra-xudc-new 3550000.xudc: entering ELPG done
+[   11.011779] l4tbr0: port 1(rndis0) entered blocking state
+[   11.011788] l4tbr0: port 1(rndis0) entered disabled state
+[   11.012539] device rndis0 entered promiscuous mode
+[   11.026431] l4tbr0: port 2(usb0) entered blocking state
+[   11.026441] l4tbr0: port 2(usb0) entered disabled state
+[   11.026719] device usb0 entered promiscuous mode
+[   12.332487] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[   12.372354] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   12.639895] zram: Added device: zram0
+[   12.643631] zram: Added device: zram1
+[   12.651528] zram: Added device: zram2
+[   12.653226] zram: Added device: zram3
+[   12.654369] zram: Added device: zram4
+[   12.660612] zram: Added device: zram5
+[   12.683653] gpio tegra-gpio wake20 for gpio=52(G:4)
+[   12.691343] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   12.715906] zram0: detected capacity change from 0 to 679256064
+[   12.748921] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   12.820944] Adding 663332k swap on /dev/zram0.  Priority:5 extents:1 across:663332k SS
+[   12.830204] zram1: detected capacity change from 0 to 679256064
+[   12.855169] Adding 663332k swap on /dev/zram1.  Priority:5 extents:1 across:663332k SS
+[   12.859829] zram2: detected capacity change from 0 to 679256064
+[   12.884237] Adding 663332k swap on /dev/zram2.  Priority:5 extents:1 across:663332k SS
+[   12.894449] zram3: detected capacity change from 0 to 679256064
+[   12.913216] Adding 663332k swap on /dev/zram3.  Priority:5 extents:1 across:663332k SS
+[   12.927120] zram4: detected capacity change from 0 to 679256064
+[   12.953731] Adding 663332k swap on /dev/zram4.  Priority:5 extents:1 across:663332k SS
+[   12.960817] zram5: detected capacity change from 0 to 679256064
+[   12.977015] Adding 663332k swap on /dev/zram5.  Priority:5 extents:1 across:663332k SS
+[   13.807407] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   13.835036] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   14.070517] tegradc 15200000.nvdisplay: blank - powerdown
+[   14.070533] tegradc 15210000.nvdisplay: blank - powerdown
+[   14.110307] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   14.254318] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   14.254897] usb 1-2.1: USB disconnect, device number 3
+[   14.586823] usb 1-2.1: new high-speed USB device number 7 using tegra-xusb
+[   14.607477] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   14.607488] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   14.607494] usb 1-2.1: Product: 802.11ac NIC
+[   14.607499] usb 1-2.1: Manufacturer: Realtek
+[   14.607504] usb 1-2.1: SerialNumber: 123456
+[   15.004066] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   15.826951] eqos 2490000.ether_qos eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[   15.841344] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   15.860769] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   15.860976] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   15.950815] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   16.046358] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   16.046936] usb 1-2.1: USB disconnect, device number 7
+[   16.169142] fuse init (API version 7.26)
+[   16.366888] usb 1-2.1: new high-speed USB device number 8 using tegra-xusb
+[   16.387336] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   16.387346] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   16.387352] usb 1-2.1: Product: 802.11ac NIC
+[   16.387357] usb 1-2.1: Manufacturer: Realtek
+[   16.387361] usb 1-2.1: SerialNumber: 123456
+[   16.700149] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   17.544056] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   17.569538] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   17.649400] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   17.838353] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   17.839242] usb 1-2.1: USB disconnect, device number 8
+[   18.166745] usb 1-2.1: new high-speed USB device number 9 using tegra-xusb
+[   18.187340] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   18.187358] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   18.187370] usb 1-2.1: Product: 802.11ac NIC
+[   18.187376] usb 1-2.1: Manufacturer: Realtek
+[   18.187380] usb 1-2.1: SerialNumber: 123456
+[   18.508829] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   19.344723] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   19.373590] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   19.475762] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   19.630933] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   19.631893] usb 1-2.1: USB disconnect, device number 9
+[   19.962732] usb 1-2.1: new high-speed USB device number 10 using tegra-xusb
+[   19.983278] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   19.983303] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   19.983308] usb 1-2.1: Product: 802.11ac NIC
+[   19.983313] usb 1-2.1: Manufacturer: Realtek
+[   19.983318] usb 1-2.1: SerialNumber: 123456
+[   20.340957] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   20.890853] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   20.890871] Bluetooth: BNEP socket layer initialized
+[   21.358726] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   21.403423] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   21.503942] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   21.678317] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   21.679098] usb 1-2.1: USB disconnect, device number 10
+[   22.002723] usb 1-2.1: new high-speed USB device number 11 using tegra-xusb
+[   22.023330] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   22.023340] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   22.023346] usb 1-2.1: Product: 802.11ac NIC
+[   22.023351] usb 1-2.1: Manufacturer: Realtek
+[   22.023355] usb 1-2.1: SerialNumber: 123456
+[   22.472793] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   23.701102] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[   24.412331] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   24.457184] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   24.590842] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   24.750468] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   24.751068] usb 1-2.1: USB disconnect, device number 11
+[   25.090752] usb 1-2.1: new high-speed USB device number 12 using tegra-xusb
+[   25.111370] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   25.111381] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   25.111386] usb 1-2.1: Product: 802.11ac NIC
+[   25.111391] usb 1-2.1: Manufacturer: Realtek
+[   25.111395] usb 1-2.1: SerialNumber: 123456
+[   25.462092] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   26.298528] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   26.322515] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   26.434394] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   26.542347] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   26.542925] usb 1-2.1: USB disconnect, device number 12
+[   26.886751] usb 1-2.1: new high-speed USB device number 13 using tegra-xusb
+[   26.907321] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   26.907332] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   26.907337] usb 1-2.1: Product: 802.11ac NIC
+[   26.907341] usb 1-2.1: Manufacturer: Realtek
+[   26.907347] usb 1-2.1: SerialNumber: 123456
+[   27.259387] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   28.113505] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   28.140681] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   28.231848] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   28.590389] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   28.590920] usb 1-2.1: USB disconnect, device number 13
+[   28.902757] usb 1-2.1: new high-speed USB device number 14 using tegra-xusb
+[   28.923339] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   28.923349] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   28.923356] usb 1-2.1: Product: 802.11ac NIC
+[   28.923394] usb 1-2.1: Manufacturer: Realtek
+[   28.923399] usb 1-2.1: SerialNumber: 123456
+[   29.220254] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   30.005574] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   30.029122] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   30.129175] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   30.382339] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   30.382932] usb 1-2.1: USB disconnect, device number 14
+[   30.714745] usb 1-2.1: new high-speed USB device number 15 using tegra-xusb
+[   30.735240] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   30.735249] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   30.735255] usb 1-2.1: Product: 802.11ac NIC
+[   30.735260] usb 1-2.1: Manufacturer: Realtek
+[   30.735266] usb 1-2.1: SerialNumber: 123456
+[   31.033925] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   31.814097] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   31.837743] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   31.937165] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   32.174305] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   32.175214] usb 1-2.1: USB disconnect, device number 15
+[   32.486773] usb 1-2.1: new high-speed USB device number 16 using tegra-xusb
+[   32.511239] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   32.511247] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   32.511253] usb 1-2.1: Product: 802.11ac NIC
+[   32.511257] usb 1-2.1: Manufacturer: Realtek
+[   32.511262] usb 1-2.1: SerialNumber: 123456
+[   32.807570] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   33.577851] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   33.604648] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   33.708272] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   33.966633] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   33.967256] usb 1-2.1: USB disconnect, device number 16
+[   34.134837] vdd-sdmmc1-sw: disabling
+[   34.134873] vdd-1v8-cvb: disabling
+[   34.134878] vdd-epb-1v0: disabling
+[   34.134882] avdd-cam-2v8: disabling
+[   34.134890] vdd-fan: disabling
+[   34.134894] vdd_sys_en: disabling
+[   34.290716] usb 1-2.1: new high-speed USB device number 17 using tegra-xusb
+[   34.311237] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   34.311247] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   34.311253] usb 1-2.1: Product: 802.11ac NIC
+[   34.311259] usb 1-2.1: Manufacturer: Realtek
+[   34.311267] usb 1-2.1: SerialNumber: 123456
+[   34.610600] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   35.521541] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   35.559264] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   35.656489] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   35.758766] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   35.759537] usb 1-2.1: USB disconnect, device number 17
+[   36.094862] usb 1-2.1: new high-speed USB device number 18 using tegra-xusb
+[   36.115788] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   36.115803] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   36.115811] usb 1-2.1: Product: 802.11ac NIC
+[   36.115818] usb 1-2.1: Manufacturer: Realtek
+[   36.115823] usb 1-2.1: SerialNumber: 123456
+[   36.471462] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   37.348447] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   37.370879] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   37.479199] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   37.806910] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   37.807631] usb 1-2.1: USB disconnect, device number 18
+[   38.118905] usb 1-2.1: new high-speed USB device number 19 using tegra-xusb
+[   38.139278] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   38.139289] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   38.139296] usb 1-2.1: Product: 802.11ac NIC
+[   38.139303] usb 1-2.1: Manufacturer: Realtek
+[   38.139308] usb 1-2.1: SerialNumber: 123456
+[   38.604065] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   39.439700] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   39.480990] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   39.587267] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   39.598317] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   39.598991] usb 1-2.1: USB disconnect, device number 19
+[   39.935028] usb 1-2.1: new high-speed USB device number 20 using tegra-xusb
+[   39.956050] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   39.956081] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   39.956090] usb 1-2.1: Product: 802.11ac NIC
+[   39.956095] usb 1-2.1: Manufacturer: Realtek
+[   39.956099] usb 1-2.1: SerialNumber: 123456
+[   40.342354] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   41.199811] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   41.236879] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   41.353453] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   41.646819] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   41.647626] usb 1-2.1: USB disconnect, device number 20
+[   41.970961] usb 1-2.1: new high-speed USB device number 21 using tegra-xusb
+[   41.991476] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   41.991486] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   41.991492] usb 1-2.1: Product: 802.11ac NIC
+[   41.991496] usb 1-2.1: Manufacturer: Realtek
+[   41.991534] usb 1-2.1: SerialNumber: 123456
+[   42.431369] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   43.225670] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   43.272992] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   43.357245] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   43.694840] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   43.696586] usb 1-2.1: USB disconnect, device number 21
+[   44.023040] usb 1-2.1: new high-speed USB device number 22 using tegra-xusb
+[   44.043328] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   44.043338] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   44.043346] usb 1-2.1: Product: 802.11ac NIC
+[   44.043351] usb 1-2.1: Manufacturer: Realtek
+[   44.043355] usb 1-2.1: SerialNumber: 123456
+[   44.443369] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   45.290292] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   45.323819] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   45.446768] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   45.486792] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   45.487355] usb 1-2.1: USB disconnect, device number 22
+[   45.822937] usb 1-2.1: new high-speed USB device number 23 using tegra-xusb
+[   45.844035] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   45.844064] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   45.844073] usb 1-2.1: Product: 802.11ac NIC
+[   45.844083] usb 1-2.1: Manufacturer: Realtek
+[   45.844089] usb 1-2.1: SerialNumber: 123456
+[   46.186244] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   47.062738] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   47.080404] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   47.197923] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   47.278772] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   47.279561] usb 1-2.1: USB disconnect, device number 23
+[   47.618884] usb 1-2.1: new high-speed USB device number 24 using tegra-xusb
+[   47.639272] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   47.639283] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   47.639290] usb 1-2.1: Product: 802.11ac NIC
+[   47.639296] usb 1-2.1: Manufacturer: Realtek
+[   47.639301] usb 1-2.1: SerialNumber: 123456
+[   48.091675] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   48.980560] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   49.012238] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   49.117696] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   49.326733] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   49.327345] usb 1-2.1: USB disconnect, device number 24
+[   49.622898] usb 1-2.1: new high-speed USB device number 25 using tegra-xusb
+[   49.643940] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   49.643957] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   49.643964] usb 1-2.1: Product: 802.11ac NIC
+[   49.643973] usb 1-2.1: Manufacturer: Realtek
+[   49.643978] usb 1-2.1: SerialNumber: 123456
+[   50.117475] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   50.953532] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   50.978805] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   51.065623] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   51.374255] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   51.374787] usb 1-2.1: USB disconnect, device number 25
+[   51.687089] usb 1-2.1: new high-speed USB device number 26 using tegra-xusb
+[   51.708142] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   51.708164] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   51.708172] usb 1-2.1: Product: 802.11ac NIC
+[   51.708179] usb 1-2.1: Manufacturer: Realtek
+[   51.708184] usb 1-2.1: SerialNumber: 123456
+[   52.107086] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   52.954459] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   52.987933] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   53.105549] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   53.166759] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   53.167272] usb 1-2.1: USB disconnect, device number 26
+[   53.483011] usb 1-2.1: new high-speed USB device number 27 using tegra-xusb
+[   53.503232] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   53.503241] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   53.503274] usb 1-2.1: Product: 802.11ac NIC
+[   53.503280] usb 1-2.1: Manufacturer: Realtek
+[   53.503284] usb 1-2.1: SerialNumber: 123456
+[   53.892636] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   54.764436] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   54.812585] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   54.927873] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   54.958970] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   54.959754] usb 1-2.1: USB disconnect, device number 27
+[   55.291017] usb 1-2.1: new high-speed USB device number 28 using tegra-xusb
+[   55.312056] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   55.312076] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   55.312084] usb 1-2.1: Product: 802.11ac NIC
+[   55.312092] usb 1-2.1: Manufacturer: Realtek
+[   55.312097] usb 1-2.1: SerialNumber: 123456
+[   55.688377] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   56.524639] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   56.560402] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   56.679342] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   56.750334] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   56.751138] usb 1-2.1: USB disconnect, device number 28
+[   57.066785] usb 1-2.1: new high-speed USB device number 29 using tegra-xusb
+[   57.087343] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   57.087354] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   57.087360] usb 1-2.1: Product: 802.11ac NIC
+[   57.087366] usb 1-2.1: Manufacturer: Realtek
+[   57.087372] usb 1-2.1: SerialNumber: 123456
+[   57.392141] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   58.310832] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   58.347889] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   58.446180] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   58.798301] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   58.798907] usb 1-2.1: USB disconnect, device number 29
+[   59.110738] usb 1-2.1: new high-speed USB device number 30 using tegra-xusb
+[   59.131345] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   59.131354] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   59.131362] usb 1-2.1: Product: 802.11ac NIC
+[   59.131368] usb 1-2.1: Manufacturer: Realtek
+[   59.131373] usb 1-2.1: SerialNumber: 123456
+[   59.434014] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   60.201282] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   60.226632] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   60.321231] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   60.334255] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   60.334761] usb 1-2.1: USB disconnect, device number 30
+[   60.650730] usb 1-2.1: new high-speed USB device number 31 using tegra-xusb
+[   60.671272] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   60.671282] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   60.671289] usb 1-2.1: Product: 802.11ac NIC
+[   60.671295] usb 1-2.1: Manufacturer: Realtek
+[   60.671300] usb 1-2.1: SerialNumber: 123456
+[   60.967249] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   61.760204] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   61.780566] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   61.888507] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   62.126745] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   62.127374] usb 1-2.1: USB disconnect, device number 31
+[   62.442791] usb 1-2.1: new high-speed USB device number 32 using tegra-xusb
+[   62.463251] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   62.463262] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   62.463268] usb 1-2.1: Product: 802.11ac NIC
+[   62.463273] usb 1-2.1: Manufacturer: Realtek
+[   62.463279] usb 1-2.1: SerialNumber: 123456
+[   62.765744] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   63.565003] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   63.599278] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   63.712073] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   63.918791] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   63.919603] usb 1-2.1: USB disconnect, device number 32
+[   64.266744] usb 1-2.1: new high-speed USB device number 33 using tegra-xusb
+[   64.287252] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   64.287262] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   64.287267] usb 1-2.1: Product: 802.11ac NIC
+[   64.287272] usb 1-2.1: Manufacturer: Realtek
+[   64.287277] usb 1-2.1: SerialNumber: 123456
+[   64.598920] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   65.500349] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   65.530542] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   65.627755] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   65.710313] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   65.711122] usb 1-2.1: USB disconnect, device number 33
+[   66.046974] usb 1-2.1: new high-speed USB device number 34 using tegra-xusb
+[   66.067236] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   66.067277] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   66.067284] usb 1-2.1: Product: 802.11ac NIC
+[   66.067288] usb 1-2.1: Manufacturer: Realtek
+[   66.067293] usb 1-2.1: SerialNumber: 123456
+[   66.464653] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   67.307616] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   67.334845] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   67.445634] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   68.014311] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   68.014777] usb 1-2.1: USB disconnect, device number 34
+[   68.346738] usb 1-2.1: new high-speed USB device number 35 using tegra-xusb
+[   68.368155] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   68.368179] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   68.368187] usb 1-2.1: Product: 802.11ac NIC
+[   68.368197] usb 1-2.1: Manufacturer: Realtek
+[   68.368203] usb 1-2.1: SerialNumber: 123456
+[   68.735720] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   69.558526] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   69.580773] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   69.675916] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   70.318312] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   70.319239] usb 1-2.1: USB disconnect, device number 35
+[   70.654773] usb 1-2.1: new high-speed USB device number 36 using tegra-xusb
+[   70.675368] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   70.675378] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   70.675384] usb 1-2.1: Product: 802.11ac NIC
+[   70.675390] usb 1-2.1: Manufacturer: Realtek
+[   70.675395] usb 1-2.1: SerialNumber: 123456
+[   70.972569] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   71.740646] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   71.762531] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   71.857998] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   72.110319] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   72.110769] usb 1-2.1: USB disconnect, device number 36
+[   72.430770] usb 1-2.1: new high-speed USB device number 37 using tegra-xusb
+[   72.451260] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   72.451271] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   72.451277] usb 1-2.1: Product: 802.11ac NIC
+[   72.451282] usb 1-2.1: Manufacturer: Realtek
+[   72.451288] usb 1-2.1: SerialNumber: 123456
+[   72.756387] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   73.544577] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   73.573843] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   73.666827] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   73.902278] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   73.903222] usb 1-2.1: USB disconnect, device number 37
+[   74.230757] usb 1-2.1: new high-speed USB device number 38 using tegra-xusb
+[   74.251362] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   74.251371] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   74.251382] usb 1-2.1: Product: 802.11ac NIC
+[   74.251411] usb 1-2.1: Manufacturer: Realtek
+[   74.251415] usb 1-2.1: SerialNumber: 123456
+[   74.559093] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   75.417926] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   75.447406] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   75.576884] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   75.694372] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   75.695231] usb 1-2.1: USB disconnect, device number 38
+[   76.030729] usb 1-2.1: new high-speed USB device number 39 using tegra-xusb
+[   76.051899] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   76.051919] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   76.051926] usb 1-2.1: Product: 802.11ac NIC
+[   76.051932] usb 1-2.1: Manufacturer: Realtek
+[   76.051937] usb 1-2.1: SerialNumber: 123456
+[   76.472675] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   77.328184] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   77.372140] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   77.494190] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   77.742610] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   77.743208] usb 1-2.1: USB disconnect, device number 39
+[   78.074813] usb 1-2.1: new high-speed USB device number 40 using tegra-xusb
+[   78.099312] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   78.099322] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   78.099329] usb 1-2.1: Product: 802.11ac NIC
+[   78.099335] usb 1-2.1: Manufacturer: Realtek
+[   78.099340] usb 1-2.1: SerialNumber: 123456
+[   78.500805] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   79.382881] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   79.411379] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   79.534165] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   79.790514] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   79.791508] usb 1-2.1: USB disconnect, device number 40
+[   80.130748] usb 1-2.1: new high-speed USB device number 41 using tegra-xusb
+[   80.152157] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   80.152179] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   80.152187] usb 1-2.1: Product: 802.11ac NIC
+[   80.152192] usb 1-2.1: Manufacturer: Realtek
+[   80.152198] usb 1-2.1: SerialNumber: 123456
+[   80.549347] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   81.411624] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   81.457926] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   81.568863] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   81.582278] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   81.583073] usb 1-2.1: USB disconnect, device number 41
+[   81.922906] usb 1-2.1: new high-speed USB device number 42 using tegra-xusb
+[   81.943897] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   81.943981] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   81.943990] usb 1-2.1: Product: 802.11ac NIC
+[   81.943996] usb 1-2.1: Manufacturer: Realtek
+[   81.944002] usb 1-2.1: SerialNumber: 123456
+[   82.367863] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   83.181127] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   83.216899] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   83.338159] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   83.374376] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   83.375322] usb 1-2.1: USB disconnect, device number 42
+[   83.686754] usb 1-2.1: new high-speed USB device number 43 using tegra-xusb
+[   83.707390] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   83.707401] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   83.707408] usb 1-2.1: Product: 802.11ac NIC
+[   83.707412] usb 1-2.1: Manufacturer: Realtek
+[   83.707417] usb 1-2.1: SerialNumber: 123456
+[   84.043606] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   84.848611] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   84.870794] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   84.974306] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   85.166872] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   85.167486] usb 1-2.1: USB disconnect, device number 43
+[   85.502763] usb 1-2.1: new high-speed USB device number 44 using tegra-xusb
+[   85.523328] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   85.523340] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   85.523346] usb 1-2.1: Product: 802.11ac NIC
+[   85.523350] usb 1-2.1: Manufacturer: Realtek
+[   85.523355] usb 1-2.1: SerialNumber: 123456
+[   85.870389] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   86.672783] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   86.692460] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   86.810824] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   86.958378] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   86.959122] usb 1-2.1: USB disconnect, device number 44
+[   87.290781] usb 1-2.1: new high-speed USB device number 45 using tegra-xusb
+[   87.311344] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   87.311381] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   87.311387] usb 1-2.1: Product: 802.11ac NIC
+[   87.311392] usb 1-2.1: Manufacturer: Realtek
+[   87.311396] usb 1-2.1: SerialNumber: 123456
+[   87.653609] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   88.517565] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   88.536277] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   88.647784] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   88.750321] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   88.750946] usb 1-2.1: USB disconnect, device number 45
+[   89.074787] usb 1-2.1: new high-speed USB device number 46 using tegra-xusb
+[   89.095354] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   89.095363] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   89.095369] usb 1-2.1: Product: 802.11ac NIC
+[   89.095377] usb 1-2.1: Manufacturer: Realtek
+[   89.095381] usb 1-2.1: SerialNumber: 123456
+[   89.403286] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   90.280794] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   90.311905] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   90.441527] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   90.542656] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   90.543528] usb 1-2.1: USB disconnect, device number 46
+[   90.883003] usb 1-2.1: new high-speed USB device number 47 using tegra-xusb
+[   90.903945] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   90.903967] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   90.903975] usb 1-2.1: Product: 802.11ac NIC
+[   90.903980] usb 1-2.1: Manufacturer: Realtek
+[   90.903985] usb 1-2.1: SerialNumber: 123456
+[   91.388890] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   92.176272] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   92.212479] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   92.314543] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   92.590615] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   92.591826] usb 1-2.1: USB disconnect, device number 47
+[   92.930880] usb 1-2.1: new high-speed USB device number 48 using tegra-xusb
+[   92.951228] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   92.951236] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   92.951242] usb 1-2.1: Product: 802.11ac NIC
+[   92.951246] usb 1-2.1: Manufacturer: Realtek
+[   92.951250] usb 1-2.1: SerialNumber: 123456
+[   93.365220] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   94.273587] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   94.305619] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   94.423430] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   94.638608] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   94.639486] usb 1-2.1: USB disconnect, device number 48
+[   94.970941] usb 1-2.1: new high-speed USB device number 49 using tegra-xusb
+[   94.992262] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   94.992286] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   94.992293] usb 1-2.1: Product: 802.11ac NIC
+[   94.992299] usb 1-2.1: Manufacturer: Realtek
+[   94.992305] usb 1-2.1: SerialNumber: 123456
+[   95.457473] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   96.420040] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   96.455299] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   96.567858] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   96.942285] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   96.943090] usb 1-2.1: USB disconnect, device number 49
+[   97.274926] usb 1-2.1: new high-speed USB device number 50 using tegra-xusb
+[   97.295337] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   97.295347] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   97.295354] usb 1-2.1: Product: 802.11ac NIC
+[   97.295359] usb 1-2.1: Manufacturer: Realtek
+[   97.295364] usb 1-2.1: SerialNumber: 123456
+[   97.691571] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   98.568703] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[   98.601909] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   98.699090] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   98.734450] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[   98.735022] usb 1-2.1: USB disconnect, device number 50
+[   99.079036] usb 1-2.1: new high-speed USB device number 51 using tegra-xusb
+[   99.099736] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[   99.099750] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   99.099757] usb 1-2.1: Product: 802.11ac NIC
+[   99.099761] usb 1-2.1: Manufacturer: Realtek
+[   99.099765] usb 1-2.1: SerialNumber: 123456
+[   99.548463] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  100.405632] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  100.433771] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  100.542128] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  100.782358] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  100.783015] usb 1-2.1: USB disconnect, device number 51
+[  101.110749] usb 1-2.1: new high-speed USB device number 52 using tegra-xusb
+[  101.131361] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  101.131372] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  101.131378] usb 1-2.1: Product: 802.11ac NIC
+[  101.131382] usb 1-2.1: Manufacturer: Realtek
+[  101.131386] usb 1-2.1: SerialNumber: 123456
+[  101.446872] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  102.234962] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  102.257395] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  102.341111] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  102.574362] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  102.575192] usb 1-2.1: USB disconnect, device number 52
+[  102.906775] usb 1-2.1: new high-speed USB device number 53 using tegra-xusb
+[  102.927364] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  102.927374] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  102.927380] usb 1-2.1: Product: 802.11ac NIC
+[  102.927385] usb 1-2.1: Manufacturer: Realtek
+[  102.927389] usb 1-2.1: SerialNumber: 123456
+[  103.250497] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  104.048033] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  104.072773] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  104.170055] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  104.367022] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  104.367739] usb 1-2.1: USB disconnect, device number 53
+[  104.714979] usb 1-2.1: new high-speed USB device number 54 using tegra-xusb
+[  104.735248] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  104.735258] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  104.735263] usb 1-2.1: Product: 802.11ac NIC
+[  104.735268] usb 1-2.1: Manufacturer: Realtek
+[  104.735273] usb 1-2.1: SerialNumber: 123456
+[  105.028906] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  105.806735] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  105.840214] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  105.943947] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  106.158343] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  106.158869] usb 1-2.1: USB disconnect, device number 54
+[  106.510745] usb 1-2.1: new high-speed USB device number 55 using tegra-xusb
+[  106.531261] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  106.531271] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  106.531277] usb 1-2.1: Product: 802.11ac NIC
+[  106.531282] usb 1-2.1: Manufacturer: Realtek
+[  106.531287] usb 1-2.1: SerialNumber: 123456
+[  106.851067] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  107.659690] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  107.676747] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  107.765586] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  108.462411] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  108.462996] usb 1-2.1: USB disconnect, device number 55
+[  108.794724] usb 1-2.1: new high-speed USB device number 56 using tegra-xusb
+[  108.815386] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  108.815397] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  108.815403] usb 1-2.1: Product: 802.11ac NIC
+[  108.815409] usb 1-2.1: Manufacturer: Realtek
+[  108.815414] usb 1-2.1: SerialNumber: 123456
+[  109.152374] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  109.986878] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  110.025055] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  110.113759] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  110.254349] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  110.255181] usb 1-2.1: USB disconnect, device number 56
+[  110.582788] usb 1-2.1: new high-speed USB device number 57 using tegra-xusb
+[  110.607272] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  110.607282] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  110.607287] usb 1-2.1: Product: 802.11ac NIC
+[  110.607292] usb 1-2.1: Manufacturer: Realtek
+[  110.607296] usb 1-2.1: SerialNumber: 123456
+[  110.912541] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  111.692522] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  111.717185] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  111.823333] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  112.046337] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  112.047504] usb 1-2.1: USB disconnect, device number 57
+[  112.398740] usb 1-2.1: new high-speed USB device number 58 using tegra-xusb
+[  112.419310] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  112.419320] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  112.419328] usb 1-2.1: Product: 802.11ac NIC
+[  112.419333] usb 1-2.1: Manufacturer: Realtek
+[  112.419337] usb 1-2.1: SerialNumber: 123456
+[  112.742081] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  113.530384] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  113.549138] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  113.641313] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  113.838334] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  113.838909] usb 1-2.1: USB disconnect, device number 58
+[  114.178755] usb 1-2.1: new high-speed USB device number 59 using tegra-xusb
+[  114.199234] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  114.199243] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  114.199248] usb 1-2.1: Product: 802.11ac NIC
+[  114.199253] usb 1-2.1: Manufacturer: Realtek
+[  114.199257] usb 1-2.1: SerialNumber: 123456
+[  114.516244] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  115.298084] start_addr=(0x8000), end_addr=(0x10000), buffer_size=(0x8000), smp_number_max=(4096)
+[  115.322717] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  115.447777] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  115.630279] usb 1-2-port1: disabled by hub (EMI?), re-enabling...
+[  115.631050] usb 1-2.1: USB disconnect, device number 59
+[  115.954737] usb 1-2.1: new high-speed USB device number 60 using tegra-xusb
+[  115.975177] usb 1-2.1: New USB device found, idVendor=0bda, idProduct=c811
+[  115.975188] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  115.975193] usb 1-2.1: Product: 802.11ac NIC
+[  115.975198] usb 1-2.1: Manufacturer: Realtek
+[  115.975202] usb 1-2.1: SerialNumber: 123456
