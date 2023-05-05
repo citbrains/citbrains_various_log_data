@@ -1,0 +1,1 @@
+2023年 5月 5日 金曜日 15:54:14 JST\n機体番号 172\n使用者 inoue satoshi \n使用目的 for testing poseinitalizer qt5
