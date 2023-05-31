@@ -1,0 +1,1 @@
+2023年 5月 31日 水曜日 21:34:08 JST\n機体番号 172\n使用者 inoue noguchi \n使用目的 for testing MorionCreator with reverse servo
