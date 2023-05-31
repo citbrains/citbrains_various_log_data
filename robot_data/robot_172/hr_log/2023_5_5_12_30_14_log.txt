@@ -1,0 +1,1 @@
+2023年 5月 5日 金曜日 12:30:14 JST\n機体番号 172\n使用者 inoue satoshi \n使用目的 for testing servo reverse issue
