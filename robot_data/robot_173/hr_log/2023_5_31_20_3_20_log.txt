@@ -1,0 +1,1 @@
+2023年 5月 31日 水曜日 20:03:20 +07\n機体番号 173\n使用者 inoue \n使用目的 for b3m refactoring inspection
