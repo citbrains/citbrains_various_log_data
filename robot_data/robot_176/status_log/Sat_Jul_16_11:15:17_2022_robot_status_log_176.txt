@@ -1,0 +1,2010 @@
+---- robot status ---- temperature [℃] ---- current [mA] ---- voltage [mV] ----
+id 0 46.52 67 10674 
+id 1 41.96 145 10674 
+id 2 41.28 73 10614 
+id 3 44.06 127 10674 
+id 4 40.9 87 10971 
+id 5 40.71 75 10852 
+id 6 38.05 80 10793 
+id 7 37.7 70 10614 
+id 8 34.13 73 10941 
+id 9 40.99 88 10763 
+id 10 38.68 85 10674 
+id 11 43.35 96 10822 
+id 12 43.35 86 10674 
+id 13 38.95 73 10793 
+id 14 39.96 78 10882 
+id 15 38.14 73 10971 
+id 16 36.82 73 10912 
+id 17 34.13 67 10822 
+id 18 36.65 72 10852 
+
+ Motors which temperature is over 45℃
+id 0 46.52
+---------------------------------- dmesg ----------------------------------
+[ 4693.302299] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.306576] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.315239] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.336572] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.336778] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.341232] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.350150] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.372880] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.373077] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.376134] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.384538] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.406370] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.406542] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.410784] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.419446] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.442236] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.442406] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.445431] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.463730] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.463923] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.471424] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.489522] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.489714] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.497410] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.517938] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.518105] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.523144] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.542204] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.542392] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.549385] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.567664] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.567862] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.575113] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.594584] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.594758] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.601361] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.620501] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.620666] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.627350] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.647745] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.647937] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.653335] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.671460] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.671653] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.679326] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.698523] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.698695] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.712167] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.713721] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.731178] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.731345] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.746688] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.748624] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.757025] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.780513] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.780701] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.783269] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.802338] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.802538] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.809262] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.828300] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.828461] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.835248] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.853544] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.853733] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.861239] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.879909] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.880084] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.895834] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.896004] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.911301] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.913210] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.930525] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.930718] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.945635] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.947864] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.956524] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.975184] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.975370] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4693.982509] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.002954] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.003116] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.008498] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.027698] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.027889] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.034483] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.052603] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.052795] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.060218] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.078652] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.078854] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.086463] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.104680] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.104871] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.112190] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.134856] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.135056] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.138174] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.146842] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.166462] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.166647] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.173084] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.181488] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.202865] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.203055] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.207476] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.216137] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.237494] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.237693] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.242385] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.250787] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.272194] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.272372] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.276775] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.285695] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.306819] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.306994] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.311425] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.320347] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.341449] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.341653] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.346336] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.364383] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.364569] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.380224] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.380731] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.395699] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.398068] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.414917] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.415377] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.430676] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.432961] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.449437] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.450293] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.465334] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.472382] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.481059] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.488709] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.500228] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.502272] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.517195] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.519596] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.528251] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.547878] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.548061] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.554247] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.572097] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.572298] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.580225] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.598261] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.598450] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.614058] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.614621] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.629870] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.631941] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.640600] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.658854] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.659042] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.666849] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.684926] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.685091] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.700459] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.701243] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.716322] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.718827] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.735426] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.735890] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.751137] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.753221] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.769789] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.770803] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.785874] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.792682] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.801592] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.805458] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.820456] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.822530] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.839085] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.840101] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.848777] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.866563] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.866731] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.874492] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.892533] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.892728] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.900734] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.918765] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.918964] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.926722] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.944760] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.944964] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.952453] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.961371] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.982314] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.982498] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.987100] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4694.995766] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.017115] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.017312] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.022009] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.030672] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.051506] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.051699] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.056661] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.074644] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.074828] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.082646] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.100438] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.100621] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.108634] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.127914] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.128098] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.134622] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.152689] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.152863] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.160354] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.178367] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.178558] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.186597] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.204641] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.204839] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.212590] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.230572] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.230747] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.238573] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.258122] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.258297] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.264557] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.282571] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.282776] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.290548] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.308352] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.308521] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.316278] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.334675] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.334862] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.342524] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.360682] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.360847] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.376480] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.377181] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.392159] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.394241] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.410757] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.411833] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.420483] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.438511] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.438713] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.446471] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.464226] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.464425] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.472203] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.490473] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.490672] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.498445] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.517741] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.517907] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.524437] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.542491] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.542672] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.556820] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.559094] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.567488] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.587309] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.587476] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.593475] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.611818] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.611991] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.619722] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.637524] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.637692] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.645450] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.663776] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.663942] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.677879] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.680362] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.696670] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.697425] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.712472] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.715012] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.723416] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.743202] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.743404] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.755973] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.758331] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.774928] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.775403] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.784056] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.802286] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.802456] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.816433] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.818703] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.827621] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.845664] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.845858] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.853352] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.873251] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.873421] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.879597] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.897731] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.897924] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.905329] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.923414] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.923595] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.931572] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.949947] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.950169] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.957564] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.975587] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.975796] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4695.983552] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.003260] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.003466] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.009279] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.027450] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.027641] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.035530] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.053669] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.053860] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.061260] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.079662] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.079835] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.087499] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.096158] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.117209] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.117380] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.122148] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.140129] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.140305] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.147877] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.167707] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.167882] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.174125] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.192391] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.192583] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.199850] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.218358] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.218525] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.225841] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.244052] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.244256] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.251825] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.270046] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.270235] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.277814] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.297749] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.297945] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.303801] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.322123] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.322305] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.330047] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.348045] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.348220] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.356033] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.374298] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.374495] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.381765] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.400015] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.400185] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.407753] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.427688] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.427882] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.433740] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.452258] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.452435] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.459985] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.468648] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.489625] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.489797] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.494634] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.503296] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.524407] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.524596] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.529027] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.547157] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.547356] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.555013] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.573118] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.573313] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.587625] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.589923] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.598584] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.618949] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.619139] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.624314] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.642355] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.642544] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.650560] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.668644] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.668822] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.676288] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.695037] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.695234] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.702536] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.721983] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.722167] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.728266] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.748867] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.749034] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.754510] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.773671] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.773858] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.780243] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.799295] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.799497] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.806484] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.825442] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.825615] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.832215] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.851424] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.851591] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.858204] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.879324] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.879506] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.884445] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.903150] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.903347] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.910178] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.928637] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.928828] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.936424] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.955568] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.955777] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.962408] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.980344] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.980540] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4696.988395] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.007347] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.007512] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.014384] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.034950] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.035140] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.040115] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.058487] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.058683] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.073107] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.075034] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.092524] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.092716] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.107096] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.109673] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.126930] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.127127] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.135663] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.154083] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.154259] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.161647] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.179871] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.180058] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.187375] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.205788] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.205960] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.221273] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.222030] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.230688] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.248827] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.249014] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.256937] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.265342] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.286542] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.286721] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.291583] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.299991] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.321515] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.321721] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.325975] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.334896] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.355928] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.356110] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.360625] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.369546] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.390921] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.391110] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.395277] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.404198] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.425240] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.425414] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.430184] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.438846] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.460001] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.460192] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.464833] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.483095] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.483274] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.490826] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.508847] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.509038] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.516552] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.534817] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.535005] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.542540] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.561115] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.561295] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.576731] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.577193] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.585849] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.604053] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.604257] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.612097] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.630192] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.630366] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.637830] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.656051] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.656242] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.664071] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.683461] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.683624] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.690059] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.709074] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.709258] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.716046] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.735539] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.735737] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.748764] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.750705] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.767908] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.768081] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.783679] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.785091] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.802811] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.802974] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.818148] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.819742] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.836885] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.837324] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.852717] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.854391] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.871258] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.871973] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.887385] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.889043] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.897958] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.916587] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.916780] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.923947] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.932351] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.954989] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.955181] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.958341] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.967264] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.989474] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.989668] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4697.993247] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.001652] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.024552] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.024743] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.027639] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.036301] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.057565] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.057760] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.062288] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.071209] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.093423] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.093619] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.097202] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.105604] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.127025] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.127229] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.131601] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.140255] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.161367] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.161545] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.166497] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.174899] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.196173] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.196366] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.201146] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.209808] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.232275] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.232474] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.235795] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.244202] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.265660] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.265845] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.270198] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.279108] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.300042] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.300235] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.305096] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.313758] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.335025] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.335231] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.339749] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.359200] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.359385] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.365736] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.384007] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.384199] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.391724] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.409652] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.409842] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.428395] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.428594] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.442379] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.443705] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.461176] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.461368] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.476596] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.478354] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.494920] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.495421] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.513132] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.513313] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.530835] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.531036] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.545813] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.547655] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.556318] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.574546] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.574719] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.582296] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.600491] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.600689] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.617215] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.617418] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.632371] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.634021] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.650971] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.651342] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.666850] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.668941] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.685914] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.686248] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.701312] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.703581] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.718477] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.720648] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.737366] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.742958] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.750683] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.763885] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.772183] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.782192] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.792283] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.832334] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.832515] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.842329] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.842523] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.850841] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.851045] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.851214] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.863909] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.864082] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.868161] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.883077] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.885488] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.894153] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.913648] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.913837] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.919876] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.938187] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.938380] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.945867] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.964769] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.964960] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.972109] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.990005] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.990169] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4698.998098] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.015936] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.016127] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.024088] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.043640] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.043807] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.049814] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.067920] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.068107] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.076071] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.093989] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.094179] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.108187] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.110727] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.127172] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.128034] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.142860] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.145360] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.162093] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.162688] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.171348] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.189332] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.189504] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.197076] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.215617] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.215805] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.231253] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.231732] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.246939] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.249072] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.266051] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.269674] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.281009] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.290967] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.300966] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.301306] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.316078] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.318353] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.333663] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.335936] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.344600] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.363915] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.364106] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.370336] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.389746] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.389948] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.396316] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.414404] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.414588] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.422306] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.440522] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.440716] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.448546] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.466565] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.466757] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.474277] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.495189] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.495396] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.500526] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.519366] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.519542] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.533719] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.534934] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.551974] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.552496] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.567657] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.569829] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.586810] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.587153] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.602426] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.604499] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.613146] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.632003] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.632164] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.639120] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.657927] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.658116] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.664851] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.685581] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.685770] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.690839] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.709896] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.710111] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.717087] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.735674] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.735857] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.742815] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.761112] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.761305] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.769059] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.786911] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.787104] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.794791] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.815913] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.816092] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.820779] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.840106] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.840303] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.847027] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.864902] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.865085] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.873010] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.891131] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.891350] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.899001] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.919541] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.919740] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.924984] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.943729] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.943924] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.950975] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.969364] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.969563] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.976964] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.996287] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4699.996497] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.002699] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.022819] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.023020] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.028937] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.048165] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.048375] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.054666] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.075889] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.076073] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.080913] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.099350] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.099557] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.106642] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.126026] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.126194] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.132885] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.151907] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.152080] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.166642] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.167293] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.182706] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.184602] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.201649] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.202206] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.217253] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.219255] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.228172] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.246370] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.246566] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.253901] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.275390] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.275564] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.279890] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.298073] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.298275] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.306133] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.324130] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.324309] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.332127] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.350990] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.351157] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.366386] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.366574] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.375180] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.393474] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.393679] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.401426] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.420000] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.420196] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.427414] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.446426] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.446607] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.461763] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.461927] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.477362] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.479402] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.496817] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.497011] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.512541] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.513783] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.529480] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.531365] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.548561] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.548729] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.564624] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.566011] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.583183] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.583387] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.598357] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.600672] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.617022] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.617738] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.633249] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.635320] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.652421] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.652623] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.667672] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.669716] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.688778] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.688990] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.703141] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.704620] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.721688] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.721873] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.737294] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.744520] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.747947] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.763485] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.765249] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.782264] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.782452] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.797649] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.799648] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.816861] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.817233] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.825884] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.844434] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.844653] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.858477] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.860548] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.877081] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.877616] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.893016] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.895186] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.911767] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.912254] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.927316] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.929839] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.946505] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.946918] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.962127] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.964498] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.972889] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.991003] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.991197] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4700.999134] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.018328] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.018526] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.025123] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.044778] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.044942] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.057216] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.059784] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.076393] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.080066] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.091403] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.101331] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.111374] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.121380] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.131285] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.141281] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.151223] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.151413] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.161280] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.171251] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.181396] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.191365] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.201360] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.201571] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.212206] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.215468] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.232730] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.232892] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.248562] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.250098] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.267186] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.267685] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.283257] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.285008] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.302053] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.305428] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.316884] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.326900] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.328314] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.344038] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.345646] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.361949] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.362959] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.378241] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.380295] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.397250] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.397611] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.413198] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.414681] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.430153] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.432259] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.448803] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.449326] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.466482] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.466908] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.482426] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.483987] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.499877] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.501566] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.518248] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.518896] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.534270] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.536221] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.553262] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.553452] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.569225] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.570603] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.588277] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.588483] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.596857] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.615468] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.615666] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.622577] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.631496] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.654007] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.654201] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.657484] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.666146] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.688599] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.688779] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.691882] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.700800] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.722693] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.722887] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.726786] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.735446] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.757762] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.757964] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.761435] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.770097] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.791573] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.791750] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.795826] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.804745] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.826539] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.826732] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.830734] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.839405] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.859420] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.859614] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.865383] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.873798] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.894962] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.895154] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.899774] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.908438] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.929985] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.930172] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.934426] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.943346] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.964484] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.964651] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.969079] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.977740] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.999152] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4701.999348] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.003726] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.022049] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.022220] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.029972] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.049625] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.049789] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.055959] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.073757] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.073933] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.081690] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.099979] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.100174] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.107934] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.116338] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.137737] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.137902] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.142583] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.150987] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.173122] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.173318] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.177237] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.195237] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.195433] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.203223] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.221066] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.221258] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.228951] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.247003] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.247179] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.255197] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.274450] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.274645] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.280931] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.299242] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.299421] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.306914] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.315833] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.336852] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.337044] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.341564] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.350226] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.371419] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.371608] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.376473] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.384879] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.406270] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.406436] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.411124] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.429868] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.430058] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.437112] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.455948] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.456131] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.463096] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.481685] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.481854] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.488833] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.507463] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.507664] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.515071] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.533492] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.533664] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.541058] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.561381] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.561569] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.567046] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.575708] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.597829] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.598020] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.601696] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.610358] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.632648] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.632821] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.636086] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.644750] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.667260] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.667445] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.670994] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.679412] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.700280] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.700468] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.705388] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.714308] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.736427] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.736621] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.740298] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.748700] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.771239] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.771409] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.774948] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.793116] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.793290] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.800948] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.820825] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.821018] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.826922] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.845740] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.845930] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.852910] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.871657] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.871843] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.878895] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.897306] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.897490] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.904883] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.923759] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.923929] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.930622] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.951407] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.951578] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.963390] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.969992] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.979136] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.986805] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4702.991536] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.000180] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.020296] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.020488] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.026158] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.045140] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.045333] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.052153] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.070705] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.070895] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.077875] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.097179] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.097377] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.104131] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.121994] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.122208] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.130108] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.148148] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.148341] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.156097] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.175421] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.175610] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.182085] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.199906] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.200076] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.208070] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.226113] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.226305] ftdi_sio ttyUSB2: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.234060] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.251873] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.252040] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.267843] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.268726] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.283642] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.285778] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.302781] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.303405] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.319930] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.320475] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4703.332368] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 4703.335802] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 4703.342088] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 4703.346722] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 4703.353081] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 4703.357810] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 4703.365018] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 4703.369357] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 4704.215154] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.215400] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 4704.215652] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.216359] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.216764] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.217166] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.217583] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 4704.217986] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.218406] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.218912] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.219210] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.219607] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 4704.220033] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4704.220836] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.221243] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 4704.223903] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.230555] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.235866] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.241632] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.249388] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 4704.256016] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.261798] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.268131] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.274182] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.281834] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 4704.288680] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4704.295003] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.301948] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 4704.308878] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.315715] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.320753] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.326989] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.334520] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 4704.340890] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.346960] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.352967] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.359309] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.366995] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 4704.373779] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4704.380593] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.387099] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 4704.393789] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.400697] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.406164] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.412149] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.419640] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 4704.426304] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.432114] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.438401] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.444152] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4704.452094] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 4704.458939] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4704.664848] ftdi_sio ttyUSB0: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4704.665066] ftdi_sio ttyUSB1: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4704.665230] ftdi_sio ttyUSB3: usb_serial_generic_write_bulk_callback - nonzero urb status: -71
+[ 4704.915456] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 4704.916415] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 4704.918734] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 4704.919763] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 4704.921595] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 4704.922285] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 4704.923739] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 4704.924243] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 4827.263723] usb 1-2.2: USB disconnect, device number 4
+[ 4858.517872] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.518112] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 4858.518478] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.518959] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.519198] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.519437] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.519675] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 4858.519917] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.520176] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.520421] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.520684] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.520936] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 4858.521186] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 4858.521801] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.522109] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 4858.526365] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.533006] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.538623] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.544626] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.552184] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 4858.558585] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.564573] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.570823] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.576697] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.584329] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 4858.591152] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 4858.597548] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.604713] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 4858.611372] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.618129] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.623766] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.629773] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.637304] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 4858.643911] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.650006] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.655717] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.662043] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.669454] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 4858.676568] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 4858.682951] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.690098] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 4858.696649] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4858.703148] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4858.708593] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4858.715006] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.722171] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 4858.729083] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4858.734875] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4858.741120] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 4858.746934] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 4858.755092] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 4858.761698] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 5069.504813] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 5070.029693]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 5070.086041] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 5070.290068] usb 2-3: usb_suspend_both: status 0
+[ 5070.290355] usb usb2: usb_suspend_both: status 0
+[ 5070.306515] usb usb2: usb_suspend_both: status 0
+[ 5070.494055] usb 2-3: usb_suspend_both: status 0
+[ 5070.494262] usb usb2: usb_suspend_both: status 0
+[ 5582.941366] usb 1-2.2: new high-speed USB device number 7 using tegra-xusb
+[ 5582.966000] usb 1-2.2: New USB device found, idVendor=2357, idProduct=011e
+[ 5582.966011] usb 1-2.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 5582.966016] usb 1-2.2: Product: 802.11ac WLAN Adapter 
+[ 5582.966020] usb 1-2.2: Manufacturer: Realtek 
+[ 5582.966025] usb 1-2.2: SerialNumber: 00e04c000001
+[ 5583.270511] usbcore: registered new interface driver rtl8821au
+[ 5583.371897] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[ 5583.753901] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[ 5583.893955] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[ 6029.385467] ------------[ cut here ]------------
+[ 6029.385722] WARNING: CPU: 3 PID: 16218 at /home/hiroki/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/net/wireless/nl80211.c:14141 cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6029.386012] Modules linked in: rtl8821au bnep fuse zram overlay userspace_alert nvgpu rtl8821cu cfg80211 ftdi_sio cdc_acm spidev binfmt_misc ar0521(O) gpio_pca953x i2c_mux_pca954x bluedroid_pm ip_tables x_tables
+
+[ 6029.386088] CPU: 3 PID: 16218 Comm: RTW_CMD_THREAD Tainted: G        W  O    4.9.201 #1
+[ 6029.386092] Hardware name: NVIDIA Jetson Xavier NX Developer Kit (DT)
+[ 6029.386099] task: ffffffc1f463c600 task.stack: ffffffc16c340000
+[ 6029.386219] PC is at cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6029.386813] LR is at rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6029.386818] pc : [<ffffff8001183080>] lr : [<ffffff800183e8b0>] pstate: 60c00045
+[ 6029.386822] sp : ffffffc16c343c20
+[ 6029.386826] x29: ffffffc16c343c20 x28: ffffff80017e0930 
+[ 6029.386836] x27: ffffff8018ce51ac x26: ffffff8001943870 
+[ 6029.386846] x25: ffffff8001996dfc x24: ffffffc16c3a3000 
+[ 6029.386856] x23: ffffffc1e5a40000 x22: ffffffc1eb630000 
+[ 6029.386865] x21: 0000000000000002 x20: ffffffc16c343ca8 
+[ 6029.386875] x19: ffffffc17d505c00 x18: 0000007fa3164a70 
+[ 6029.386884] x17: 0000007fa30b3588 x16: ffffff8008139850 
+[ 6029.386894] x15: 0000000000000000 x14: 0000000000000008 
+[ 6029.386903] x13: 7f0201c70000002a x12: 0105c001b2fffe01 
+[ 6029.386913] x11: 0000000000000004 x10: 0000000000000002 
+[ 6029.386922] x9 : 0000000000000004 x8 : ffffffc16c343d3a 
+[ 6029.386932] x7 : 0000000000000000 x6 : 0000000000000001 
+[ 6029.386941] x5 : 0000000000000040 x4 : 0000000000001464 
+[ 6029.386951] x3 : 0000145a00000003 x2 : ffffffc1f029d8c8 
+[ 6029.386960] x1 : 0000145a00000003 x0 : 0000000000000000 
+
+[ 6029.386974] ---[ end trace 5d1fb47380e09edb ]---
+[ 6029.387060] Call trace:
+[ 6029.387184] [<ffffff8001183080>] cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6029.387746] [<ffffff800183e8b0>] rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6029.388284] [<ffffff80017e0894>] rtw_chk_start_clnt_join+0x43c/0x4d8 [rtl8821au]
+[ 6029.388821] [<ffffff80017e0b68>] join_cmd_hdl+0x238/0x330 [rtl8821au]
+[ 6029.389348] [<ffffff80017a4550>] rtw_cmd_thread+0x308/0x608 [rtl8821au]
+[ 6029.389357] [<ffffff80080db074>] kthread+0xec/0xf0
+[ 6029.389364] [<ffffff80080838a0>] ret_from_fork+0x10/0x30
+[ 6029.544790] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[ 6147.864511] ------------[ cut here ]------------
+[ 6147.864786] WARNING: CPU: 5 PID: 16218 at /home/hiroki/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/net/wireless/nl80211.c:14141 cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6147.865081] Modules linked in: rtl8821au bnep fuse zram overlay userspace_alert nvgpu rtl8821cu cfg80211 ftdi_sio cdc_acm spidev binfmt_misc ar0521(O) gpio_pca953x i2c_mux_pca954x bluedroid_pm ip_tables x_tables
+
+[ 6147.865176] CPU: 5 PID: 16218 Comm: RTW_CMD_THREAD Tainted: G        W  O    4.9.201 #1
+[ 6147.865181] Hardware name: NVIDIA Jetson Xavier NX Developer Kit (DT)
+[ 6147.865188] task: ffffffc1f463c600 task.stack: ffffffc16c340000
+[ 6147.865311] PC is at cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6147.865865] LR is at rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6147.865871] pc : [<ffffff8001183080>] lr : [<ffffff800183e8b0>] pstate: 60c00045
+[ 6147.865874] sp : ffffffc16c343c20
+[ 6147.865879] x29: ffffffc16c343c20 x28: ffffff80017e0930 
+[ 6147.865889] x27: ffffff8018ce51ac x26: ffffff8001943870 
+[ 6147.865900] x25: ffffff8001996dfc x24: ffffffc16c3a3000 
+[ 6147.865909] x23: ffffffc1e5a40000 x22: ffffffc1eb630000 
+[ 6147.865924] x21: 0000000000000000 x20: ffffffc16c343ca8 
+[ 6147.865933] x19: ffffffc17d505c00 x18: 0000000000000400 
+[ 6147.865942] x17: 0000007fa30edf10 x16: 0000000000000000 
+[ 6147.865952] x15: 000000000000031c x14: 0000000000000000 
+[ 6147.865961] x13: 00000000000000ff x12: 1f192c1a2d000100 
+[ 6147.865970] x11: 0000000000000005 x10: 0000000000000002 
+[ 6147.865980] x9 : 0000000000000004 x8 : ffffffc16c343d3a 
+[ 6147.865989] x7 : 0000000000000000 x6 : 0000000000000001 
+[ 6147.865998] x5 : 0000000000000040 x4 : 000000000000098a 
+[ 6147.866007] x3 : 0000098a00000001 x2 : ffffffc1eb6321c8 
+[ 6147.866017] x1 : 0000098a00000001 x0 : 0000000000000000 
+
+[ 6147.866030] ---[ end trace 5d1fb47380e09edc ]---
+[ 6147.866117] Call trace:
+[ 6147.866238] [<ffffff8001183080>] cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6147.866793] [<ffffff800183e8b0>] rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6147.867330] [<ffffff80017e0894>] rtw_chk_start_clnt_join+0x43c/0x4d8 [rtl8821au]
+[ 6147.867865] [<ffffff80017e0b68>] join_cmd_hdl+0x238/0x330 [rtl8821au]
+[ 6147.868396] [<ffffff80017a4550>] rtw_cmd_thread+0x308/0x608 [rtl8821au]
+[ 6147.868408] [<ffffff80080db074>] kthread+0xec/0xf0
+[ 6147.868416] [<ffffff80080838a0>] ret_from_fork+0x10/0x30
+[ 6157.398879] ------------[ cut here ]------------
+[ 6157.399150] WARNING: CPU: 0 PID: 16218 at /home/hiroki/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/net/wireless/nl80211.c:14141 cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6157.399450] Modules linked in: rtl8821au bnep fuse zram overlay userspace_alert nvgpu rtl8821cu cfg80211 ftdi_sio cdc_acm spidev binfmt_misc ar0521(O) gpio_pca953x i2c_mux_pca954x bluedroid_pm ip_tables x_tables
+
+[ 6157.399547] CPU: 0 PID: 16218 Comm: RTW_CMD_THREAD Tainted: G        W  O    4.9.201 #1
+[ 6157.399551] Hardware name: NVIDIA Jetson Xavier NX Developer Kit (DT)
+[ 6157.399561] task: ffffffc1f463c600 task.stack: ffffffc16c340000
+[ 6157.399681] PC is at cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6157.400249] LR is at rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6157.400258] pc : [<ffffff8001183080>] lr : [<ffffff800183e8b0>] pstate: 60c00045
+[ 6157.400262] sp : ffffffc16c343c20
+[ 6157.400267] x29: ffffffc16c343c20 x28: ffffff80017e0930 
+[ 6157.400278] x27: ffffff8018ce51ac x26: ffffff8001943870 
+[ 6157.400289] x25: ffffff8001996dfc x24: ffffffc16c3a3000 
+[ 6157.400299] x23: ffffffc1e5a40000 x22: ffffffc1eb630000 
+[ 6157.400309] x21: 0000000000000000 x20: ffffffc16c343ca8 
+[ 6157.400319] x19: ffffffc17d505c00 x18: 000000000000001e 
+[ 6157.400329] x17: 0000007f8cafa278 x16: ffffff8008274a30 
+[ 6157.400339] x15: 0000000000000000 x14: 0000000000000000 
+[ 6157.400349] x13: 00000000000000ff x12: 0000000000000000 
+[ 6157.400359] x11: fffffffffffffffe x10: 0000000000000002 
+[ 6157.400369] x9 : 0000000000000004 x8 : ffffffc16c343d3a 
+[ 6157.400379] x7 : 0000000000000000 x6 : 0000000000000001 
+[ 6157.400389] x5 : 0000000000000040 x4 : 000000000000098a 
+[ 6157.400399] x3 : 0000098a00000001 x2 : ffffffc1eb6321c8 
+[ 6157.400411] x1 : 0000098a00000001 x0 : 0000000000000000 
+
+[ 6157.400425] ---[ end trace 5d1fb47380e09edd ]---
+[ 6157.400511] Call trace:
+[ 6157.400631] [<ffffff8001183080>] cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6157.401182] [<ffffff800183e8b0>] rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6157.401713] [<ffffff80017e0894>] rtw_chk_start_clnt_join+0x43c/0x4d8 [rtl8821au]
+[ 6157.402249] [<ffffff80017e0b68>] join_cmd_hdl+0x238/0x330 [rtl8821au]
+[ 6157.402762] [<ffffff80017a4550>] rtw_cmd_thread+0x308/0x608 [rtl8821au]
+[ 6157.402775] [<ffffff80080db074>] kthread+0xec/0xf0
+[ 6157.402784] [<ffffff80080838a0>] ret_from_fork+0x10/0x30
+[ 6178.673568] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[ 6182.545211] ------------[ cut here ]------------
+[ 6182.545475] WARNING: CPU: 0 PID: 16218 at /home/hiroki/top_dir/kernel_sources/Linux_for_Tegra/source/public/kernel/kernel-4.9/net/wireless/nl80211.c:14141 cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6182.545775] Modules linked in: rtl8821au bnep fuse zram overlay userspace_alert nvgpu rtl8821cu cfg80211 ftdi_sio cdc_acm spidev binfmt_misc ar0521(O) gpio_pca953x i2c_mux_pca954x bluedroid_pm ip_tables x_tables
+
+[ 6182.545851] CPU: 0 PID: 16218 Comm: RTW_CMD_THREAD Tainted: G        W  O    4.9.201 #1
+[ 6182.545855] Hardware name: NVIDIA Jetson Xavier NX Developer Kit (DT)
+[ 6182.545862] task: ffffffc1f463c600 task.stack: ffffffc16c340000
+[ 6182.545983] PC is at cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6182.546541] LR is at rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6182.546547] pc : [<ffffff8001183080>] lr : [<ffffff800183e8b0>] pstate: 60c00045
+[ 6182.546551] sp : ffffffc16c343c20
+[ 6182.546555] x29: ffffffc16c343c20 x28: ffffff80017e0930 
+[ 6182.546566] x27: ffffff8018ce51ac x26: ffffff8001943870 
+[ 6182.546577] x25: ffffff8001996dfc x24: ffffffc16c3a3000 
+[ 6182.546587] x23: ffffffc1e5a40000 x22: ffffffc1eb630000 
+[ 6182.546596] x21: 0000000000000002 x20: ffffffc16c343ca8 
+[ 6182.546606] x19: ffffffc17d505c00 x18: 0000000000000014 
+[ 6182.546616] x17: 0000007fb5565a58 x16: 0000000000000000 
+[ 6182.546625] x15: 0000000000000000 x14: 0000000000000008 
+[ 6182.546635] x13: 7f0201c70000002a x12: 0105c001b2fffe01 
+[ 6182.546645] x11: 0000000000000002 x10: 0000000000000002 
+[ 6182.546654] x9 : 0000000000000004 x8 : ffffffc16c343d3a 
+[ 6182.546664] x7 : 0000000000000000 x6 : 0000000000000001 
+[ 6182.546673] x5 : 0000000000000040 x4 : 0000000000001464 
+[ 6182.546683] x3 : 0000145a00000003 x2 : ffffffc1f029d8c8 
+[ 6182.546693] x1 : 0000145a00000003 x0 : 0000000000000000 
+
+[ 6182.546707] ---[ end trace 5d1fb47380e09ede ]---
+[ 6182.546803] Call trace:
+[ 6182.546926] [<ffffff8001183080>] cfg80211_ch_switch_notify+0x150/0x170 [cfg80211]
+[ 6182.547480] [<ffffff800183e8b0>] rtw_cfg80211_ch_switch_notify+0x94/0x98 [rtl8821au]
+[ 6182.548020] [<ffffff80017e0894>] rtw_chk_start_clnt_join+0x43c/0x4d8 [rtl8821au]
+[ 6182.548552] [<ffffff80017e0b68>] join_cmd_hdl+0x238/0x330 [rtl8821au]
+[ 6182.549079] [<ffffff80017a4550>] rtw_cmd_thread+0x308/0x608 [rtl8821au]
+[ 6182.549089] [<ffffff80080db074>] kthread+0xec/0xf0
+[ 6182.549097] [<ffffff80080838a0>] ret_from_fork+0x10/0x30
+[ 6182.962863] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[ 6250.068464] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 6250.068778] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 6250.069793] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 6250.070022] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 6250.071014] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 6250.071244] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 6250.072170] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 6250.072433] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 6250.473272] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.473567] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 6250.473820] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.474321] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.474577] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.474820] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.475061] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 6250.475310] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.475563] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.475837] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.476093] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.476528] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 6250.476899] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6250.477546] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.478082] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 6250.482165] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.487970] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.494289] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.499797] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.507630] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 6250.514309] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.520177] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.526036] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.532098] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.540274] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 6250.547068] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6250.553498] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.560316] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 6250.566805] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.573504] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.579199] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.585281] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.592664] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 6250.599565] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.605641] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.611196] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.617270] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.625025] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 6250.631957] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6250.638390] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.645512] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 6250.651999] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6250.658369] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6250.664358] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6250.670213] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.677594] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 6250.684620] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6250.690489] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6250.696297] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6250.702338] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6250.710068] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 6250.717276] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6451.784764] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 6451.785048] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 6451.786084] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 6451.786341] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 6451.787345] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 6451.787576] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 6451.788887] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 6451.789161] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 6452.616526] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.616838] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 6452.617044] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.617601] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.617867] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.618112] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.618361] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 6452.618611] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.618860] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.619113] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.619358] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.619608] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 6452.619860] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 6452.620492] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.620738] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 6452.625130] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.631336] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.637248] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.643685] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.650879] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 6452.657350] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.663262] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.669624] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.675304] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.683079] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 6452.690266] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 6452.696549] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.703424] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 6452.710490] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.716745] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.722388] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.728633] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.736127] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 6452.743196] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.748625] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.754796] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.760949] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.768467] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 6452.775141] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 6452.782402] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.788853] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 6452.795568] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6452.801682] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6452.807578] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6452.813754] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.821243] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 6452.827851] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6452.833816] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6452.839894] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6452.846339] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 6452.853767] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 6452.860445] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 6453.317031] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 6453.317337] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 6453.319851] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 6453.320530] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 6453.322738] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 6453.322982] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 6453.323982] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 6453.324281] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 7126.523729] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.524098] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7126.524428] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.524974] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.525231] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.525494] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.525743] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7126.525989] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.526252] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.526534] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.526780] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.527028] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7126.527287] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7126.527875] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.528116] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7126.532295] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.538440] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.544668] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.550298] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.557813] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7126.564669] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.570597] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.576774] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.582920] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.590509] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7126.597394] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7126.603415] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.610685] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7126.617318] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.623959] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.629916] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.635578] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.643041] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7126.649710] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.655728] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.661661] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.667648] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.675710] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7126.682428] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7126.688979] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.695852] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7126.702910] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7126.708910] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7126.714789] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7126.720869] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.728348] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7126.735035] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7126.741405] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7126.746849] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7126.752857] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7126.760920] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7126.767729] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.015458] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 7172.015710] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 7172.017393] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 7172.017626] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 7172.018581] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 7172.018810] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 7172.023306] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 7172.023547] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 7172.426902] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.427241] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7172.427494] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.428002] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.428261] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.428511] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.428754] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7172.429015] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.429258] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.429531] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.429775] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.430013] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7172.430257] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7172.430888] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.431198] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7172.435581] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.441596] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.447670] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.453656] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.460899] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7172.467971] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.473672] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.479927] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.485754] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.493654] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7172.500512] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7172.506932] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.514041] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7172.520716] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.527131] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.532762] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.538849] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.546532] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7172.553157] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.559070] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.565048] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.570794] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.578799] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7172.585501] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7172.591943] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.599204] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7172.605669] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.611915] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.617715] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.624069] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.631571] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7172.638195] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.644226] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.650308] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7172.656300] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7172.663972] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7172.670629] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7297.805631] FAN rising trip_level:1 cur_temp:46150 trip_temps[2]:60000
+[ 7528.851578] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 7529.371852]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 7529.371861] Skipping Previous mode set ... 
+[ 7529.577557] usb 2-3: usb_suspend_both: status 0
+[ 7529.577826] usb usb2: usb_suspend_both: status 0
+[ 7529.597999] usb usb2: usb_suspend_both: status 0
+[ 7529.777674] usb 2-3: usb_suspend_both: status 0
+[ 7529.778022] usb usb2: usb_suspend_both: status 0
+[ 7547.029106] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 7547.029408] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 7547.031282] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 7547.031515] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 7547.032452] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 7547.032691] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 7547.033635] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 7547.033893] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 7557.458026] tegra-i2c c240000.i2c: pio timed out addr: 0x68 tlen:16 rlen:0
+[ 7557.458228] tegra-i2c c240000.i2c: --- register dump for debugging ----
+[ 7557.458352] tegra-i2c c240000.i2c: I2C_CNFG - 0x22c00
+[ 7557.458441] tegra-i2c c240000.i2c: I2C_PACKET_TRANSFER_STATUS - 0x10001
+[ 7557.458560] tegra-i2c c240000.i2c: I2C_FIFO_CONTROL - 0x0
+[ 7557.458695] tegra-i2c c240000.i2c: I2C_FIFO_STATUS - 0x800080
+[ 7557.458809] tegra-i2c c240000.i2c: I2C_MST_FIFO_CONTROL - 0x70000
+[ 7557.458926] tegra-i2c c240000.i2c: I2C_MST_FIFO_STATUS - 0x800000
+[ 7557.459038] tegra-i2c c240000.i2c: I2C_MST_PACKET_TRANSFER_CNT - 0x1
+[ 7557.459153] tegra-i2c c240000.i2c: I2C_INT_MASK - 0x7c
+[ 7557.459267] tegra-i2c c240000.i2c: I2C_INT_STATUS - 0x2
+[ 7557.459370] tegra-i2c c240000.i2c: i2c transfer timed out addr: 0x68
+[ 7557.512873] tegra-i2c c240000.i2c: arb lost in communicate to add 0x68
+[ 7557.879801] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.880167] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7557.880375] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.880909] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.881189] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.881431] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.881667] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7557.882359] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.882619] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.882846] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.883159] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.883364] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7557.883627] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7557.884230] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.884495] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7557.888341] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.894468] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.900710] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.906627] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.914059] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7557.920691] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.926817] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.932909] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.938832] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.946583] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7557.953143] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7557.959804] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.967189] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7557.973541] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7557.979932] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7557.985477] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7557.991716] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7557.998975] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7558.005882] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7558.011654] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7558.018021] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7558.023755] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7558.031463] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7558.038524] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7558.044782] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7558.051803] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7558.058747] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7558.065816] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7558.070838] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7558.076660] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7558.084098] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7558.091052] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7558.097114] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7558.102885] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7558.109163] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7558.116901] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7558.123794] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7649.507946] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 7650.033228]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 7650.033237] Skipping Previous mode set ... 
+[ 7650.059156] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 7650.251279] usb 2-3: usb_suspend_both: status 0
+[ 7650.251674] usb usb2: usb_suspend_both: status 0
+[ 7726.336681] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 7726.861485]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 7726.861494] Skipping Previous mode set ... 
+[ 7726.928049] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 7727.076081] usb 2-3: usb_suspend_both: status 0
+[ 7727.076345] usb usb2: usb_suspend_both: status 0
+[ 7727.096515] usb usb2: usb_suspend_both: status 0
+[ 7727.292036] usb 2-3: usb_suspend_both: status 0
+[ 7727.292257] usb usb2: usb_suspend_both: status 0
+[ 7727.316294] usb usb2: usb_suspend_both: status 0
+[ 7774.170362] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 7774.170625] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 7774.172697] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 7774.173010] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 7774.174022] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 7774.174242] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 7774.175212] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 7774.175509] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 7774.990738] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7774.991038] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7774.991298] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.991819] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.992126] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.992368] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7774.992695] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7774.992950] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.993193] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.993460] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.993726] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7774.993991] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 7774.994254] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 7774.994810] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7774.995049] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7774.999115] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.005809] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.011508] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.017525] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.024891] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7775.031413] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.037453] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.043754] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.049627] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.057190] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 7775.064026] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 7775.070910] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.077868] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7775.084549] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.090752] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.096776] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.102407] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.109866] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7775.116836] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.122669] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.128626] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.134936] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.142795] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 7775.149168] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 7775.155814] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.162957] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7775.169711] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.175899] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.181463] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.187954] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.195508] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7775.202117] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.208036] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.214190] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.220129] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 7775.227444] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 7775.234510] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 7775.691518] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 7775.691845] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 7775.692935] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 7775.693171] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 7775.694115] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 7775.694331] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 7775.695096] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 7775.695325] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 8809.213194] nvgpu: 17000000.gv11b                 tpc_pg_mask_store:843  [INFO]  no value change, same mask already set
+[ 8809.739852]  Index = 0x0000 , format = 0x59565955, width = 640, height = 480, frate num = 75 
+[ 8809.739860] Skipping Previous mode set ... 
+[ 8809.782224] [RCE] vi5_hwinit: firmware CL2018101701 protocol version 2.2
+[ 8809.954189] usb 2-3: usb_suspend_both: status 0
+[ 8809.954392] usb usb2: usb_suspend_both: status 0
+[ 8809.974770] usb usb2: usb_suspend_both: status 0
+[ 8810.154194] usb 2-3: usb_suspend_both: status 0
+[ 8810.154394] usb usb2: usb_suspend_both: status 0
+[ 8810.174599] usb usb2: usb_suspend_both: status 0
+[ 8907.281619] eqos 2490000.ether_qos eth0: Link is Down
+[ 9038.717774] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.718034] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 9038.718279] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.718787] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.719092] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.719332] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.719584] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 9038.719825] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.720068] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.720315] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.720555] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.720800] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 9038.721042] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9038.721572] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.721810] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 9038.727089] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.732574] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.738587] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.744580] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.752145] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 9038.758971] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.764722] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.770901] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.776782] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.784285] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 9038.791381] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9038.797965] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.804675] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 9038.811559] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.817931] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.823404] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.829408] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.837290] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 9038.843545] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.850014] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.855708] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.861808] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.869712] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 9038.876526] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9038.882986] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.889746] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 9038.896456] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9038.903006] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9038.908777] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9038.914634] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.922361] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 9038.929131] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9038.934792] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9038.940899] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9038.947190] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9038.954788] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 9038.961992] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9341.819948] FAN rising trip_level:1 cur_temp:46100 trip_temps[2]:60000
+[ 9899.191294] eqos 2490000.ether_qos eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[ 9906.258796] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 9906.259107] ftdi_sio ttyUSB3: error from flowcontrol urb
+[ 9906.260271] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 9906.260512] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 9906.261504] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 9906.261737] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 9906.262672] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 9906.262912] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 9906.930445] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9906.930701] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 9906.930951] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.931501] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.931750] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.932002] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9906.932243] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 9906.932503] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.932740] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.933134] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.933391] ftdi_sio ttyUSB0: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9906.933634] ftdi_sio ttyUSB0: ftdi_set_termios urb failed to set baudrate
+[ 9906.933871] ftdi_sio ttyUSB0: urb failed to clear flow control
+[ 9906.934421] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9906.934658] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 9906.939335] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9906.945100] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9906.951149] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9906.956883] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9906.964778] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 9906.971336] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9906.977424] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9906.983448] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9906.989472] ftdi_sio ttyUSB1: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9906.996958] ftdi_sio ttyUSB1: ftdi_set_termios urb failed to set baudrate
+[ 9907.003729] ftdi_sio ttyUSB1: urb failed to clear flow control
+[ 9907.010369] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9907.017294] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 9907.023914] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.030206] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.036319] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.042022] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9907.049862] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 9907.056552] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.062546] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.068616] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.074344] ftdi_sio ttyUSB2: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9907.082299] ftdi_sio ttyUSB2: ftdi_set_termios urb failed to set baudrate
+[ 9907.088839] ftdi_sio ttyUSB2: urb failed to clear flow control
+[ 9907.095255] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9907.102687] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 9907.109211] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9907.115616] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9907.121265] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9907.127344] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9907.134769] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 9907.141634] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9907.147417] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9907.153794] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9907.159857] ftdi_sio ttyUSB3: ftdi_set_termios FAILED to set databits/stopbits/parity
+[ 9907.167416] ftdi_sio ttyUSB3: ftdi_set_termios urb failed to set baudrate
+[ 9907.174351] ftdi_sio ttyUSB3: urb failed to clear flow control
+[ 9917.953058] ftdi_sio ttyUSB0: failed to get modem status: -32
+[ 9917.953314] ftdi_sio ttyUSB0: error from flowcontrol urb
+[ 9917.954156] ftdi_sio ttyUSB1: failed to get modem status: -32
+[ 9917.954391] ftdi_sio ttyUSB1: error from flowcontrol urb
+[ 9917.955326] ftdi_sio ttyUSB2: failed to get modem status: -32
+[ 9917.955561] ftdi_sio ttyUSB2: error from flowcontrol urb
+[ 9917.956497] ftdi_sio ttyUSB3: failed to get modem status: -32
+[ 9917.956740] ftdi_sio ttyUSB3: error from flowcontrol urb
